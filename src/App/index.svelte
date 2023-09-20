@@ -1,6 +1,6 @@
 <script>
     import Layout from '@Components/Layout';
-    import Menu from '@Components/Menu';
+    import Header from '@Components/Header';
     import Footer from '@Components/Footer';
     import { writable } from 'svelte/store';
 
@@ -109,7 +109,7 @@
 </style>
 
 <Layout>
-    <Menu />
+    <Header />
     <div class="wrapper">
         <div class="content">
             <div class="atm-keypad">

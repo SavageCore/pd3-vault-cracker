@@ -8,7 +8,7 @@
 
 <div class="background">
     <div class="wrapper">
-        <div class="menu">
+        <div class="header">
             <div class="logo">PD3 Vault Cracker</div>
             <div class="github-link">
 
