@@ -113,7 +113,7 @@
                     <!-- Keypad display 4 asterisks, replaced with numbers -->
                     {#each Array(4) as _, i}
                         <!-- If pressedNumbers[i] print otherwise * -->
-                        {#if $pressedNumbers[i]}
+                        {#if $pressedNumbers[i] !== undefined}
                             {$pressedNumbers[i]}
                         {:else}*{/if}
                     {/each}
