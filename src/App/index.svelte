@@ -203,6 +203,13 @@
                 {:else if combinations.length > 0 && currentCombination >= combinations.length}
                     <div>
                         <p>End of combinations</p>
+                        <button
+                            class="btn"
+                            on:click={() => {
+                                onKeypadInput('OK');
+                            }}>
+                            Start again
+                        </button>
                     </div>
                 {/if}
             </div>
