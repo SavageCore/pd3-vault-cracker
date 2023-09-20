@@ -1,7 +1,3 @@
-<script>
-    export let src;
-</script>
-
 <style src="./style.scss">
 
 </style>
