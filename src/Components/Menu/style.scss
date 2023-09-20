@@ -12,6 +12,10 @@
     align-items: center;
     padding: 10px 20px;
     color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .wrapper {

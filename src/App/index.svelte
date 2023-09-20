@@ -1,41 +1,43 @@
 <script>
     import Layout from '@Components/Layout';
     import Menu from '@Components/Menu';
+    import Footer from '@Components/Footer';
     import { writable } from 'svelte/store';
 
-    export const pressedNumbers = writable([]);
+    // https://i.imgur.com/NKHNmfr.png
+    // https://codepen.io/noleli/pen/abbeWRL
+    // https://www.reddit.com/r/paydaytheheist/comments/15jvvpq/payday_3_beta_vault_code_generator_from/
+    // https://www.onlinegdb.com/jMsyIVl33
 
-    let digit1 = '';
-    let digit2 = '';
-    let digit3 = '';
-    let digit4 = '';
+    export const pressedNumbers = writable([]);
+    let combinations = [];
+    let currentCombination = 0;
 
     window.addEventListener('keydown', event => {
         const keyPressed = event.key;
 
         if (keyPressed >= 0 && keyPressed <= 9) {
-            onNumberInput(parseInt(keyPressed));
+            onKeypadInput(parseInt(keyPressed));
         }
 
         if (keyPressed === 'Backspace' || keyPressed === 'Delete') {
-            onNumberInput('Backspace');
+            onKeypadInput('Backspace');
         }
 
         if (keyPressed === 'Enter' || keyPressed === 'Return') {
-            onNumberInput('OK');
+            onKeypadInput('OK');
         }
 
         if (keyPressed === 'Escape') {
             pressedNumbers.update(numbers => []);
-            updateDisplay();
         }
     });
 
-    function onNumberInput(input) {
+    function onKeypadInput(input) {
         if (input === 'Backspace') {
             pressedNumbers.update(numbers => numbers.slice(0, -1));
-
-            updateDisplay();
+            combinations = [];
+            currentCombination = 0;
             return;
         }
 
@@ -46,8 +48,6 @@
 
         pressedNumbers.update(numbers => [...numbers, input]);
 
-        updateDisplay();
-
         // If the user has entered 4 numbers, start the cracking process
         if ($pressedNumbers.length === 4) {
             start();
@@ -56,13 +56,14 @@
 
     function start() {
         const fingerprints = $pressedNumbers;
+        currentCombination = 0;
 
         // Ensure that the user has entered 2, 3 or 4 numbers
         if (fingerprints.length < 2 || fingerprints.length > 4) {
             return;
         }
 
-        printCombinations(fingerprints);
+        combinations = generateCombinations(fingerprints);
     }
 
     function generateCombinations(fingerprints) {
@@ -89,91 +90,6 @@
 
         return combinations;
     }
-
-    function printCombinations(fingerprints) {
-        const combinations = generateCombinations(fingerprints);
-        combinations.sort(); // Sort combinations
-
-        let sectionCount = 0;
-        let firstNumber = -1;
-
-        console.log('');
-        console.log('');
-        console.log('');
-
-        for (const combo of combinations) {
-            if (combo[0] !== firstNumber) {
-                firstNumber = combo[0];
-                sectionCount += 1;
-                console.log(`--- section ${sectionCount} ---`);
-            }
-            console.log(`(${combo.join(', ')})`);
-        }
-    }
-
-    function numberToDigit(number) {
-        switch (number) {
-            case 1:
-                return 'digOne';
-            case 2:
-                return 'digTwo';
-            case 3:
-                return 'digThree';
-            case 4:
-                return 'digFour';
-            case 5:
-                return 'digFive';
-            case 6:
-                return 'digSix';
-            case 7:
-                return 'digSeven';
-            case 8:
-                return 'digEight';
-            case 9:
-                return 'digNine';
-            case 0:
-                return 'digZero';
-        }
-    }
-
-    function updateDisplay() {
-        const numbers = $pressedNumbers;
-
-        if (numbers.length === 0) {
-            digit1 = '';
-            digit2 = '';
-            digit3 = '';
-            digit4 = '';
-        }
-
-        if (numbers.length === 1) {
-            digit1 = numberToDigit(numbers[0]);
-            digit2 = '';
-            digit3 = '';
-            digit4 = '';
-        }
-
-        if (numbers.length === 2) {
-            digit1 = numberToDigit(numbers[0]);
-            digit2 = numberToDigit(numbers[1]);
-            digit3 = '';
-            digit4 = '';
-        }
-
-        if (numbers.length === 3) {
-            digit1 = numberToDigit(numbers[0]);
-            digit2 = numberToDigit(numbers[1]);
-            digit3 = numberToDigit(numbers[2]);
-            digit4 = '';
-        }
-
-        if (numbers.length === 4) {
-            digit1 = numberToDigit(numbers[0]);
-            digit2 = numberToDigit(numbers[1]);
-            digit3 = numberToDigit(numbers[2]);
-            digit4 = numberToDigit(numbers[3]);
-        }
-    }
 </script>
 
 <style src="./style.scss">
@@ -187,75 +103,46 @@
             <div class="atm-keypad">
                 <!-- Display -->
                 <div class="display">
-                    <div class="digit {digit1}">
-                        <div class="segment segA" />
-                        <div class="segment segB" />
-                        <div class="segment segC" />
-                        <div class="segment segD" />
-                        <div class="segment segE" />
-                        <div class="segment segF" />
-                        <div class="segment segG" />
-                    </div>
-                    <div class="digit {digit2}">
-                        <div class="segment segA" />
-                        <div class="segment segB" />
-                        <div class="segment segC" />
-                        <div class="segment segD" />
-                        <div class="segment segE" />
-                        <div class="segment segF" />
-                        <div class="segment segG" />
-                    </div>
-                    <div class="digit {digit3}">
-                        <div class="segment segA" />
-                        <div class="segment segB" />
-                        <div class="segment segC" />
-                        <div class="segment segD" />
-                        <div class="segment segE" />
-                        <div class="segment segF" />
-                        <div class="segment segG" />
-                    </div>
-                    <div class="digit {digit4}">
-                        <div class="segment segA" />
-                        <div class="segment segB" />
-                        <div class="segment segC" />
-                        <div class="segment segD" />
-                        <div class="segment segE" />
-                        <div class="segment segF" />
-                        <div class="segment segG" />
-                    </div>
+                    <!-- Keypad display 4 asterisks, replaced with numbers -->
+                    {#each Array(4) as _, i}
+                        <!-- If pressedNumbers[i] print otherwise * -->
+                        {#if $pressedNumbers[i]}
+                            {$pressedNumbers[i]}
+                        {:else}*{/if}
+                    {/each}
                 </div>
                 <!-- Keypad -->
                 <div class="keypad">
                     <div class="row">
-                        <button class="btn" on:click={() => onNumberInput(1)}>
+                        <button class="btn" on:click={() => onKeypadInput(1)}>
                             1
                         </button>
-                        <button class="btn" on:click={() => onNumberInput(2)}>
+                        <button class="btn" on:click={() => onKeypadInput(2)}>
                             2
                         </button>
-                        <button class="btn" on:click={() => onNumberInput(3)}>
+                        <button class="btn" on:click={() => onKeypadInput(3)}>
                             3
                         </button>
                     </div>
                     <div class="row">
-                        <button class="btn" on:click={() => onNumberInput(4)}>
+                        <button class="btn" on:click={() => onKeypadInput(4)}>
                             4
                         </button>
-                        <button class="btn" on:click={() => onNumberInput(5)}>
+                        <button class="btn" on:click={() => onKeypadInput(5)}>
                             5
                         </button>
-                        <button class="btn" on:click={() => onNumberInput(6)}>
+                        <button class="btn" on:click={() => onKeypadInput(6)}>
                             6
                         </button>
                     </div>
                     <div class="row">
-                        <button class="btn" on:click={() => onNumberInput(7)}>
+                        <button class="btn" on:click={() => onKeypadInput(7)}>
                             7
                         </button>
-                        <button class="btn" on:click={() => onNumberInput(8)}>
+                        <button class="btn" on:click={() => onKeypadInput(8)}>
                             8
                         </button>
-                        <button class="btn" on:click={() => onNumberInput(9)}>
+                        <button class="btn" on:click={() => onKeypadInput(9)}>
                             9
                         </button>
                     </div>
@@ -263,22 +150,46 @@
                         <button
                             class="btn"
                             style="color: red;"
-                            on:click={() => onNumberInput('Backspace')}>
+                            on:click={() => onKeypadInput('Backspace')}>
                             X
                         </button>
-                        <button class="btn" on:click={() => onNumberInput(0)}>
+                        <button class="btn" on:click={() => onKeypadInput(0)}>
                             0
                         </button>
                         <button
                             class="btn"
                             style="color: green;"
-                            on:click={() => onNumberInput('OK')}>
+                            on:click={() => onKeypadInput('OK')}>
                             ✔
                         </button>
                     </div>
                 </div>
             </div>
 
+            <!-- Combination display -->
+            <!-- Display each combination in turn with a button to go to the next one -->
+            <!-- Tell user when they reach the end -->
+            <div class="combinationDisplay">
+                <!-- if combinations is not empty -->
+                {#if combinations.length > 0 && currentCombination < combinations.length}
+                    <div>{combinations[currentCombination].join(' ')}</div>
+                    <!-- Next button -->
+                    <div>
+                        <button
+                            class="btn"
+                            on:click={() => {
+                                currentCombination += 1;
+                            }}>
+                            Next
+                        </button>
+                    </div>
+                {:else if combinations.length > 0 && currentCombination >= combinations.length}
+                    <div>
+                        <p>End of combinations</p>
+                    </div>
+                {/if}
+            </div>
         </div>
     </div>
+    <Footer />
 </Layout>

@@ -3,6 +3,11 @@
     src: url("/Assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "DINEngschrift";
+    src: url("/Assets/fonts/DINEngschrift-Regular.ttf") format("truetype");
+}
+
 :root {
     font-family: "Roboto", sans-serif;
     background-color: #2b2a33;
@@ -30,15 +35,49 @@
     padding: 10px;
     max-width: 305px;
     margin: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .display {
     background-color: #444;
     border: 2px solid #666;
     border-radius: 6px;
-    padding: 10px;
-    text-align: right;
     margin-bottom: 10px;
+    font-family: "DINEngschrift", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Centre combinationDisplay on screen
+.combinationDisplay {
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+    font-family: "DINEngschrift", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn.danger {
+    background-color: #c9302c;
+    border-color: #ac2925;
+    color: #fff;
+}
+
+.btn.danger:hover {
+    background-color: #d9534f;
+    border-color: #d43f3a;
 }
 
 .keypad .row {
@@ -62,337 +101,4 @@
 
 .btn:active {
     background-color: #bbb;
-}
-
-.digit {
-    /* options */
-    --aspectRatio: 0.57;
-    --height: 100px;
-    /* this is half the thickness of a segment expressed as a fraction of the height */
-    /* change the thickness of the segments by changing the decimal number */
-    --segment-thickness: 0.14;
-    --half-segment-minor-dimention: calc(var(--height) * var(--segment-thickness) / 2);
-    --segment-spacing: 5%;
-    --on-color: rgba(0, 200, 0);
-    --off-color: rgba(0, 200, 0, 0.2);
-
-    height: var(--height);
-    width: calc(var(--height) * var(--aspectRatio));
-
-    margin: 2px;
-
-    display: inline-grid;
-    grid-template-columns:
-        var(--half-segment-minor-dimention)
-        var(--half-segment-minor-dimention)
-        1fr
-        var(--half-segment-minor-dimention)
-        var(--half-segment-minor-dimention);
-    grid-template-rows:
-        var(--half-segment-minor-dimention)
-        var(--half-segment-minor-dimention)
-        1fr
-        var(--half-segment-minor-dimention)
-        var(--half-segment-minor-dimention)
-        1fr
-        var(--half-segment-minor-dimention)
-        var(--half-segment-minor-dimention);
-
-    transform: skew(-3deg);
-}
-
-.digit .segment {
-    width: 100%;
-    height: 100%;
-    line-height: 0;
-    display: flex;
-    align-items: center;
-}
-
-.digit .segment.segA,
-.digit .segment.segG,
-.digit .segment.segD {
-    flex-direction: column;
-}
-
-.digit .segment.segA {
-    grid-area: 1 / 2 / 3 / 5;
-}
-
-.digit .segment.segB {
-    grid-area: 2 / 4 / 5 / 6;
-}
-
-.digit .segment.segC {
-    grid-area: 5 / 4 / 8 / 6;
-}
-
-.digit .segment.segD {
-    grid-area: 7 / 2 / 9 / 5;
-}
-
-.digit .segment.segE {
-    grid-area: 5 / 1 / 8 / 3;
-}
-
-.digit .segment.segF {
-    grid-area: 2 / 1 / 5 / 3;
-}
-
-.digit .segment.segG {
-    grid-area: 4 / 2 / 6 / 5;
-}
-
-.digit .segment::before,
-.digit .segment::after {
-    display: block;
-    content: "";
-    box-sizing: border-box;
-}
-
-/* horizontal segments */
-.digit .segment.segA::before,
-.digit .segment.segA::after,
-.digit .segment.segG::before,
-.digit .segment.segG::after,
-.digit .segment.segD::before,
-.digit .segment.segD::after {
-    border-right: var(--half-segment-minor-dimention) solid transparent;
-    border-left: var(--half-segment-minor-dimention) solid transparent;
-    width: calc(100% - var(--segment-spacing)); /* not 100% so there’s spacing between the segments */
-    height: 0;
-}
-
-.digit .segment.segA::before,
-.digit .segment.segG::before,
-.digit .segment.segD::before {
-    border-bottom: var(--half-segment-minor-dimention) solid var(--off-color);
-}
-
-.digit .segment.segA::after,
-.digit .segment.segG::after,
-.digit .segment.segD::after {
-    border-top: var(--half-segment-minor-dimention) solid var(--off-color);
-}
-
-.digit .segment.on.segA::before,
-.digit .segment.on.segG::before,
-.digit .segment.on.segD::before {
-    border-bottom: var(--half-segment-minor-dimention) solid var(--on-color);
-}
-
-.digit .segment.on.segA::after,
-.digit .segment.on.segG::after,
-.digit .segment.on.segD::after {
-    border-top: var(--half-segment-minor-dimention) solid var(--on-color);
-}
-
-/* vertical segments */
-.digit .segment.segB::before,
-.digit .segment.segB::after,
-.digit .segment.segC::before,
-.digit .segment.segC::after,
-.digit .segment.segE::before,
-.digit .segment.segE::after,
-.digit .segment.segF::before,
-.digit .segment.segF::after {
-    border-top: var(--half-segment-minor-dimention) solid transparent;
-    border-bottom: var(--half-segment-minor-dimention) solid transparent;
-    width: 0;
-    height: calc(100% - var(--segment-spacing));
-}
-
-.digit .segment.segB::before,
-.digit .segment.segC::before,
-.digit .segment.segE::before,
-.digit .segment.segF::before {
-    border-right: var(--half-segment-minor-dimention) solid var(--off-color);
-}
-
-.digit .segment.segB::after,
-.digit .segment.segC::after,
-.digit .segment.segE::after,
-.digit .segment.segF::after {
-    border-left: var(--half-segment-minor-dimention) solid var(--off-color);
-}
-
-.digit .segment.on.segB::before,
-.digit .segment.on.segC::before,
-.digit .segment.on.segE::before,
-.digit .segment.on.segF::before {
-    border-right: var(--half-segment-minor-dimention) solid var(--on-color);
-}
-
-.digit .segment.on.segB::after,
-.digit .segment.on.segC::after,
-.digit .segment.on.segE::after,
-.digit .segment.on.segF::after {
-    border-left: var(--half-segment-minor-dimention) solid var(--on-color);
-}
-
-/******* so you can add classes to the digit container for numbers *******/
-
-.digit.digZero .segment.segA::before,
-.digit.digZero .segment.segA::after,
-.digit.digZero .segment.segD::before,
-.digit.digZero .segment.segD::after {
-    border-top-color: var(--on-color);
-    border-bottom-color: var(--on-color);
-}
-.digit.digZero .segment.segB::before,
-.digit.digZero .segment.segB::after,
-.digit.digZero .segment.segC::before,
-.digit.digZero .segment.segC::after,
-.digit.digZero .segment.segE::before,
-.digit.digZero .segment.segE::after,
-.digit.digZero .segment.segF::before,
-.digit.digZero .segment.segF::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
-}
-
-.digit.digOne .segment.segB::before,
-.digit.digOne .segment.segB::after,
-.digit.digOne .segment.segC::before,
-.digit.digOne .segment.segC::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
-}
-
-.digit.digTwo .segment.segA::before,
-.digit.digTwo .segment.segA::after,
-.digit.digTwo .segment.segD::before,
-.digit.digTwo .segment.segD::after,
-.digit.digTwo .segment.segG::before,
-.digit.digTwo .segment.segG::after {
-    border-top-color: var(--on-color);
-    border-bottom-color: var(--on-color);
-}
-.digit.digTwo .segment.segB::before,
-.digit.digTwo .segment.segB::after,
-.digit.digTwo .segment.segE::before,
-.digit.digTwo .segment.segE::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
-}
-
-.digit.digThree .segment.segA::before,
-.digit.digThree .segment.segA::after,
-.digit.digThree .segment.segD::before,
-.digit.digThree .segment.segD::after,
-.digit.digThree .segment.segG::before,
-.digit.digThree .segment.segG::after {
-    border-top-color: var(--on-color);
-    border-bottom-color: var(--on-color);
-}
-.digit.digThree .segment.segB::before,
-.digit.digThree .segment.segB::after,
-.digit.digThree .segment.segC::before,
-.digit.digThree .segment.segC::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
-}
-
-.digit.digFour .segment.segG::before,
-.digit.digFour .segment.segG::after {
-    border-top-color: var(--on-color);
-    border-bottom-color: var(--on-color);
-}
-.digit.digFour .segment.segB::before,
-.digit.digFour .segment.segB::after,
-.digit.digFour .segment.segC::before,
-.digit.digFour .segment.segC::after,
-.digit.digFour .segment.segF::before,
-.digit.digFour .segment.segF::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
-}
-
-.digit.digFive .segment.segA::before,
-.digit.digFive .segment.segA::after,
-.digit.digFive .segment.segD::before,
-.digit.digFive .segment.segD::after,
-.digit.digFive .segment.segG::before,
-.digit.digFive .segment.segG::after {
-    border-top-color: var(--on-color);
-    border-bottom-color: var(--on-color);
-}
-.digit.digFive .segment.segC::before,
-.digit.digFive .segment.segC::after,
-.digit.digFive .segment.segF::before,
-.digit.digFive .segment.segF::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
-}
-
-.digit.digSix .segment.segA::before,
-.digit.digSix .segment.segA::after,
-.digit.digSix .segment.segD::before,
-.digit.digSix .segment.segD::after,
-.digit.digSix .segment.segG::before,
-.digit.digSix .segment.segG::after {
-    border-top-color: var(--on-color);
-    border-bottom-color: var(--on-color);
-}
-.digit.digSix .segment.segC::before,
-.digit.digSix .segment.segC::after,
-.digit.digSix .segment.segE::before,
-.digit.digSix .segment.segE::after,
-.digit.digSix .segment.segF::before,
-.digit.digSix .segment.segF::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
-}
-
-.digit.digSeven .segment.segA::before,
-.digit.digSeven .segment.segA::after {
-    border-top-color: var(--on-color);
-    border-bottom-color: var(--on-color);
-}
-.digit.digSeven .segment.segB::before,
-.digit.digSeven .segment.segB::after,
-.digit.digSeven .segment.segC::before,
-.digit.digSeven .segment.segC::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
-}
-
-.digit.digEight .segment.segA::before,
-.digit.digEight .segment.segA::after,
-.digit.digEight .segment.segD::before,
-.digit.digEight .segment.segD::after,
-.digit.digEight .segment.segG::before,
-.digit.digEight .segment.segG::after {
-    border-top-color: var(--on-color);
-    border-bottom-color: var(--on-color);
-}
-.digit.digEight .segment.segB::before,
-.digit.digEight .segment.segB::after,
-.digit.digEight .segment.segC::before,
-.digit.digEight .segment.segC::after,
-.digit.digEight .segment.segE::before,
-.digit.digEight .segment.segE::after,
-.digit.digEight .segment.segF::before,
-.digit.digEight .segment.segF::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
-}
-
-.digit.digNine .segment.segA::before,
-.digit.digNine .segment.segA::after,
-.digit.digNine .segment.segD::before,
-.digit.digNine .segment.segD::after,
-.digit.digNine .segment.segG::before,
-.digit.digNine .segment.segG::after {
-    border-top-color: var(--on-color);
-    border-bottom-color: var(--on-color);
-}
-.digit.digNine .segment.segB::before,
-.digit.digNine .segment.segB::after,
-.digit.digNine .segment.segC::before,
-.digit.digNine .segment.segC::after,
-.digit.digNine .segment.segF::before,
-.digit.digNine .segment.segF::after {
-    border-left-color: var(--on-color);
-    border-right-color: var(--on-color);
 }
