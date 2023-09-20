@@ -181,10 +181,15 @@
             <!-- Combination display -->
             <!-- Display each combination in turn with a button to go to the next one -->
             <!-- Tell user when they reach the end -->
-            <div class="combinationDisplay">
+            <div class="combinationDisplayContainer">
                 <!-- if combinations is not empty -->
                 {#if combinations.length > 0 && currentCombination < combinations.length}
-                    <div>{combinations[currentCombination].join(' ')}</div>
+                    <div class="combinationDisplay">
+                        {combinations[currentCombination].join(' ')}
+                    </div>
+                    <div>
+                        Attempt {currentCombination} of {combinations.length}
+                    </div>
                     <!-- Next button -->
                     <div>
                         <button
