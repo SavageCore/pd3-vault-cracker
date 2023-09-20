@@ -11,5 +11,5 @@ Inspired by [this](https://www.reddit.com/r/paydaytheheist/comments/15jvvpq/payd
 
 # TODO
 
-* Mobile friendly
+* Mobile friendly - WIP
 * Improve the look, make it look more like the games keypad

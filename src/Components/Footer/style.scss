@@ -5,10 +5,10 @@
     align-items: center;
     padding: 10px 20px;
     color: #fff;
-    position: absolute;
-    bottom: 0;
     background-color: #1c1b22;
     width: 100%;
+    position: fixed; /* Change to fixed */
+    bottom: 0;
 }
 
 .footer a {
