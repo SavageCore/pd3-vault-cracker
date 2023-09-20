@@ -10,7 +10,28 @@
     let digit3 = '';
     let digit4 = '';
 
-    function handleClick(input) {
+    window.addEventListener('keydown', event => {
+        const keyPressed = event.key;
+
+        if (keyPressed >= 0 && keyPressed <= 9) {
+            onNumberInput(parseInt(keyPressed));
+        }
+
+        if (keyPressed === 'Backspace' || keyPressed === 'Delete') {
+            onNumberInput('Backspace');
+        }
+
+        if (keyPressed === 'Enter' || keyPressed === 'Return') {
+            onNumberInput('OK');
+        }
+
+        if (keyPressed === 'Escape') {
+            pressedNumbers.update(numbers => []);
+            updateDisplay();
+        }
+    });
+
+    function onNumberInput(input) {
         if (input === 'Backspace') {
             pressedNumbers.update(numbers => numbers.slice(0, -1));
 
@@ -206,35 +227,35 @@
                 <!-- Keypad -->
                 <div class="keypad">
                     <div class="row">
-                        <button class="btn" on:click={() => handleClick(1)}>
+                        <button class="btn" on:click={() => onNumberInput(1)}>
                             1
                         </button>
-                        <button class="btn" on:click={() => handleClick(2)}>
+                        <button class="btn" on:click={() => onNumberInput(2)}>
                             2
                         </button>
-                        <button class="btn" on:click={() => handleClick(3)}>
+                        <button class="btn" on:click={() => onNumberInput(3)}>
                             3
                         </button>
                     </div>
                     <div class="row">
-                        <button class="btn" on:click={() => handleClick(4)}>
+                        <button class="btn" on:click={() => onNumberInput(4)}>
                             4
                         </button>
-                        <button class="btn" on:click={() => handleClick(5)}>
+                        <button class="btn" on:click={() => onNumberInput(5)}>
                             5
                         </button>
-                        <button class="btn" on:click={() => handleClick(6)}>
+                        <button class="btn" on:click={() => onNumberInput(6)}>
                             6
                         </button>
                     </div>
                     <div class="row">
-                        <button class="btn" on:click={() => handleClick(7)}>
+                        <button class="btn" on:click={() => onNumberInput(7)}>
                             7
                         </button>
-                        <button class="btn" on:click={() => handleClick(8)}>
+                        <button class="btn" on:click={() => onNumberInput(8)}>
                             8
                         </button>
-                        <button class="btn" on:click={() => handleClick(9)}>
+                        <button class="btn" on:click={() => onNumberInput(9)}>
                             9
                         </button>
                     </div>
@@ -242,16 +263,16 @@
                         <button
                             class="btn"
                             style="color: red;"
-                            on:click={() => handleClick('Backspace')}>
+                            on:click={() => onNumberInput('Backspace')}>
                             X
                         </button>
-                        <button class="btn" on:click={() => handleClick(0)}>
+                        <button class="btn" on:click={() => onNumberInput(0)}>
                             0
                         </button>
                         <button
                             class="btn"
                             style="color: green;"
-                            on:click={() => handleClick('OK')}>
+                            on:click={() => onNumberInput('OK')}>
                             ✔
                         </button>
                     </div>
