@@ -48,6 +48,11 @@
             return;
         }
 
+        // Prevent the user from entering the same number twice
+        if ($pressedNumbers.includes(input)) {
+            return;
+        }
+
         pressedNumbers.update(numbers => [...numbers, input]);
 
         // If the user has entered 4 numbers, start the cracking process
