@@ -2,6 +2,7 @@
     import Layout from '@Components/Layout';
     import Header from '@Components/Header';
     import Footer from '@Components/Footer';
+    import { onMount } from 'svelte';
     import { writable } from 'svelte/store';
 
     // https://i.imgur.com/NKHNmfr.png
@@ -12,6 +13,17 @@
     export const pressedNumbers = writable([]);
     let combinations = [];
     let currentCombination = 0;
+    let code = null;
+
+    onMount(() => {
+        const params = new URLSearchParams(window.location.search);
+        code = params.get('code');
+
+        if (code) {
+            pressedNumbers.update(numbers => [...numbers, ...code.split('')]);
+            start();
+        }
+    });
 
     window.addEventListener('keydown', event => {
         const keyPressed = event.key;
@@ -32,6 +44,14 @@
             pressedNumbers.update(numbers => []);
             combinations = [];
             currentCombination = 0;
+
+            const params = new URLSearchParams(window.location.search);
+            params.delete('code');
+            window.history.replaceState(
+                {},
+                '',
+                `${location.pathname}?${params}`,
+            );
         }
     });
 
@@ -40,6 +60,17 @@
             pressedNumbers.update(numbers => numbers.slice(0, -1));
             combinations = [];
             currentCombination = 0;
+
+            if ($pressedNumbers.length === 0) {
+                const params = new URLSearchParams(window.location.search);
+                params.delete('code');
+                window.history.replaceState(
+                    {},
+                    '',
+                    `${location.pathname}?${params}`,
+                );
+            }
+
             return;
         }
 
@@ -71,6 +102,10 @@
         }
 
         combinations = generateCombinations(fingerprints);
+
+        const params = new URLSearchParams(window.location.search);
+        params.set('code', fingerprints.join(''));
+        window.history.replaceState({}, '', `${location.pathname}?${params}`);
     }
 
     function generateCombinations(fingerprints) {
