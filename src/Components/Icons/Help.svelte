@@ -1,3 +1,4 @@
+<!-- https://boxicons.com/ -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path
         d="M12 6a3.939 3.939 0 0 0-3.934 3.934h2C10.066 8.867 10.934 8 12

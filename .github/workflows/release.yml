@@ -23,6 +23,13 @@ jobs:
       - name: Update node-gyp 🔨
         run: npm install -g node-gyp@latest
 
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "#{GH_COMMIT_HASH}#"
+          replace: "${{ github.sha }}"
+          regex: false
+
       - name: Install and Build 🔧
         run: |
           npm ci
