@@ -22,6 +22,12 @@ exports[`App should render the app 1`] = `
             </div>
              
             <div
+              class="offlinemode"
+            >
+              #OFFLINEMODE
+            </div>
+             
+            <div
               class="icons"
             >
               <div

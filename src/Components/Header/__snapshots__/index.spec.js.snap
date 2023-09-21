@@ -19,6 +19,12 @@ exports[`Header renders header 1`] = `
           </div>
            
           <div
+            class="offlinemode"
+          >
+            #OFFLINEMODE
+          </div>
+           
+          <div
             class="icons"
           >
             <div

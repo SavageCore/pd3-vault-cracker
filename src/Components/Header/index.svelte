@@ -18,6 +18,7 @@
     <div class="wrapper">
         <div class="header">
             <div class="logo">PD3 Vault Cracker</div>
+            <div class="offlinemode">#OFFLINEMODE</div>
             <div class="icons">
                 <div
                     class="icon pointer"
