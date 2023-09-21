@@ -221,7 +221,7 @@
                         {combinations[currentCombination].join(' ')}
                     </div>
                     <div>
-                        Attempt {currentCombination} of {combinations.length}
+                        Attempt {currentCombination + 1} of {combinations.length}
                     </div>
                     <!-- Next button -->
                     <div>
