@@ -23,6 +23,7 @@ exports[`Header renders header 1`] = `
           >
             <div
               class="icon pointer"
+              title="Help"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -48,6 +49,7 @@ exports[`Header renders header 1`] = `
             >
               <div
                 class="icon"
+                title="View source"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -77,8 +79,12 @@ exports[`Header renders header 1`] = `
       </div>
     </div>
      
-    <dialog>
-      <div>
+    <dialog
+      class="svelte-19xcnu3"
+    >
+      <div
+        class="svelte-19xcnu3"
+      >
         <h2
           slot="header"
         >
@@ -173,6 +179,7 @@ exports[`Header renders header 1`] = `
          
         <button
           autofocus=""
+          class="svelte-19xcnu3"
         >
           Close
         </button>

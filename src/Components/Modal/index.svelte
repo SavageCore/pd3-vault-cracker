@@ -1,5 +1,5 @@
 <script>
-    export let showModal; // boolean
+    export let showModal = false; // boolean
 
     let dialog; // HTMLDialogElement
 

@@ -1,7 +1,7 @@
 <script>
     import HelpIcon from '@Components/Icons/Help.svelte';
     import GitubIcon from '@Components/Icons/Github.svelte';
-    import Modal from '@Components/Modal.svelte';
+    import Modal from '@Components/Modal/index.svelte';
 
     let showModal = false;
 
@@ -21,6 +21,7 @@
             <div class="icons">
                 <div
                     class="icon pointer"
+                    title="Help"
                     on:click={onHelpClick}
                     on:keydown={onHelpClick}>
                     <HelpIcon />
@@ -29,7 +30,7 @@
                 <a
                     href="https://github.com/SavageCore/pd3-vault-cracker"
                     target="_blank">
-                    <div class="icon">
+                    <div class="icon" title="View source">
                         <GitubIcon />
                     </div>
                 </a>
