@@ -19,7 +19,10 @@
         <div class="header">
             <div class="logo">PD3 Vault Cracker</div>
             <div class="icons">
-                <div class="icon pointer" on:click={onHelpClick}>
+                <div
+                    class="icon pointer"
+                    on:click={onHelpClick}
+                    on:keydown={onHelpClick}>
                     <HelpIcon />
                 </div>
 
