@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders the modal 1`] = `
+<body>
+  <div>
+    <dialog
+      class="svelte-19xcnu3"
+    >
+      <div
+        class="svelte-19xcnu3"
+      >
+         
+        <hr />
+         
+         
+        <button
+          autofocus=""
+          class="svelte-19xcnu3"
+        >
+          Close
+        </button>
+      </div>
+    </dialog>
+  </div>
+</body>
+`;

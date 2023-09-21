@@ -227,6 +227,7 @@
                     <div>
                         <button
                             class="btn"
+                            title="Next combination"
                             on:click={() => {
                                 currentCombination += 1;
                             }}>
