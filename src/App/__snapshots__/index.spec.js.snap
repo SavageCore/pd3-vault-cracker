@@ -319,13 +319,15 @@ exports[`App should render the app 1`] = `
           <div
             class="made_by"
           >
-            Made with 🔫 by  
-            
             <a
               href="https://github.com/SavageCore"
               target="_blank"
             >
-              SavageCore
+              Made with 🔫 by
+                
+              <span>
+                SavageCore
+              </span>
             </a>
           </div>
            

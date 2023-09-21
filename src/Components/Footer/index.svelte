@@ -11,9 +11,10 @@
 <div class="background">
     <div class="footer">
         <div class="made_by">
-            Made with 🔫 by &nbsp;
+
             <a href="https://github.com/SavageCore" target="_blank">
-                SavageCore
+                Made with 🔫 by
+                <span>SavageCore</span>
             </a>
         </div>
         <div class="version">
