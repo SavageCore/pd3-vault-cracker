@@ -195,17 +195,15 @@
                     </div>
                     <div class="row">
                         <button
-                            class="btn"
-                            style="color: red;"
+                            class="btn red"
                             on:click={() => onKeypadInput('Backspace')}>
-                            X
+                            ✘
                         </button>
                         <button class="btn" on:click={() => onKeypadInput(0)}>
                             0
                         </button>
                         <button
-                            class="btn"
-                            style="color: green;"
+                            class="btn green"
                             on:click={() => onKeypadInput('OK')}>
                             ✔
                         </button>

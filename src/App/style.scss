@@ -75,38 +75,14 @@
     margin-top: 10px;
 }
 
-.btn.danger {
-    background-color: #c9302c;
-    border-color: #ac2925;
-    color: #fff;
-}
-
-.btn.danger:hover {
-    background-color: #d9534f;
-    border-color: #d43f3a;
-}
-
 .keypad .row {
     display: flex;
     justify-content: space-around;
 }
 
 .btn {
-    background-color: #ccc;
-    border: 2px solid #888;
-    border-radius: 6px;
     padding: 2vw 4vw;
     font-size: 3vw;
-    margin: 5px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #ddd;
-}
-
-.btn:active {
-    background-color: #bbb;
 }
 
 @media (max-width: 768px) {

@@ -33,3 +33,48 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.btn {
+    background-color: #ccc;
+    border: 2px solid #888;
+    border-radius: 2px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn:active {
+    background-color: #bbb;
+}
+
+.btn.danger {
+    background-color: #c9302c;
+    border-color: #ac2925;
+    color: #fff;
+}
+
+.btn.danger:hover {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.green {
+    color: #00b894;
+}
+
+.red {
+    color: #d63031;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+}
