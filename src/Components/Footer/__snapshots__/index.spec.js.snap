@@ -1,28 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hello World renders Hello World! text 1`] = `
+exports[`Footer renders footer 1`] = `
 <body>
   <div>
     <div
-      class="title"
+      class="background"
     >
-      <span
-        class="title__top"
+      <div
+        class="footer"
       >
-        Hello
-      </span>
-       
-      <span
-        class="title__front"
-      >
-        World
-      </span>
-       
-      <span
-        class="title__back"
-      >
-        World
-      </span>
+        <div>
+          Made with 🔫 by
+            
+          <a
+            href="https://github.com/SavageCore"
+            target="_blank"
+          >
+            SavageCore
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </body>
