@@ -1,5 +1,5 @@
-[![Build and Deploy](https://github.com/SavageCore/pd3-vault-cracker/actions/workflows/release.yml/badge.svg)](https://github.com/SavageCore/pd3-vault-cracker/actions/workflows/release.yml)
 
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/SavageCore/pd3-vault-cracker/release.yml?style=for-the-badge) ![Codecov](https://img.shields.io/codecov/c/github/SavageCore/pd3-vault-cracker?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/SavageCore/pd3-vault-cracker?style=for-the-badge)
 
 # PD3 Vault Cracker
 
