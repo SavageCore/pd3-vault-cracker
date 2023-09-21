@@ -34,3 +34,14 @@
     color: #fff;
     font-weight: bold;
 }
+
+.icons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #fff;
+}

@@ -1,5 +1,6 @@
 <script>
-    import Image from '@Components/Image';
+    import HelpIcon from '@Components/Icons/Help.svelte';
+    import GitubIcon from '@Components/Icons/Github.svelte';
 </script>
 
 <style src="./style.scss">
@@ -10,12 +11,17 @@
     <div class="wrapper">
         <div class="header">
             <div class="logo">PD3 Vault Cracker</div>
-            <div class="github-link">
+            <div class="icons">
+                <div class="icon">
+                    <HelpIcon />
+                </div>
 
                 <a
                     href="https://github.com/SavageCore/pd3-vault-cracker"
                     target="_blank">
-                    <Image />
+                    <div class="icon">
+                        <GitubIcon />
+                    </div>
                 </a>
             </div>
         </div>
