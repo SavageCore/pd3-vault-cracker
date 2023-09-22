@@ -19,5 +19,3 @@ Inspired by [this](https://www.reddit.com/r/paydaytheheist/comments/15jvvpq/payd
 ## Publishing
 
 1. Push a tag to the repo
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E6P7VIQ)
