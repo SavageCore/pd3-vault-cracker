@@ -4,10 +4,10 @@ exports[`Component > should render without crashing 1`] = `
 <body>
   <div>
     <div
-      class="atm-keypad svelte-ubgt2i"
+      class="atm-keypad svelte-1jw29oh"
     >
       <div
-        class="display svelte-ubgt2i"
+        class="display svelte-1jw29oh"
       >
         *
         
@@ -21,91 +21,91 @@ exports[`Component > should render without crashing 1`] = `
       </div>
        
       <div
-        class="keypad svelte-ubgt2i"
+        class="keypad svelte-1jw29oh"
       >
         <div
-          class="row svelte-ubgt2i"
+          class="row svelte-1jw29oh"
         >
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             1
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             2
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             3
           </button>
         </div>
          
         <div
-          class="row svelte-ubgt2i"
+          class="row svelte-1jw29oh"
         >
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             4
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             5
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             6
           </button>
         </div>
          
         <div
-          class="row svelte-ubgt2i"
+          class="row svelte-1jw29oh"
         >
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             7
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             8
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             9
           </button>
         </div>
          
         <div
-          class="row svelte-ubgt2i"
+          class="row svelte-1jw29oh"
         >
           <button
-            class="btn red svelte-ubgt2i"
+            class="btn red svelte-1jw29oh"
           >
             ✘
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             0
           </button>
            
           <button
-            class="btn green svelte-ubgt2i"
+            class="btn green svelte-1jw29oh"
           >
             ✔
           </button>
@@ -119,10 +119,10 @@ exports[`Component > should render without crashing 1`] = `
   </div>
   <div>
     <div
-      class="atm-keypad svelte-ubgt2i"
+      class="atm-keypad svelte-1jw29oh"
     >
       <div
-        class="display svelte-ubgt2i"
+        class="display svelte-1jw29oh"
       >
         *
         
@@ -136,91 +136,91 @@ exports[`Component > should render without crashing 1`] = `
       </div>
        
       <div
-        class="keypad svelte-ubgt2i"
+        class="keypad svelte-1jw29oh"
       >
         <div
-          class="row svelte-ubgt2i"
+          class="row svelte-1jw29oh"
         >
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             1
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             2
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             3
           </button>
         </div>
          
         <div
-          class="row svelte-ubgt2i"
+          class="row svelte-1jw29oh"
         >
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             4
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             5
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             6
           </button>
         </div>
          
         <div
-          class="row svelte-ubgt2i"
+          class="row svelte-1jw29oh"
         >
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             7
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             8
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             9
           </button>
         </div>
          
         <div
-          class="row svelte-ubgt2i"
+          class="row svelte-1jw29oh"
         >
           <button
-            class="btn red svelte-ubgt2i"
+            class="btn red svelte-1jw29oh"
           >
             ✘
           </button>
            
           <button
-            class="btn svelte-ubgt2i"
+            class="btn svelte-1jw29oh"
           >
             0
           </button>
            
           <button
-            class="btn green svelte-ubgt2i"
+            class="btn green svelte-1jw29oh"
           >
             ✔
           </button>
