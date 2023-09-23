@@ -4,10 +4,10 @@ exports[`Component > should render without crashing 1`] = `
 <body>
   <div>
     <div
-      class="atm-keypad svelte-135mq18"
+      class="atm-keypad svelte-ubgt2i"
     >
       <div
-        class="display svelte-135mq18"
+        class="display svelte-ubgt2i"
       >
         *
         
@@ -21,91 +21,91 @@ exports[`Component > should render without crashing 1`] = `
       </div>
        
       <div
-        class="keypad svelte-135mq18"
+        class="keypad svelte-ubgt2i"
       >
         <div
-          class="row svelte-135mq18"
+          class="row svelte-ubgt2i"
         >
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             1
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             2
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             3
           </button>
         </div>
          
         <div
-          class="row svelte-135mq18"
+          class="row svelte-ubgt2i"
         >
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             4
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             5
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             6
           </button>
         </div>
          
         <div
-          class="row svelte-135mq18"
+          class="row svelte-ubgt2i"
         >
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             7
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             8
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             9
           </button>
         </div>
          
         <div
-          class="row svelte-135mq18"
+          class="row svelte-ubgt2i"
         >
           <button
-            class="btn red svelte-135mq18"
+            class="btn red svelte-ubgt2i"
           >
             ✘
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             0
           </button>
            
           <button
-            class="btn green svelte-135mq18"
+            class="btn green svelte-ubgt2i"
           >
             ✔
           </button>
@@ -114,15 +114,15 @@ exports[`Component > should render without crashing 1`] = `
     </div>
      
     <div
-      class="combinationDisplayContainer svelte-135mq18"
+      class="combinationDisplayContainer"
     />
   </div>
   <div>
     <div
-      class="atm-keypad svelte-135mq18"
+      class="atm-keypad svelte-ubgt2i"
     >
       <div
-        class="display svelte-135mq18"
+        class="display svelte-ubgt2i"
       >
         *
         
@@ -136,91 +136,91 @@ exports[`Component > should render without crashing 1`] = `
       </div>
        
       <div
-        class="keypad svelte-135mq18"
+        class="keypad svelte-ubgt2i"
       >
         <div
-          class="row svelte-135mq18"
+          class="row svelte-ubgt2i"
         >
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             1
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             2
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             3
           </button>
         </div>
          
         <div
-          class="row svelte-135mq18"
+          class="row svelte-ubgt2i"
         >
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             4
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             5
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             6
           </button>
         </div>
          
         <div
-          class="row svelte-135mq18"
+          class="row svelte-ubgt2i"
         >
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             7
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             8
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             9
           </button>
         </div>
          
         <div
-          class="row svelte-135mq18"
+          class="row svelte-ubgt2i"
         >
           <button
-            class="btn red svelte-135mq18"
+            class="btn red svelte-ubgt2i"
           >
             ✘
           </button>
            
           <button
-            class="btn svelte-135mq18"
+            class="btn svelte-ubgt2i"
           >
             0
           </button>
            
           <button
-            class="btn green svelte-135mq18"
+            class="btn green svelte-ubgt2i"
           >
             ✔
           </button>
@@ -229,7 +229,7 @@ exports[`Component > should render without crashing 1`] = `
     </div>
      
     <div
-      class="combinationDisplayContainer svelte-135mq18"
+      class="combinationDisplayContainer"
     />
   </div>
 </body>

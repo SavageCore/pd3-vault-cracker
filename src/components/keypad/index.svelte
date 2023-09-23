@@ -188,12 +188,9 @@
 <div class="combinationDisplayContainer">
   <!-- if combinations is not empty -->
   {#if combinations.length > 0 && currentCombination < combinations.length}
-    <div class="combinationDisplay">
-      {combinations[currentCombination].join(' ')}
-    </div>
-    <div>
+    <p class="attempts_display">
       Attempt {currentCombination + 1} of {combinations.length}
-    </div>
+    </p>
     <!-- Next button -->
     <div>
       <!-- svelte-ignore a11y-invalid-attribute -->

@@ -87,9 +87,7 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(2)',
-    );
+    const combinations = container.querySelector('p.attempts_display');
 
     if (!combinations) {
       throw new Error('Combinations not found');
@@ -111,9 +109,7 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(2)',
-    );
+    const combinations = container.querySelector('p.attempts_display');
 
     if (!combinations) {
       throw new Error('Combinations not found');
@@ -136,9 +132,7 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(2)',
-    );
+    const combinations = container.querySelector('p.attempts_display');
 
     if (!combinations) {
       throw new Error('Combinations not found');
@@ -174,15 +168,13 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combination = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(1)',
-    );
+    const combination = container.querySelector('div.display');
 
     if (!combination) {
       throw new Error('Combinations not found');
     }
 
-    expect(combination.textContent).toBe('1 1 1 2');
+    expect(combination.textContent).toBe('1112');
   });
 
   it('should get the combinations correct for 12', async () => {
@@ -197,95 +189,91 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(2)',
-    );
+    const combinations = container.querySelector('p.attempts_display');
 
     if (!combinations) {
       throw new Error('Combinations not found');
     }
 
-    const combination = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(1)',
-    );
+    const combination = container.querySelector('div.display');
 
     if (!combination) {
       throw new Error('Combination not found');
     }
 
     const nextButton = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(3) > a[role="button"]',
+      'div.combinationDisplayContainer > div:nth-child(2) > a[role="button"]',
     );
 
     if (!nextButton) {
       throw new Error('Next button not found');
     }
 
-    expect(combination.textContent).toBe('1 1 1 2');
+    expect(combination.textContent).toBe('1112');
     expect(combinations.textContent).toBe('Attempt 1 of 14');
 
     await fireEvent.click(nextButton);
-    expect(combination.textContent).toBe('1 1 2 1');
+    expect(combination.textContent).toBe('1121');
     expect(combinations.textContent).toBe('Attempt 2 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('1 1 2 2');
+    expect(combination.textContent).toBe('1122');
     expect(combinations.textContent).toBe('Attempt 3 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('1 2 1 1');
+    expect(combination.textContent).toBe('1211');
     expect(combinations.textContent).toBe('Attempt 4 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('1 2 1 2');
+    expect(combination.textContent).toBe('1212');
     expect(combinations.textContent).toBe('Attempt 5 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('1 2 2 1');
+    expect(combination.textContent).toBe('1221');
     expect(combinations.textContent).toBe('Attempt 6 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('1 2 2 2');
+    expect(combination.textContent).toBe('1222');
     expect(combinations.textContent).toBe('Attempt 7 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('2 1 1 1');
+    expect(combination.textContent).toBe('2111');
     expect(combinations.textContent).toBe('Attempt 8 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('2 1 1 2');
+    expect(combination.textContent).toBe('2112');
     expect(combinations.textContent).toBe('Attempt 9 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('2 1 2 1');
+    expect(combination.textContent).toBe('2121');
     expect(combinations.textContent).toBe('Attempt 10 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('2 1 2 2');
+    expect(combination.textContent).toBe('2122');
     expect(combinations.textContent).toBe('Attempt 11 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('2 2 1 1');
+    expect(combination.textContent).toBe('2211');
     expect(combinations.textContent).toBe('Attempt 12 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('2 2 1 2');
+    expect(combination.textContent).toBe('2212');
     expect(combinations.textContent).toBe('Attempt 13 of 14');
 
     await fireEvent.click(nextButton);
 
-    expect(combination.textContent).toBe('2 2 2 1');
+    expect(combination.textContent).toBe('2221');
     expect(combinations.textContent).toBe('Attempt 14 of 14');
   });
 
@@ -301,31 +289,27 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(2)',
-    );
+    const combinations = container.querySelector('p.attempts_display');
 
     if (!combinations) {
       throw new Error('Combinations not found');
     }
 
-    const combination = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(1)',
-    );
+    const combination = container.querySelector('div.display');
 
     if (!combination) {
       throw new Error('Combination not found');
     }
 
     const nextButton = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(3) > a[role="button"]',
+      'div.combinationDisplayContainer > div:nth-child(2) > a[role="button"]',
     );
 
     if (!nextButton) {
       throw new Error('Next button not found');
     }
 
-    expect(combination.textContent).toBe('1 1 1 2');
+    expect(combination.textContent).toBe('1112');
     expect(combinations.textContent).toBe('Attempt 1 of 14');
 
     // Click next 13 times to get to the end of the combinations

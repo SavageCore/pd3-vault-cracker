@@ -25,18 +25,9 @@
   align-items: center;
 }
 
-// Centre combinationDisplay on screen
-.combinationDisplayContainer {
-  padding-top: 10px;
+.attempts_display {
+  margin-top: var(--typography-spacing-vertical);
   text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.combinationDisplay {
-  font-family: 'DINEngschrift', sans-serif;
 }
 
 .keypad .row {
