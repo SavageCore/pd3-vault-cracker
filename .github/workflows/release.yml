@@ -17,6 +17,10 @@ jobs:
         with:
           node-version: 'lts/Hydrogen'
 
+      - name: Replace GH_COMMIT_HASH 📝
+        run: |
+          sed -i "s/#{GH_COMMIT_HASH}#/${{ github.sha }}/g" src/components/footer/index.svelte
+
       - name: Install and Build 🔧
         run: |
           npm ci
