@@ -4,28 +4,28 @@ exports[`should render without crashing 1`] = `
 <body>
   <div>
     <div
-      class="grid header svelte-1f7lyfo"
+      class="grid header svelte-lqigq"
     >
       <div
-        class="logo svelte-1f7lyfo"
+        class="logo svelte-lqigq"
       >
         PD3 Vault Cracker
       </div>
        
       <div
-        class="OFFLINEMODE svelte-1f7lyfo"
+        class="OFFLINEMODE svelte-lqigq"
       >
         #OFFLINEMODE
       </div>
        
       <div
-        class="links svelte-1f7lyfo"
+        class="links svelte-lqigq"
       >
         <div
           aria-checked="false"
           aria-label="auto"
           aria-live="polite"
-          class="icon theme-toggle svelte-1f7lyfo"
+          class="icon theme-toggle svelte-lqigq"
           id="theme-toggle"
           role="checkbox"
           tabindex="0"
@@ -44,7 +44,7 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="icon pointer svelte-1f7lyfo"
+          class="icon pointer svelte-lqigq"
           role="link"
           tabindex="0"
           title="Help"
@@ -72,7 +72,7 @@ exports[`should render without crashing 1`] = `
           target="_blank"
         >
           <div
-            class="icon svelte-1f7lyfo"
+            class="icon svelte-lqigq"
             title="View source"
           >
             <svg

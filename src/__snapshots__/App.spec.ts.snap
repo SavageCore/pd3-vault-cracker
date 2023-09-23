@@ -4,28 +4,28 @@ exports[`should render without crashing 1`] = `
 <body>
   <div>
     <div
-      class="grid header svelte-1f7lyfo"
+      class="grid header svelte-lqigq"
     >
       <div
-        class="logo svelte-1f7lyfo"
+        class="logo svelte-lqigq"
       >
         PD3 Vault Cracker
       </div>
        
       <div
-        class="OFFLINEMODE svelte-1f7lyfo"
+        class="OFFLINEMODE svelte-lqigq"
       >
         #OFFLINEMODE
       </div>
        
       <div
-        class="links svelte-1f7lyfo"
+        class="links svelte-lqigq"
       >
         <div
           aria-checked="false"
           aria-label="auto"
           aria-live="polite"
-          class="icon theme-toggle svelte-1f7lyfo"
+          class="icon theme-toggle svelte-lqigq"
           id="theme-toggle"
           role="checkbox"
           tabindex="0"
@@ -44,7 +44,7 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="icon pointer svelte-1f7lyfo"
+          class="icon pointer svelte-lqigq"
           role="link"
           tabindex="0"
           title="Help"
@@ -72,7 +72,7 @@ exports[`should render without crashing 1`] = `
           target="_blank"
         >
           <div
-            class="icon svelte-1f7lyfo"
+            class="icon svelte-lqigq"
             title="View source"
           >
             <svg
@@ -236,10 +236,10 @@ exports[`should render without crashing 1`] = `
       class="container"
     >
       <div
-        class="atm-keypad svelte-4bdk45"
+        class="atm-keypad svelte-28bcpt"
       >
         <div
-          class="display svelte-4bdk45"
+          class="display svelte-28bcpt"
         >
           *
           
@@ -253,91 +253,91 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="keypad svelte-4bdk45"
+          class="keypad svelte-28bcpt"
         >
           <div
-            class="row svelte-4bdk45"
+            class="row svelte-28bcpt"
           >
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               1
             </button>
              
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               2
             </button>
              
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               3
             </button>
           </div>
            
           <div
-            class="row svelte-4bdk45"
+            class="row svelte-28bcpt"
           >
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               4
             </button>
              
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               5
             </button>
              
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               6
             </button>
           </div>
            
           <div
-            class="row svelte-4bdk45"
+            class="row svelte-28bcpt"
           >
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               7
             </button>
              
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               8
             </button>
              
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               9
             </button>
           </div>
            
           <div
-            class="row svelte-4bdk45"
+            class="row svelte-28bcpt"
           >
             <button
-              class="btn red svelte-4bdk45"
+              class="btn red svelte-28bcpt"
             >
               ✘
             </button>
              
             <button
-              class="btn svelte-4bdk45"
+              class="btn svelte-28bcpt"
             >
               0
             </button>
              
             <button
-              class="btn green svelte-4bdk45"
+              class="btn green svelte-28bcpt"
             >
               ✔
             </button>
@@ -349,13 +349,13 @@ exports[`should render without crashing 1`] = `
         class="combinationDisplayContainer"
       >
         <p
-          class="attempts_display svelte-4bdk45"
+          class="attempts_display svelte-28bcpt"
         >
           Enter known fingerprints
         </p>
          
         <a
-          class="disabled svelte-4bdk45"
+          class="disabled svelte-28bcpt"
           href="#"
           role="button"
         >
