@@ -15,27 +15,14 @@ jobs:
       - name: Setup Node.js 🛠️
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-
-      - name: Update npm 📦
-        run: npm install -g npm@latest
-
-      - name: Update node-gyp 🔨
-        run: npm install -g node-gyp@latest
-
-      - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@v3
-        with:
-          find: "#{GH_COMMIT_HASH}#"
-          replace: "${{ github.sha }}"
-          regex: false
+          node-version: 'lts/Hydrogen'
 
       - name: Install and Build 🔧
         run: |
           npm ci
-          NODE_OPTIONS=--openssl-legacy-provider npm run build
+          npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: public
+          folder: dist

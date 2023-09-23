@@ -1,0 +1,13 @@
+{
+  "title": "Vite + Svelte",
+  "header": {
+    "help_modal": {
+      "header": "Help"
+    }
+  },
+  "footer": {
+    "made_by": {
+      "text": "Made with 🔫 by"
+    }
+  }
+}

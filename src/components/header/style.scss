@@ -1,0 +1,31 @@
+// .header-bg {
+//   background-color: var(--card-sectionning-background-color);
+//   width: 100%;
+// }
+
+.header {
+  background-color: var(--card-sectionning-background-color);
+  padding: 0.25rem 1rem;
+  width: 100%;
+  // max-width: 1130px;
+  // margin: 0 auto;
+}
+
+.OFFLINEMODE {
+  text-align: center;
+}
+
+.logo {
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .icon {
+  margin-right: 0.25rem;
+}

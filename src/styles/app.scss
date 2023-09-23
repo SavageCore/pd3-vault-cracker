@@ -1,0 +1,32 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './theme.scss';
+
+.icon {
+  display: flex;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.bold {
+  margin-left: 0.25rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

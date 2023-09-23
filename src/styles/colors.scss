@@ -1,0 +1,46 @@
+// Indigo Light scheme (Default)
+// Can be forced with data-theme="light"
+[data-theme='light'],
+:root:not([data-theme='dark']) {
+  .header,
+  .footer {
+    [role='link'],
+    a {
+      color: hsl(205, 20%, 32%);
+    }
+  }
+}
+
+// Indigo Dark scheme (Auto)
+// Automatically enabled if user has Dark mode enabled
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    .header,
+    .footer {
+      [role='link'],
+      a {
+        color: hsl(205, 16%, 77%);
+      }
+    }
+  }
+}
+
+// Indigo Dark scheme (Forced)
+// Enabled if forced with data-theme="dark"
+[data-theme='dark'] {
+  .header,
+  .footer {
+    [role='link'],
+    a {
+      color: hsl(205, 16%, 77%);
+    }
+  }
+}
+
+.red {
+  color: #d63031;
+}
+
+.green {
+  color: #00b894;
+}

@@ -1,0 +1,76 @@
+.atm-keypad {
+  border: 2px solid #666;
+  border-radius: 8px;
+  background-color: #222;
+  padding: 10px;
+  max-width: 25vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 2px solid #666;
+  border-radius: 6px;
+  background-color: #444;
+  padding: 10px;
+  height: 60px;
+  font-size: 2rem;
+  font-family: 'DINEngschrift', sans-serif;
+  text-align: center;
+}
+
+.attempts_display {
+  margin-top: var(--typography-spacing-vertical);
+  text-align: center;
+}
+
+.keypad .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin: 0.5rem;
+  border: 2px solid #666;
+  border-radius: 6px;
+  background-color: #444;
+  padding: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  font-family: 'DINEngschrift', sans-serif;
+  // Disable user select
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn:hover {
+  border-color: #888;
+  background-color: #666;
+}
+
+.btn:active {
+  border-color: #aaa;
+  background-color: #888;
+}
+
+.btn:focus {
+  outline: none;
+  --box-shadow: none;
+}
+
+[role='button'] {
+  width: 10rem;
+}

@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "svelte.svelte-vscode",
+    "esbenp.prettier-vscode",
+    "ZixuanChen.vitest-explorer",
+    "lokalise.i18n-ally",
+    "dbaeumer.vscode-eslint"
+  ]
+}

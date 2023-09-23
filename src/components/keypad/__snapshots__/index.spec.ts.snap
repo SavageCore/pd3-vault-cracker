@@ -1,0 +1,268 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component > should render without crashing 1`] = `
+<body>
+  <div>
+    <div
+      class="atm-keypad svelte-1h3rsyf"
+    >
+      <div
+        class="display svelte-1h3rsyf"
+      >
+        *
+        
+        *
+        
+        *
+        
+        *
+        
+        
+      </div>
+       
+      <div
+        class="keypad svelte-1h3rsyf"
+      >
+        <div
+          class="row svelte-1h3rsyf"
+        >
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            1
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            2
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            3
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-1h3rsyf"
+        >
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            4
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            5
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            6
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-1h3rsyf"
+        >
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            7
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            8
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            9
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-1h3rsyf"
+        >
+          <button
+            class="btn red svelte-1h3rsyf"
+          >
+            ✘
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            0
+          </button>
+           
+          <button
+            class="btn green svelte-1h3rsyf"
+          >
+            ✔
+          </button>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="combinationDisplayContainer"
+    >
+      <p
+        class="attempts_display svelte-1h3rsyf"
+      >
+        Enter known fingerprints
+      </p>
+       
+      <div>
+        <a
+          class="disabled svelte-1h3rsyf"
+          href="#"
+          role="button"
+        >
+          Waiting for input
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      class="atm-keypad svelte-1h3rsyf"
+    >
+      <div
+        class="display svelte-1h3rsyf"
+      >
+        *
+        
+        *
+        
+        *
+        
+        *
+        
+        
+      </div>
+       
+      <div
+        class="keypad svelte-1h3rsyf"
+      >
+        <div
+          class="row svelte-1h3rsyf"
+        >
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            1
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            2
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            3
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-1h3rsyf"
+        >
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            4
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            5
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            6
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-1h3rsyf"
+        >
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            7
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            8
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            9
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-1h3rsyf"
+        >
+          <button
+            class="btn red svelte-1h3rsyf"
+          >
+            ✘
+          </button>
+           
+          <button
+            class="btn svelte-1h3rsyf"
+          >
+            0
+          </button>
+           
+          <button
+            class="btn green svelte-1h3rsyf"
+          >
+            ✔
+          </button>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="combinationDisplayContainer"
+    >
+      <p
+        class="attempts_display svelte-1h3rsyf"
+      >
+        Enter known fingerprints
+      </p>
+       
+      <div>
+        <a
+          class="disabled svelte-1h3rsyf"
+          href="#"
+          role="button"
+        >
+          Waiting for input
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,16 @@
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --background-color: #1c1b22;
+    --card-background-color: #1c1b22;
+    --card-sectionning-background-color: #2b2a33;
+    --modal-overlay-background-color: rgba(75, 73, 89, 0.8);
+    color-scheme: dark;
+  }
+}
+[data-theme='dark'] {
+  --background-color: #1c1b22;
+  --card-background-color: #1c1b22;
+  --card-sectionning-background-color: #2b2a33;
+  --modal-overlay-background-color: rgba(75, 73, 89, 0.8);
+  color-scheme: dark;
+}

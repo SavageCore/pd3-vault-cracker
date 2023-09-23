@@ -1,0 +1,32 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--card-sectionning-background-color);
+  padding: 0.25rem 1rem;
+  width: 100%;
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+:global(a span) {
+  font-weight: bold;
+}
+
+.made_by {
+  text-align: center;
+}
+
+.version {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.version .icon {
+  margin-right: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+}
