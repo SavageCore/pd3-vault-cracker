@@ -365,16 +365,16 @@ exports[`should render without crashing 1`] = `
     </main>
      
     <div
-      class="grid footer svelte-1xwuz6p"
+      class="grid footer svelte-nfddwm"
     >
       <div />
        
       <div
-        class="made_by svelte-1xwuz6p"
+        class="made_by svelte-nfddwm"
       >
         Made with 🔫 by
         <a
-          class="svelte-1xwuz6p"
+          class="svelte-nfddwm"
           href="https://github.com/SavageCore"
           target="_blank"
         >
@@ -387,10 +387,10 @@ exports[`should render without crashing 1`] = `
       </div>
        
       <div
-        class="version svelte-1xwuz6p"
+        class="version svelte-nfddwm"
       >
         <div
-          class="icon svelte-1xwuz6p"
+          class="icon svelte-nfddwm"
         >
           <svg
             fill="#f14e32"
@@ -411,7 +411,7 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <a
-          class="svelte-1xwuz6p"
+          class="svelte-nfddwm"
           href="https://github.com/SavageCore/pd3-vault-cracker/commit/#{GH_COMMIT_HASH}#"
           target="_blank"
         >
