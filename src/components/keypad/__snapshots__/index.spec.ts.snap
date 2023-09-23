@@ -115,7 +115,23 @@ exports[`Component > should render without crashing 1`] = `
      
     <div
       class="combinationDisplayContainer"
-    />
+    >
+      <p
+        class="attempts_display svelte-1h3rsyf"
+      >
+        Enter known fingerprints
+      </p>
+       
+      <div>
+        <a
+          class="disabled svelte-1h3rsyf"
+          href="#"
+          role="button"
+        >
+          Waiting for input
+        </a>
+      </div>
+    </div>
   </div>
   <div>
     <div
@@ -230,7 +246,23 @@ exports[`Component > should render without crashing 1`] = `
      
     <div
       class="combinationDisplayContainer"
-    />
+    >
+      <p
+        class="attempts_display svelte-1h3rsyf"
+      >
+        Enter known fingerprints
+      </p>
+       
+      <div>
+        <a
+          class="disabled svelte-1h3rsyf"
+          href="#"
+          role="button"
+        >
+          Waiting for input
+        </a>
+      </div>
+    </div>
   </div>
 </body>
 `;

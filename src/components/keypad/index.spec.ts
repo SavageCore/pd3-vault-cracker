@@ -321,10 +321,8 @@ describe('Component', () => {
 
     await fireEvent.click(nextButton);
 
-    const endMessage = screen.getByText('End of combinations');
-    const startAgainBtn = screen.getByText('Start again');
-    expect(endMessage).toBeInTheDocument();
-    expect(startAgainBtn).toBeInTheDocument();
+    expect(screen.getByText('End of combinations')).toBeInTheDocument();
+    expect(screen.getByText('Start again')).toBeInTheDocument();
   });
 
   it('should start when Enter is typed', async () => {

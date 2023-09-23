@@ -25,3 +25,8 @@
 
   min-height: 100vh;
 }
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
