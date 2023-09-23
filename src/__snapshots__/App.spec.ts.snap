@@ -4,28 +4,28 @@ exports[`should render without crashing 1`] = `
 <body>
   <div>
     <div
-      class="grid header svelte-1ycrylo"
+      class="grid header svelte-1f7lyfo"
     >
       <div
-        class="logo svelte-1ycrylo"
+        class="logo svelte-1f7lyfo"
       >
         PD3 Vault Cracker
       </div>
        
       <div
-        class="OFFLINEMODE svelte-1ycrylo"
+        class="OFFLINEMODE svelte-1f7lyfo"
       >
         #OFFLINEMODE
       </div>
        
       <div
-        class="links svelte-1ycrylo"
+        class="links svelte-1f7lyfo"
       >
         <div
           aria-checked="false"
           aria-label="auto"
           aria-live="polite"
-          class="icon theme-toggle svelte-1ycrylo"
+          class="icon theme-toggle svelte-1f7lyfo"
           id="theme-toggle"
           role="checkbox"
           tabindex="0"
@@ -44,7 +44,7 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="icon pointer svelte-1ycrylo"
+          class="icon pointer svelte-1f7lyfo"
           role="link"
           tabindex="0"
           title="Help"
@@ -72,7 +72,7 @@ exports[`should render without crashing 1`] = `
           target="_blank"
         >
           <div
-            class="icon svelte-1ycrylo"
+            class="icon svelte-1f7lyfo"
             title="View source"
           >
             <svg
@@ -236,10 +236,10 @@ exports[`should render without crashing 1`] = `
       class="container"
     >
       <div
-        class="atm-keypad svelte-1jw29oh"
+        class="atm-keypad svelte-1h3rsyf"
       >
         <div
-          class="display svelte-1jw29oh"
+          class="display svelte-1h3rsyf"
         >
           *
           
@@ -253,91 +253,91 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="keypad svelte-1jw29oh"
+          class="keypad svelte-1h3rsyf"
         >
           <div
-            class="row svelte-1jw29oh"
+            class="row svelte-1h3rsyf"
           >
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               1
             </button>
              
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               2
             </button>
              
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               3
             </button>
           </div>
            
           <div
-            class="row svelte-1jw29oh"
+            class="row svelte-1h3rsyf"
           >
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               4
             </button>
              
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               5
             </button>
              
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               6
             </button>
           </div>
            
           <div
-            class="row svelte-1jw29oh"
+            class="row svelte-1h3rsyf"
           >
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               7
             </button>
              
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               8
             </button>
              
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               9
             </button>
           </div>
            
           <div
-            class="row svelte-1jw29oh"
+            class="row svelte-1h3rsyf"
           >
             <button
-              class="btn red svelte-1jw29oh"
+              class="btn red svelte-1h3rsyf"
             >
               ✘
             </button>
              
             <button
-              class="btn svelte-1jw29oh"
+              class="btn svelte-1h3rsyf"
             >
               0
             </button>
              
             <button
-              class="btn green svelte-1jw29oh"
+              class="btn green svelte-1h3rsyf"
             >
               ✔
             </button>
@@ -351,16 +351,16 @@ exports[`should render without crashing 1`] = `
     </main>
      
     <div
-      class="grid footer svelte-1bkg9ov"
+      class="grid footer svelte-1xwuz6p"
     >
       <div />
        
       <div
-        class="made_by svelte-1bkg9ov"
+        class="made_by svelte-1xwuz6p"
       >
         Made with 🔫 by
         <a
-          class="svelte-1bkg9ov"
+          class="svelte-1xwuz6p"
           href="https://github.com/SavageCore"
           target="_blank"
         >
@@ -373,10 +373,10 @@ exports[`should render without crashing 1`] = `
       </div>
        
       <div
-        class="version svelte-1bkg9ov"
+        class="version svelte-1xwuz6p"
       >
         <div
-          class="icon svelte-1bkg9ov"
+          class="icon svelte-1xwuz6p"
         >
           <svg
             fill="#f14e32"
@@ -397,7 +397,7 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <a
-          class="svelte-1bkg9ov"
+          class="svelte-1xwuz6p"
           href="https://github.com/SavageCore/pd3-vault-cracker/commit/#{GH_COMMIT_HASH}#"
           target="_blank"
         >

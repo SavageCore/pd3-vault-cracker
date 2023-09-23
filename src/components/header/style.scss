@@ -4,8 +4,8 @@
 // }
 
 .header {
-  padding: 0.25rem 1rem;
   background-color: var(--card-sectionning-background-color);
+  padding: 0.25rem 1rem;
   width: 100%;
   // max-width: 1130px;
   // margin: 0 auto;
@@ -22,8 +22,8 @@
 
 .links {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .header .icon {

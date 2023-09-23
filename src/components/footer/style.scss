@@ -1,9 +1,9 @@
 .footer {
-  padding: 0.25rem 1rem;
-  background-color: var(--card-sectionning-background-color);
-  width: 100%;
   position: fixed;
   bottom: 0;
+  background-color: var(--card-sectionning-background-color);
+  padding: 0.25rem 1rem;
+  width: 100%;
   font-size: 0.75rem;
 }
 
@@ -21,12 +21,12 @@ a {
 
 .version {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .version .icon {
-  height: 1rem;
-  width: 1rem;
   margin-right: 0.25rem;
+  width: 1rem;
+  height: 1rem;
 }
