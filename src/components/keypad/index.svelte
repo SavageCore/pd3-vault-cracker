@@ -192,41 +192,34 @@
     </p>
 
     <!-- Next button -->
-    <div>
-      <!-- svelte-ignore a11y-invalid-attribute -->
-      <a
-        href="#"
-        role="button"
-        title="Next combination"
-        on:click="{() => {
-          currentCombination += 1;
-        }}"
-      >
-        Next
-      </a>
-    </div>
+    <!-- svelte-ignore a11y-invalid-attribute -->
+    <a
+      href="#"
+      role="button"
+      title="Next combination"
+      on:click="{() => {
+        currentCombination += 1;
+      }}"
+    >
+      Next
+    </a>
   {:else if combinations.length > 0 && currentCombination + 1 >= combinations.length}
     <p class="attempts_display">End of combinations</p>
-
-    <div>
-      <!-- svelte-ignore a11y-invalid-attribute -->
-      <a
-        href="#"
-        role="button"
-        on:click="{() => {
-          onKeypadInput('OK');
-        }}"
-      >
-        Start again
-      </a>
-    </div>
+    <!-- svelte-ignore a11y-invalid-attribute -->
+    <a
+      href="#"
+      role="button"
+      on:click="{() => {
+        onKeypadInput('OK');
+      }}"
+    >
+      Start again
+    </a>
   {:else}
     <p class="attempts_display">Enter known fingerprints</p>
 
-    <div>
-      <!-- svelte-ignore a11y-invalid-attribute -->
-      <a href="#" role="button" class="disabled"> Waiting for input </a>
-    </div>
+    <!-- svelte-ignore a11y-invalid-attribute -->
+    <a href="#" role="button" class="disabled"> Waiting for input </a>
   {/if}
 </div>
 

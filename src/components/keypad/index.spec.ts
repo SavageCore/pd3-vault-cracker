@@ -202,7 +202,7 @@ describe('Component', () => {
     }
 
     const nextButton = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(2) > a[role="button"]',
+      'div.combinationDisplayContainer > a[role="button"]',
     );
 
     if (!nextButton) {
@@ -302,7 +302,7 @@ describe('Component', () => {
     }
 
     const nextButton = container.querySelector(
-      'div.combinationDisplayContainer > div:nth-child(2) > a[role="button"]',
+      'div.combinationDisplayContainer > a[role="button"]',
     );
 
     if (!nextButton) {

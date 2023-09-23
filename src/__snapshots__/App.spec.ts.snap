@@ -236,10 +236,10 @@ exports[`should render without crashing 1`] = `
       class="container"
     >
       <div
-        class="atm-keypad svelte-1h3rsyf"
+        class="atm-keypad svelte-4bdk45"
       >
         <div
-          class="display svelte-1h3rsyf"
+          class="display svelte-4bdk45"
         >
           *
           
@@ -253,91 +253,91 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="keypad svelte-1h3rsyf"
+          class="keypad svelte-4bdk45"
         >
           <div
-            class="row svelte-1h3rsyf"
+            class="row svelte-4bdk45"
           >
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               1
             </button>
              
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               2
             </button>
              
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               3
             </button>
           </div>
            
           <div
-            class="row svelte-1h3rsyf"
+            class="row svelte-4bdk45"
           >
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               4
             </button>
              
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               5
             </button>
              
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               6
             </button>
           </div>
            
           <div
-            class="row svelte-1h3rsyf"
+            class="row svelte-4bdk45"
           >
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               7
             </button>
              
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               8
             </button>
              
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               9
             </button>
           </div>
            
           <div
-            class="row svelte-1h3rsyf"
+            class="row svelte-4bdk45"
           >
             <button
-              class="btn red svelte-1h3rsyf"
+              class="btn red svelte-4bdk45"
             >
               ✘
             </button>
              
             <button
-              class="btn svelte-1h3rsyf"
+              class="btn svelte-4bdk45"
             >
               0
             </button>
              
             <button
-              class="btn green svelte-1h3rsyf"
+              class="btn green svelte-4bdk45"
             >
               ✔
             </button>
@@ -349,20 +349,18 @@ exports[`should render without crashing 1`] = `
         class="combinationDisplayContainer"
       >
         <p
-          class="attempts_display svelte-1h3rsyf"
+          class="attempts_display svelte-4bdk45"
         >
           Enter known fingerprints
         </p>
          
-        <div>
-          <a
-            class="disabled svelte-1h3rsyf"
-            href="#"
-            role="button"
-          >
-            Waiting for input
-          </a>
-        </div>
+        <a
+          class="disabled svelte-4bdk45"
+          href="#"
+          role="button"
+        >
+          Waiting for input
+        </a>
       </div>
     </main>
      
