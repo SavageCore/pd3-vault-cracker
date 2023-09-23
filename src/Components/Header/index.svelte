@@ -1,88 +1,106 @@
-<script>
-    import HelpIcon from '@Components/Icons/Help.svelte';
-    import GitubIcon from '@Components/Icons/Github.svelte';
-    import Modal from '@Components/Modal/index.svelte';
+<script lang="ts">
+  import Modal from '../modal/index.svelte';
 
-    let showModal = false;
+  import GitubIcon from '../../assets/icons/github.svelte';
+  import HelpIcon from '../../assets/icons/help.svelte';
+  import MoonIcon from '../../assets/icons/moon.svelte';
+  import SunIcon from '../../assets/icons/sun.svelte';
 
-    function onHelpClick() {
-        showModal = true;
+  let isModalOpen = false;
+  const themeStorageKey = 'theme-preference';
+
+  const getColorPreference = () => {
+    if (localStorage.getItem(themeStorageKey)) {
+      return localStorage.getItem(themeStorageKey)!;
     }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+  };
+
+  const theme = {
+    value: getColorPreference(),
+  };
+
+  const toggleHelpModal = () => {
+    isModalOpen = !isModalOpen;
+  };
+
+  const toggleTheme = () => {
+    theme.value = theme.value === 'light' ? 'dark' : 'light';
+
+    setThemePreference();
+  };
+
+  const setThemePreference = () => {
+    localStorage.setItem(themeStorageKey, theme.value);
+    reflectThemePreference();
+  };
+
+  const reflectThemePreference = () => {
+    document.firstElementChild!.setAttribute('data-theme', theme.value);
+
+    document
+      .querySelector('#theme-toggle')
+      ?.setAttribute('aria-label', theme.value);
+  };
+
+  // Sync with system changes
+  window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', ({ matches: isDark }) => {
+      theme.value = isDark ? 'dark' : 'light';
+      setThemePreference();
+    });
 </script>
 
-<style src="./style.scss">
-
-</style>
-
-<div class="background">
-    <div class="wrapper">
-        <div class="header">
-            <div class="logo">PD3 Vault Cracker</div>
-            <div class="offlinemode">#OFFLINEMODE</div>
-            <div class="icons">
-                <div
-                    class="icon pointer"
-                    title="Help"
-                    on:click={onHelpClick}
-                    on:keydown={onHelpClick}>
-                    <HelpIcon />
-                </div>
-
-                <a
-                    href="https://github.com/SavageCore/pd3-vault-cracker"
-                    target="_blank">
-                    <div class="icon" title="View source">
-                        <GitubIcon />
-                    </div>
-                </a>
-            </div>
-        </div>
+<!-- <div class="header-bg"> -->
+<div class="grid header">
+  <div class="logo">PD3 Vault Cracker</div>
+  <div class="OFFLINEMODE">#OFFLINEMODE</div>
+  <div class="links">
+    <div
+      class="icon theme-toggle"
+      id="theme-toggle"
+      title="{theme.value === 'light' ? 'Dark theme' : 'Light theme'}"
+      aria-label="auto"
+      aria-live="polite"
+      aria-checked="false"
+      on:click="{toggleTheme}"
+      on:keydown="{toggleTheme}"
+      role="checkbox"
+      tabindex="0"
+    >
+      <!-- If theme.value is light show moon, otherwise sun -->
+      {#if theme.value === 'light'}
+        <MoonIcon />
+      {:else}
+        <SunIcon />
+      {/if}
     </div>
+
+    <div
+      class="icon pointer"
+      title="Help"
+      on:click="{toggleHelpModal}"
+      on:keydown="{toggleHelpModal}"
+      role="link"
+      tabindex="0"
+    >
+      <HelpIcon />
+    </div>
+
+    <a href="https://github.com/SavageCore/pd3-vault-cracker" target="_blank">
+      <div class="icon" title="View source">
+        <GitubIcon />
+      </div>
+    </a>
+  </div>
 </div>
+<!-- </div> -->
 
-<Modal bind:showModal>
-    <h2 slot="header">Help</h2>
+<Modal isOpen="{isModalOpen}" onClose="{toggleHelpModal}" />
 
-    <p>
-        This tool helps you to find the correct combination for the vault in
-        Payday 3.
-    </p>
-    <br />
-    <p>
-        Enter the 2, 3 or 4 digits from the fingerprints on the vault keypad
-        then click the
-        <span class="green">✔</span>
-        button to calculate the possible combinations.
-    </p>
-    <br />
-    <p>
-        To remove the entered digits click the
-        <span class="red">✘</span>
-        button.
-    </p>
-    <br />
-    <h3>Keybinds</h3>
-    <br />
-    <ol>
-        <li>Enter/Return - Calculate combinations</li>
-        <li>Backspace/Delete - Remove last entered digit</li>
-        <li>Escape - Clear entered digits</li>
-    </ol>
-    <br />
-    <h3>Issues</h3>
-    <br />
-    <p>
-        Please post any issues on
-        <a
-            href="https://github.com/SavageCore/pd3-vault-cracker/issues"
-            target="_blank">
-            GitHub
-        </a>
-        or DM me
-        <a
-            href="https://www.reddit.com/message/compose/?to=SavageCore"
-            target="_blank">
-            /u/SavageCore.
-        </a>
-    </p>
-</Modal>
+<style src="./style.scss">
+</style>

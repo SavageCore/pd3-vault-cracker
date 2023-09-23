@@ -1,41 +1,32 @@
 .footer {
-    font-family: "Roboto", sans-serif;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background-color: #1c1b22;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 0.25rem 1rem;
+  background-color: var(--card-sectionning-background-color);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.75rem;
 }
 
-.footer a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: normal;
+a {
+  text-decoration: none;
 }
 
-.footer a span {
-    font-weight: bold;
+:global(a span) {
+  font-weight: bold;
 }
 
 .made_by {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+  text-align: center;
 }
 
 .version {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .version .icon {
-    fill: #f14e32;
-    width: 24px;
-    margin-right: 0.5rem;
-    display: flex;
-    align-items: center;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.25rem;
 }

@@ -1,0 +1,236 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component > should render without crashing 1`] = `
+<body>
+  <div>
+    <div
+      class="atm-keypad svelte-135mq18"
+    >
+      <div
+        class="display svelte-135mq18"
+      >
+        *
+        
+        *
+        
+        *
+        
+        *
+        
+        
+      </div>
+       
+      <div
+        class="keypad svelte-135mq18"
+      >
+        <div
+          class="row svelte-135mq18"
+        >
+          <button
+            class="btn svelte-135mq18"
+          >
+            1
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            2
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            3
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-135mq18"
+        >
+          <button
+            class="btn svelte-135mq18"
+          >
+            4
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            5
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            6
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-135mq18"
+        >
+          <button
+            class="btn svelte-135mq18"
+          >
+            7
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            8
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            9
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-135mq18"
+        >
+          <button
+            class="btn red svelte-135mq18"
+          >
+            ✘
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            0
+          </button>
+           
+          <button
+            class="btn green svelte-135mq18"
+          >
+            ✔
+          </button>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="combinationDisplayContainer svelte-135mq18"
+    />
+  </div>
+  <div>
+    <div
+      class="atm-keypad svelte-135mq18"
+    >
+      <div
+        class="display svelte-135mq18"
+      >
+        *
+        
+        *
+        
+        *
+        
+        *
+        
+        
+      </div>
+       
+      <div
+        class="keypad svelte-135mq18"
+      >
+        <div
+          class="row svelte-135mq18"
+        >
+          <button
+            class="btn svelte-135mq18"
+          >
+            1
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            2
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            3
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-135mq18"
+        >
+          <button
+            class="btn svelte-135mq18"
+          >
+            4
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            5
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            6
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-135mq18"
+        >
+          <button
+            class="btn svelte-135mq18"
+          >
+            7
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            8
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            9
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-135mq18"
+        >
+          <button
+            class="btn red svelte-135mq18"
+          >
+            ✘
+          </button>
+           
+          <button
+            class="btn svelte-135mq18"
+          >
+            0
+          </button>
+           
+          <button
+            class="btn green svelte-135mq18"
+          >
+            ✔
+          </button>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="combinationDisplayContainer svelte-135mq18"
+    />
+  </div>
+</body>
+`;

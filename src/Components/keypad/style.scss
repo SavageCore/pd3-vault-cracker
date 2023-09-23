@@ -1,0 +1,54 @@
+.atm-keypad {
+  background-color: #222;
+  border: 2px solid #666;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 25vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.display {
+  background-color: #444;
+  border: 2px solid #666;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-family: 'DINEngschrift', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Centre combinationDisplay on screen
+.combinationDisplayContainer {
+  padding-top: 10px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.combinationDisplay {
+  font-family: 'DINEngschrift', sans-serif;
+}
+
+.keypad .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  margin: 0.5rem;
+}
+
+[role='button'] {
+  margin-top: 0.5rem;
+  width: 10rem;
+}

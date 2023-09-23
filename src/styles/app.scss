@@ -1,0 +1,27 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './theme.scss';
+
+.icon {
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+  margin-left: 0.25rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
