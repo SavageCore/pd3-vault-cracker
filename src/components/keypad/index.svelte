@@ -35,7 +35,7 @@
   window.addEventListener('keydown', (event) => {
     const keyPressed = event.key;
 
-    if (/[0-9]/.test(keyPressed)) {
+    if (/^[0-9]$/.test(keyPressed)) {
       onKeypadInput(keyPressed);
     }
 

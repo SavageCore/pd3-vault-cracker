@@ -357,6 +357,16 @@ describe('Component', () => {
     }
   });
 
+  it('should not enter a digit when a F key is typed', async () => {
+    for (let i = 0; i < 10; i++) {
+      await fireEvent.keyDown(document.body, { key: `F${i}` });
+      expect(display.textContent).toBe(`****`);
+
+      // Clear the display
+      await fireEvent.keyDown(document.body, { key: `Escape` });
+    }
+  });
+
   it('should enter a digit when a number is clicked', async () => {
     const buttons = [
       { number: '1', button: oneButton },
