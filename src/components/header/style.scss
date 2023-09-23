@@ -1,22 +1,21 @@
-// .header-bg {
-//   background-color: var(--card-sectionning-background-color);
-//   width: 100%;
-// }
-
 .header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
   background-color: var(--card-sectionning-background-color);
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0.5rem;
   width: 100%;
-  // max-width: 1130px;
-  // margin: 0 auto;
 }
 
 .OFFLINEMODE {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  justify-content: flex-start;
+  justify-self: start;
   font-weight: bold;
 }
 
