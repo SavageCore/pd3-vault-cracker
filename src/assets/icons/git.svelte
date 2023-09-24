@@ -1,5 +1,15 @@
 <!-- https://boxicons.com/ -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#f14e32">
+<script>
+  export let size = '2rem';
+</script>
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="{size}"
+  height="{size}"
+  viewBox="0 0 24 24"
+  fill="#f14e32"
+>
   <path
     d="m21.62 11.108-8.731-8.729a1.292 1.292 0 0 0-1.823 0L9.257 4.19l2.299
         2.3a1.532 1.532 0 0 1 1.939 1.95l2.214 2.217a1.53 1.53 0 0 1 1.583

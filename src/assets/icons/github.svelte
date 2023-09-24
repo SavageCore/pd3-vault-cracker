@@ -1,5 +1,14 @@
 <!-- https://boxicons.com/ -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<script>
+  export let size = '2rem';
+</script>
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="{size}"
+  height="{size}"
+  viewBox="0 0 24 24"
+>
   <path
     fill-rule="evenodd"
     clip-rule="evenodd"

@@ -1,5 +1,14 @@
 <!-- https://boxicons.com/ -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<script>
+  export let size = '2rem';
+</script>
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="{size}"
+  height="{size}"
+  viewBox="0 0 24 24"
+>
   <path
     d="M12 6a3.939 3.939 0 0 0-3.934 3.934h2C10.066 8.867 10.934 8 12
         8s1.934.867 1.934 1.934c0 .598-.481 1.032-1.216 1.626a9.208 9.208 0 0
