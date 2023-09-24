@@ -13,6 +13,7 @@
     "test:ui": "vitest --ui",
     "test:watch": "vitest",
     "lint": "eslint -c .eslintrc --ext .svelte,.ts src",
+    "lint:styles": "stylelint --config .stylelintrc \"src/**/*.{css,scss}\"",
     "format": "eslint -c .eslintrc --fix --ext .svelte,.ts --fix src",
     "format:prettier": "prettier --write src/**/{*.svelte,*.ts,*.scss}",
     "prepare": "husky install"
