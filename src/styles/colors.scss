@@ -11,12 +11,57 @@
       color: hsl(205deg 20% 32%);
     }
   }
+
+  .atm-keypad {
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-sectionning-background-color);
+  }
+
+  .display {
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-sectionning-background-color);
+    color: var(--color);
+  }
+
+  .btn {
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-sectionning-background-color);
+    color: var(--h5-color);
+  }
+
+  .btn:hover {
+    border-color: var(--card-border-color);
+    background-color: var(--card-background-color);
+  }
+
+  .btn:active {
+    border-color: #aaa;
+    background-color: var(--card-background-color);
+  }
+
+  .btn-inverted {
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-sectionning-background-color);
+    color: var(--h5-color);
+  }
+
+  .btn-inverted:hover {
+    border-color: var(--card-border-color);
+    background-color: var(--card-background-color);
+  }
+
+  .btn-inverted:active {
+    border-color: var(--card-border-color);
+    background-color: var(--card-background-color);
+  }
 }
 
 // Indigo Dark scheme (Auto)
 // Automatically enabled if user has Dark mode enabled
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
+    --primary-focus: #3b3948;
+
     .header,
     .footer {
       [role='link'],
@@ -24,18 +69,106 @@
         color: hsl(205deg 16% 77%);
       }
     }
+
+    .atm-keypad {
+      border: 2px solid var(--card-border-color);
+      background-color: var(--card-sectionning-background-color);
+    }
+
+    .display {
+      border: 2px solid var(--card-border-color);
+      background-color: var(--card-background-color);
+      color: var(--color);
+    }
+
+    .btn {
+      border: 2px solid var(--card-border-color);
+      background-color: var(--card-background-color);
+      color: var(--h5-color);
+    }
+
+    .btn:hover {
+      border-color: var(--card-border-color);
+      background-color: #3b3948;
+    }
+
+    .btn:active {
+      border-color: #aaa;
+      background-color: #3b3948;
+    }
+
+    .btn-inverted {
+      border: 2px solid var(--card-border-color);
+      background-color: var(--card-sectionning-background-color);
+      color: var(--h5-color);
+    }
+
+    .btn-inverted:hover {
+      border-color: var(--card-border-color);
+      background-color: #3b3948;
+    }
+
+    .btn-inverted:active {
+      border-color: #aaa;
+      background-color: #3b3948;
+    }
   }
 }
 
 // Indigo Dark scheme (Forced)
 // Enabled if forced with data-theme="dark"
 [data-theme='dark'] {
+  --primary-focus: #3b3948;
+
   .header,
   .footer {
     [role='link'],
     a {
       color: hsl(205deg 16% 77%);
     }
+  }
+
+  .atm-keypad {
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-sectionning-background-color);
+  }
+
+  .display {
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-background-color);
+    color: var(--color);
+  }
+
+  .btn {
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-background-color);
+    color: var(--h5-color);
+  }
+
+  .btn:hover {
+    border-color: var(--card-border-color);
+    background-color: #3b3948;
+  }
+
+  .btn:active {
+    border-color: #aaa;
+    background-color: #3b3948;
+  }
+
+  .btn-inverted {
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-sectionning-background-color);
+    color: var(--h5-color);
+  }
+
+  .btn-inverted:hover {
+    border-color: var(--card-border-color);
+    background-color: #3b3948;
+  }
+
+  .btn-inverted:active {
+    border-color: #aaa;
+    background-color: #3b3948;
   }
 }
 

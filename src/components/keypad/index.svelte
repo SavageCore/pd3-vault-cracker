@@ -199,6 +199,7 @@
     <a
       href="#"
       role="button"
+      class="btn-inverted"
       title="Next combination"
       on:click="{() => {
         currentCombination += 1;
@@ -212,6 +213,7 @@
     <a
       href="#"
       role="button"
+      class="btn-inverted"
       on:click="{() => {
         onKeypadInput('OK');
       }}"
@@ -222,7 +224,9 @@
     <p class="attempts-display">Enter known fingerprints</p>
 
     <!-- svelte-ignore a11y-invalid-attribute -->
-    <a href="#" role="button" class="disabled"> Waiting for input </a>
+    <a href="#" role="button" class="btn-inverted disabled">
+      Waiting for input
+    </a>
   {/if}
 </div>
 
