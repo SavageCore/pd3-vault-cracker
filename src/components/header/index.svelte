@@ -46,6 +46,8 @@
       ?.setAttribute('aria-label', theme.value);
   };
 
+  reflectThemePreference();
+
   // Sync with system changes
   window
     .matchMedia('(prefers-color-scheme: dark)')
