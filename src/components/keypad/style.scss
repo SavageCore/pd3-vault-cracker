@@ -54,6 +54,10 @@
   color: var(--green);
 }
 
+.btn-inverted {
+  user-select: none;
+}
+
 [role='button'] {
   display: flex;
   justify-content: center;

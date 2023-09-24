@@ -258,10 +258,10 @@ exports[`should render without crashing 1`] = `
       class="container"
     >
       <div
-        class="atm-keypad svelte-1lbj1x1"
+        class="atm-keypad svelte-yb9ena"
       >
         <div
-          class="display svelte-1lbj1x1"
+          class="display svelte-yb9ena"
         >
           *
           
@@ -275,79 +275,79 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="keypad svelte-1lbj1x1"
+          class="keypad svelte-yb9ena"
         >
           <div
-            class="row svelte-1lbj1x1"
+            class="row svelte-yb9ena"
           >
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               1
             </button>
              
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               2
             </button>
              
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               3
             </button>
           </div>
            
           <div
-            class="row svelte-1lbj1x1"
+            class="row svelte-yb9ena"
           >
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               4
             </button>
              
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               5
             </button>
              
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               6
             </button>
           </div>
            
           <div
-            class="row svelte-1lbj1x1"
+            class="row svelte-yb9ena"
           >
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               7
             </button>
              
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               8
             </button>
              
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               9
             </button>
           </div>
            
           <div
-            class="row svelte-1lbj1x1"
+            class="row svelte-yb9ena"
           >
             <button
-              class="btn red svelte-1lbj1x1"
+              class="btn red svelte-yb9ena"
             >
               <svg
                 height="2rem"
@@ -362,13 +362,13 @@ exports[`should render without crashing 1`] = `
             </button>
              
             <button
-              class="btn svelte-1lbj1x1"
+              class="btn svelte-yb9ena"
             >
               0
             </button>
              
             <button
-              class="btn green svelte-1lbj1x1"
+              class="btn green svelte-yb9ena"
             >
               <svg
                 height="2rem"
@@ -389,13 +389,13 @@ exports[`should render without crashing 1`] = `
         class="combinationDisplayContainer"
       >
         <p
-          class="attempts-display svelte-1lbj1x1"
+          class="attempts-display svelte-yb9ena"
         >
           Enter known fingerprints
         </p>
          
         <a
-          class="btn-inverted disabled svelte-1lbj1x1"
+          class="btn-inverted disabled svelte-yb9ena"
           href="#"
           role="button"
         >
