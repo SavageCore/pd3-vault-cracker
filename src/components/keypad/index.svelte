@@ -2,6 +2,9 @@
   import { onMount } from 'svelte';
   import { writable } from 'svelte/store';
 
+  import CheckIcon from '../../assets/icons/check.svelte';
+  import CrossIcon from '../../assets/icons/cross.svelte';
+
   // https://i.imgur.com/NKHNmfr.png
   // https://codepen.io/noleli/pen/abbeWRL
   // https://www.reddit.com/r/paydaytheheist/comments/15jvvpq/payday_3_beta_vault_code_generator_from/
@@ -175,11 +178,11 @@
     </div>
     <div class="row">
       <button class="btn red" on:click="{() => onKeypadInput('Backspace')}">
-        ✘
+        <CrossIcon />
       </button>
       <button class="btn" on:click="{() => onKeypadInput('0')}"> 0 </button>
       <button class="btn green" on:click="{() => onKeypadInput('OK')}">
-        ✔
+        <CheckIcon />
       </button>
     </div>
   </div>
