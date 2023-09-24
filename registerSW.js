@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/pd3-vault-cracker/sw.js', { scope: '/pd3-vault-cracker/' })})}
