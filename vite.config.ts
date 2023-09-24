@@ -7,9 +7,12 @@ export default defineConfig({
   plugins: [
     svelte(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: 'prompt',
       devOptions: {
         enabled: true,
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
       },
       manifest: {
         name: 'PD3 Vault Cracker',
@@ -45,5 +48,4 @@ export default defineConfig({
     }),
   ],
   base: '/pd3-vault-cracker/',
-  publicDir: 'public',
 });
