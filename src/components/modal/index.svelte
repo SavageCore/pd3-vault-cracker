@@ -3,6 +3,8 @@
 
   import MoonIcon from '../../assets/icons/moon.svelte';
   import SunIcon from '../../assets/icons/sun.svelte';
+  import CheckIcon from '../../assets/icons/check.svelte';
+  import CrossIcon from '../../assets/icons/cross.svelte';
 
   export let isOpen = false;
   export let onClose = () => {};
@@ -26,17 +28,17 @@
     <p>
       Enter the 2, 3 or 4 digits from the fingerprints on the vault keypad then
       click the
-      <span class="green">✔</span>
+      <span class="green"><CheckIcon size="1rem" /></span>
       button to calculate the possible combinations.
     </p>
     <p>
       To remove the entered digits click the
-      <span class="red">✘</span>
+      <span class="red"><CrossIcon size="1rem" /></span>
       button.
     </p>
     <p>
-      Click on the <SunIcon size="20px" /> or
-      <MoonIcon size="20px" /> icon to toggle between light and dark mode.
+      Click on the <SunIcon size="1rem" /> or
+      <MoonIcon size="1rem" /> icon to toggle between light and dark mode.
     </p>
     <h3>Keybinds</h3>
     <ol>

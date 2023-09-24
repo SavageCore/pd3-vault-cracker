@@ -33,7 +33,16 @@ exports[`should render without crashing 1`] = `
           <span
             class="green"
           >
-            ✔
+            <svg
+              height="1rem"
+              viewBox="0 0 24 24"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
+              />
+            </svg>
           </span>
           
       button to calculate the possible combinations.
@@ -47,7 +56,16 @@ exports[`should render without crashing 1`] = `
           <span
             class="red"
           >
-            ✘
+            <svg
+              height="1rem"
+              viewBox="0 0 24 24"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+              />
+            </svg>
           </span>
           
       button.
@@ -58,9 +76,9 @@ exports[`should render without crashing 1`] = `
         >
           Click on the 
           <svg
-            height="20px"
+            height="1rem"
             viewBox="0 0 24 24"
-            width="20px"
+            width="1rem"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -70,9 +88,9 @@ exports[`should render without crashing 1`] = `
            or
       
           <svg
-            height="20px"
+            height="1rem"
             viewBox="0 0 24 24"
-            width="20px"
+            width="1rem"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
