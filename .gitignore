@@ -27,3 +27,6 @@ dev-dist
 
 # Coverage directory used by tools like istanbul
 coverage
+
+public/*
+!public/vite.svg
