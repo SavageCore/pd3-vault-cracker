@@ -87,7 +87,7 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector('p.attempts_display');
+    const combinations = container.querySelector('p.attempts-display');
 
     if (!combinations) {
       throw new Error('Combinations not found');
@@ -109,7 +109,7 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector('p.attempts_display');
+    const combinations = container.querySelector('p.attempts-display');
 
     if (!combinations) {
       throw new Error('Combinations not found');
@@ -132,7 +132,7 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector('p.attempts_display');
+    const combinations = container.querySelector('p.attempts-display');
 
     if (!combinations) {
       throw new Error('Combinations not found');
@@ -189,7 +189,7 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector('p.attempts_display');
+    const combinations = container.querySelector('p.attempts-display');
 
     if (!combinations) {
       throw new Error('Combinations not found');
@@ -289,7 +289,7 @@ describe('Component', () => {
 
     await fireEvent.click(enterButton);
 
-    const combinations = container.querySelector('p.attempts_display');
+    const combinations = container.querySelector('p.attempts-display');
 
     if (!combinations) {
       throw new Error('Combinations not found');

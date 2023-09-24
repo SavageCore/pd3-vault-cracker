@@ -1,6 +1,6 @@
-@import './colors.scss';
-@import './fonts.scss';
-@import './theme.scss';
+@import './colors';
+@import './fonts';
+@import './theme';
 
 .icon {
   display: flex;
@@ -8,6 +8,7 @@
   width: 1.5rem;
   height: 1.5rem;
 }
+
 .pointer {
   cursor: pointer;
 }
@@ -30,7 +31,7 @@
   pointer-events: none;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .container {
     min-height: 80vh;
   }

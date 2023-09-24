@@ -13,11 +13,12 @@ a {
   text-decoration: none;
 }
 
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown */
 :global(a span) {
   font-weight: bold;
 }
 
-.made_by {
+.made-by {
   text-align: center;
 }
 

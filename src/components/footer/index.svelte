@@ -8,8 +8,8 @@
 
 <div class="grid footer">
   <div></div>
-  <div class="made_by">
-    {$_('footer.made_by.text')}<a
+  <div class="made-by">
+    {$_('footer.made-by.text')}<a
       href="https://github.com/SavageCore"
       target="_blank"><span class="bold">SavageCore</span></a
     >

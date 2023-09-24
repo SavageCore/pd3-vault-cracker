@@ -1,13 +1,12 @@
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   background-color: var(--card-sectionning-background-color);
   padding: 0.25rem 0.5rem;
   width: 100%;
 }
 
-.OFFLINEMODE {
+.offlinemode {
   display: flex;
   flex-direction: column;
   justify-content: center;

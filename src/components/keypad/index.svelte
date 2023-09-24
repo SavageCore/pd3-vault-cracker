@@ -190,7 +190,7 @@
 
 <div class="combinationDisplayContainer">
   {#if combinations.length > 0 && currentCombination < combinations.length}
-    <p class="attempts_display">
+    <p class="attempts-display">
       Attempt {currentCombination + 1} of {combinations.length}
     </p>
 
@@ -207,7 +207,7 @@
       Next
     </a>
   {:else if combinations.length > 0 && currentCombination + 1 >= combinations.length}
-    <p class="attempts_display">End of combinations</p>
+    <p class="attempts-display">End of combinations</p>
     <!-- svelte-ignore a11y-invalid-attribute -->
     <a
       href="#"
@@ -219,7 +219,7 @@
       Start again
     </a>
   {:else}
-    <p class="attempts_display">Enter known fingerprints</p>
+    <p class="attempts-display">Enter known fingerprints</p>
 
     <!-- svelte-ignore a11y-invalid-attribute -->
     <a href="#" role="button" class="disabled"> Waiting for input </a>

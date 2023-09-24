@@ -4,28 +4,28 @@ exports[`should render without crashing 1`] = `
 <body>
   <div>
     <div
-      class="grid header svelte-re7gzn"
+      class="grid header svelte-yzjrtv"
     >
       <div
-        class="logo svelte-re7gzn"
+        class="logo svelte-yzjrtv"
       >
         PD3 Vault Cracker
       </div>
        
       <div
-        class="OFFLINEMODE svelte-re7gzn"
+        class="offlinemode svelte-yzjrtv"
       >
         #OFFLINEMODE
       </div>
        
       <div
-        class="links svelte-re7gzn"
+        class="links svelte-yzjrtv"
       >
         <div
           aria-checked="false"
           aria-label="auto"
           aria-live="polite"
-          class="icon theme-toggle svelte-re7gzn"
+          class="icon theme-toggle svelte-yzjrtv"
           id="theme-toggle"
           role="checkbox"
           tabindex="0"
@@ -44,7 +44,7 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="icon pointer svelte-re7gzn"
+          class="icon pointer svelte-yzjrtv"
           role="link"
           tabindex="0"
           title="Help"
@@ -74,7 +74,7 @@ exports[`should render without crashing 1`] = `
           target="_blank"
         >
           <div
-            class="icon svelte-re7gzn"
+            class="icon svelte-yzjrtv"
             title="View source"
           >
             <svg
@@ -240,10 +240,10 @@ exports[`should render without crashing 1`] = `
       class="container"
     >
       <div
-        class="atm-keypad svelte-28bcpt"
+        class="atm-keypad svelte-c26win"
       >
         <div
-          class="display svelte-28bcpt"
+          class="display svelte-c26win"
         >
           *
           
@@ -257,79 +257,79 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="keypad svelte-28bcpt"
+          class="keypad svelte-c26win"
         >
           <div
-            class="row svelte-28bcpt"
+            class="row svelte-c26win"
           >
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               1
             </button>
              
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               2
             </button>
              
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               3
             </button>
           </div>
            
           <div
-            class="row svelte-28bcpt"
+            class="row svelte-c26win"
           >
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               4
             </button>
              
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               5
             </button>
              
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               6
             </button>
           </div>
            
           <div
-            class="row svelte-28bcpt"
+            class="row svelte-c26win"
           >
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               7
             </button>
              
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               8
             </button>
              
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               9
             </button>
           </div>
            
           <div
-            class="row svelte-28bcpt"
+            class="row svelte-c26win"
           >
             <button
-              class="btn red svelte-28bcpt"
+              class="btn red svelte-c26win"
             >
               <svg
                 height="2rem"
@@ -344,13 +344,13 @@ exports[`should render without crashing 1`] = `
             </button>
              
             <button
-              class="btn svelte-28bcpt"
+              class="btn svelte-c26win"
             >
               0
             </button>
              
             <button
-              class="btn green svelte-28bcpt"
+              class="btn green svelte-c26win"
             >
               <svg
                 height="2rem"
@@ -371,13 +371,13 @@ exports[`should render without crashing 1`] = `
         class="combinationDisplayContainer"
       >
         <p
-          class="attempts_display svelte-28bcpt"
+          class="attempts-display svelte-c26win"
         >
           Enter known fingerprints
         </p>
          
         <a
-          class="disabled svelte-28bcpt"
+          class="disabled svelte-c26win"
           href="#"
           role="button"
         >
@@ -387,16 +387,16 @@ exports[`should render without crashing 1`] = `
     </main>
      
     <div
-      class="grid footer svelte-nfddwm"
+      class="grid footer svelte-186285e"
     >
       <div />
        
       <div
-        class="made_by svelte-nfddwm"
+        class="made-by svelte-186285e"
       >
         Made with 🔫 by
         <a
-          class="svelte-nfddwm"
+          class="svelte-186285e"
           href="https://github.com/SavageCore"
           target="_blank"
         >
@@ -409,10 +409,10 @@ exports[`should render without crashing 1`] = `
       </div>
        
       <div
-        class="version svelte-nfddwm"
+        class="version svelte-186285e"
       >
         <div
-          class="icon svelte-nfddwm"
+          class="icon svelte-186285e"
         >
           <svg
             fill="#f14e32"
@@ -435,7 +435,7 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <a
-          class="svelte-nfddwm"
+          class="svelte-186285e"
           href="https://github.com/SavageCore/pd3-vault-cracker/commit/#{GH_COMMIT_HASH}#"
           target="_blank"
         >

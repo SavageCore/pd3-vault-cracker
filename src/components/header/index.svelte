@@ -58,7 +58,7 @@
 <!-- <div class="header-bg"> -->
 <div class="grid header">
   <div class="logo">PD3 Vault Cracker</div>
-  <div class="OFFLINEMODE">#OFFLINEMODE</div>
+  <div class="offlinemode">#OFFLINEMODE</div>
   <div class="links">
     <div
       class="icon theme-toggle"

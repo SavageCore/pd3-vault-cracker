@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 // Indigo Light scheme (Default)
 // Can be forced with data-theme="light"
 [data-theme='light'],
@@ -6,7 +8,7 @@
   .footer {
     [role='link'],
     a {
-      color: hsl(205, 20%, 32%);
+      color: hsl(205deg 20% 32%);
     }
   }
 }
@@ -19,7 +21,7 @@
     .footer {
       [role='link'],
       a {
-        color: hsl(205, 16%, 77%);
+        color: hsl(205deg 16% 77%);
       }
     }
   }
@@ -32,7 +34,7 @@
   .footer {
     [role='link'],
     a {
-      color: hsl(205, 16%, 77%);
+      color: hsl(205deg 16% 77%);
     }
   }
 }
