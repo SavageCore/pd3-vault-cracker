@@ -174,5 +174,19 @@
 
 :root {
   --red: #d63031;
+  --red-shade: #ab2627;
+  --red-tint: #de595a;
   --green: #00b894;
+}
+
+// Warning button
+button.warning {
+  border: var(--border-width) solid var(--red-tint);
+  background-color: var(--red);
+  color: white;
+}
+
+button.warning:hover {
+  border-color: var(--red-shade);
+  background-color: var(--red-tint);
 }

@@ -15,7 +15,8 @@
     "checkJs": true,
     "isolatedModules": true,
     "types": [
-      "vitest/globals"
+      "vitest/globals",
+      "./src/types/app.d.ts"
     ]
   },
   "include": [

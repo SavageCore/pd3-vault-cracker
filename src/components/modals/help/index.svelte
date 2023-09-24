@@ -1,10 +1,10 @@
 <script>
   import { _ } from 'svelte-i18n';
 
-  import MoonIcon from '../../assets/icons/moon.svelte';
-  import SunIcon from '../../assets/icons/sun.svelte';
-  import CheckIcon from '../../assets/icons/check.svelte';
-  import CrossIcon from '../../assets/icons/cross.svelte';
+  import MoonIcon from '../../../assets/icons/moon.svelte';
+  import SunIcon from '../../../assets/icons/sun.svelte';
+  import CheckIcon from '../../../assets/icons/check.svelte';
+  import CrossIcon from '../../../assets/icons/cross.svelte';
 
   export let isOpen = false;
   export let onClose = () => {};

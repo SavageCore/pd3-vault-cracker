@@ -461,6 +461,47 @@ exports[`should render without crashing 1`] = `
         </a>
       </div>
     </div>
+     
+    <dialog>
+      <article>
+        <header
+          class="svelte-1fzt22e"
+        >
+          <a
+            aria-label="Close"
+            class="close"
+            href="#close"
+          />
+           
+          Install
+        </header>
+         
+        <p>
+          Do you want to install this app on your device? This will allow you to
+      launch from your home screen and use whilst offline.
+        </p>
+         
+        <p>
+          If you choose to cancel, you will not be asked again. You can still
+      install the app manually by clicking the install icon in the address bar
+      or under the 3 dot menu.
+        </p>
+         
+        <div
+          class="grid svelte-1fzt22e"
+        >
+          <button
+            class="warning"
+          >
+            Cancel
+          </button>
+           
+          <button>
+            Install
+          </button>
+        </div>
+      </article>
+    </dialog>
     
   </div>
 </body>

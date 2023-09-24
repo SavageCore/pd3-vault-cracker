@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Modal from '../modal/index.svelte';
+  import Modal from '../modals/help/index.svelte';
 
   import GitubIcon from '../../assets/icons/github.svelte';
   import HelpIcon from '../../assets/icons/help.svelte';

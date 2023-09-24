@@ -3,6 +3,9 @@
   "header": {
     "help_modal": {
       "header": "Help"
+    },
+    "install_modal": {
+      "header": "Install"
     }
   },
   "footer": {
