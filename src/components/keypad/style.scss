@@ -62,6 +62,14 @@
   --box-shadow: none;
 }
 
+.btn.red {
+  color: var(--red);
+}
+
+.btn.green {
+  color: var(--green);
+}
+
 [role='button'] {
   display: flex;
   justify-content: center;
