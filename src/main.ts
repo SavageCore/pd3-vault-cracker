@@ -2,7 +2,6 @@ import '@picocss/pico';
 
 import './i18n.js';
 import './styles/app.scss';
-import './styles/fonts.scss';
 
 import App from './App.svelte';
 
