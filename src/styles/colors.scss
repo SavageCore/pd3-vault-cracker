@@ -191,6 +191,16 @@ button.warning:hover {
   background-color: var(--red-tint);
 }
 
+.btn-inverted.tried,
+.btn-inverted.tried:hover {
+  background-color: var(--red);
+}
+
+.btn-inverted.correct,
+.btn-inverted.correct:hover {
+  background-color: var(--green);
+}
+
 .green {
   color: var(--green);
 }

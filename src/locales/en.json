@@ -6,6 +6,9 @@
     },
     "install_modal": {
       "header": "Install"
+    },
+    "view_all_combos_modal": {
+      "header": "All combinations for"
     }
   },
   "footer": {
