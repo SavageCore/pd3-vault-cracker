@@ -120,6 +120,10 @@ exports[`should render without crashing 1`] = `
           <li>
             Escape - Clear entered digits
           </li>
+           
+          <li>
+            Numbers or numpad - Enter digits from keyboard
+          </li>
         </ol>
          
         <h3
