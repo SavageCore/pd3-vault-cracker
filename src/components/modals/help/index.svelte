@@ -45,6 +45,7 @@
       <li>Enter/Return - Calculate combinations</li>
       <li>Backspace/Delete - Remove last entered digit</li>
       <li>Escape - Clear entered digits</li>
+      <li>Numbers or numpad - Enter digits from keyboard</li>
     </ol>
     <h3>Issues</h3>
     <p>
