@@ -4,10 +4,10 @@ exports[`Component > should render without crashing 1`] = `
 <body>
   <div>
     <div
-      class="atm-keypad svelte-1mginxj"
+      class="atm-keypad svelte-w42tvt"
     >
       <div
-        class="display svelte-1mginxj"
+        class="display svelte-w42tvt"
       >
         *
         
@@ -21,79 +21,79 @@ exports[`Component > should render without crashing 1`] = `
       </div>
        
       <div
-        class="keypad svelte-1mginxj"
+        class="keypad svelte-w42tvt"
       >
         <div
-          class="row svelte-1mginxj"
+          class="row svelte-w42tvt"
         >
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             1
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             2
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             3
           </button>
         </div>
          
         <div
-          class="row svelte-1mginxj"
+          class="row svelte-w42tvt"
         >
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             4
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             5
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             6
           </button>
         </div>
          
         <div
-          class="row svelte-1mginxj"
+          class="row svelte-w42tvt"
         >
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             7
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             8
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             9
           </button>
         </div>
          
         <div
-          class="row svelte-1mginxj"
+          class="row svelte-w42tvt"
         >
           <button
-            class="btn red svelte-1mginxj"
+            class="btn red svelte-w42tvt"
           >
             <svg
               height="2rem"
@@ -108,13 +108,13 @@ exports[`Component > should render without crashing 1`] = `
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             0
           </button>
            
           <button
-            class="btn green svelte-1mginxj"
+            class="btn green svelte-w42tvt"
           >
             <svg
               height="2rem"
@@ -135,13 +135,13 @@ exports[`Component > should render without crashing 1`] = `
       class="combinationDisplayContainer"
     >
       <p
-        class="attempts-display svelte-1mginxj"
+        class="attempts-display svelte-w42tvt"
       >
         Enter known fingerprints
       </p>
        
       <a
-        class="btn-inverted disabled svelte-1mginxj"
+        class="btn-inverted disabled svelte-w42tvt"
         href="#"
         role="button"
       >
@@ -193,10 +193,10 @@ exports[`Component > should render without crashing 1`] = `
   </div>
   <div>
     <div
-      class="atm-keypad svelte-1mginxj"
+      class="atm-keypad svelte-w42tvt"
     >
       <div
-        class="display svelte-1mginxj"
+        class="display svelte-w42tvt"
       >
         *
         
@@ -210,79 +210,79 @@ exports[`Component > should render without crashing 1`] = `
       </div>
        
       <div
-        class="keypad svelte-1mginxj"
+        class="keypad svelte-w42tvt"
       >
         <div
-          class="row svelte-1mginxj"
+          class="row svelte-w42tvt"
         >
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             1
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             2
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             3
           </button>
         </div>
          
         <div
-          class="row svelte-1mginxj"
+          class="row svelte-w42tvt"
         >
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             4
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             5
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             6
           </button>
         </div>
          
         <div
-          class="row svelte-1mginxj"
+          class="row svelte-w42tvt"
         >
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             7
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             8
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             9
           </button>
         </div>
          
         <div
-          class="row svelte-1mginxj"
+          class="row svelte-w42tvt"
         >
           <button
-            class="btn red svelte-1mginxj"
+            class="btn red svelte-w42tvt"
           >
             <svg
               height="2rem"
@@ -297,13 +297,13 @@ exports[`Component > should render without crashing 1`] = `
           </button>
            
           <button
-            class="btn svelte-1mginxj"
+            class="btn svelte-w42tvt"
           >
             0
           </button>
            
           <button
-            class="btn green svelte-1mginxj"
+            class="btn green svelte-w42tvt"
           >
             <svg
               height="2rem"
@@ -324,13 +324,13 @@ exports[`Component > should render without crashing 1`] = `
       class="combinationDisplayContainer"
     >
       <p
-        class="attempts-display svelte-1mginxj"
+        class="attempts-display svelte-w42tvt"
       >
         Enter known fingerprints
       </p>
        
       <a
-        class="btn-inverted disabled svelte-1mginxj"
+        class="btn-inverted disabled svelte-w42tvt"
         href="#"
         role="button"
       >

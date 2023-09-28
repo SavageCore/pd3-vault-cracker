@@ -1,49 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`should print known fingerprints in header 1`] = `
-<body>
-  <div>
-    <dialog>
-      <article>
-        <header
-          class="svelte-1hk3v5y"
-        >
-          <a
-            aria-label="Close"
-            class="close"
-            href="#close"
-          />
-           
-          All combinations for
-           
-          69
-        </header>
-         
-        <p
-          class="svelte-1hk3v5y"
-        >
-          Left-click on a combination to mark it as tried
-        </p>
-         
-        <p
-          class="svelte-1hk3v5y"
-        >
-          Right-click/long-press on a combination to mark it as correct
-        </p>
-         
-        <br />
-         
-        <p
-          class="svelte-1hk3v5y"
-        >
-          No combos found.
-        </p>
-      </article>
-    </dialog>
-  </div>
-</body>
-`;
-
 exports[`should render with props 1`] = `
 <body>
   <div>
