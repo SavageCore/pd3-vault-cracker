@@ -1,1 +1,0 @@
-const e="Vite + Svelte",t={help_modal:{header:"Help"},install_modal:{header:"Install"}},a={"made-by":{text:"Made with 🔫 by"}},l={title:e,header:t,footer:a};export{l as default,a as footer,t as header,e as title};
