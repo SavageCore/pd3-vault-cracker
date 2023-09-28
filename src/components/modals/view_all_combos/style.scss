@@ -1,0 +1,20 @@
+header {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+// Centered text within a small button
+.combo-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  width: 5rem;
+  height: 2rem;
+  user-select: none;
+}

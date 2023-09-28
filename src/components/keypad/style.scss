@@ -61,6 +61,6 @@
 [role='button'] {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin-bottom: var(--typography-spacing-vertical);
   width: 10rem;
 }

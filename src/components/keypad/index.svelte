@@ -1,7 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { writable } from 'svelte/store';
+  import { writable, type Writable } from 'svelte/store';
 
+  import Modal from '../modals/view_all_combos/index.svelte';
   import CheckIcon from '../../assets/icons/check.svelte';
   import CrossIcon from '../../assets/icons/cross.svelte';
 
@@ -10,10 +11,14 @@
   // https://www.reddit.com/r/paydaytheheist/comments/15jvvpq/payday_3_beta_vault_code_generator_from/
   // https://www.onlinegdb.com/jMsyIVl33
 
-  export const pressedNumbers = writable([]);
+  export const pressedNumbers: Writable<number[]> = writable([]);
   let combinations: number[][] = [];
   let currentCombination = 0;
   let code: string | null = null;
+  let isModalOpen = false;
+
+  $: modalCombinations = combinations;
+  $: modalCurrentCombination = pressedNumbers;
 
   onMount(() => {
     if (!code) {
@@ -139,6 +144,14 @@
 
     return combinations;
   }
+
+  const toggleModal = () => {
+    isModalOpen = !isModalOpen;
+  };
+
+  const viewAllCombinations = () => {
+    isModalOpen = true;
+  };
 </script>
 
 <div class="atm-keypad">
@@ -207,6 +220,17 @@
     >
       Next
     </a>
+
+    <!-- View all link -->
+    <!-- svelte-ignore a11y-invalid-attribute -->
+    <p>
+      <a
+        href="#"
+        class="view-all-link"
+        title="View all combinations"
+        on:click="{() => viewAllCombinations()}">View all combinations</a
+      >
+    </p>
   {:else if combinations.length > 0 && currentCombination + 1 >= combinations.length}
     <p class="attempts-display">End of combinations</p>
     <!-- svelte-ignore a11y-invalid-attribute -->
@@ -220,6 +244,8 @@
     >
       Start again
     </a>
+
+    <p>&nbsp;</p>
   {:else}
     <p class="attempts-display">Enter known fingerprints</p>
 
@@ -227,8 +253,17 @@
     <a href="#" role="button" class="btn-inverted disabled">
       Waiting for input
     </a>
+
+    <p>&nbsp;</p>
   {/if}
 </div>
+
+<Modal
+  isOpen="{isModalOpen}"
+  onClose="{toggleModal}"
+  combinations="{modalCombinations}"
+  combination="{modalCurrentCombination}"
+/>
 
 <style src="./style.scss">
 </style>

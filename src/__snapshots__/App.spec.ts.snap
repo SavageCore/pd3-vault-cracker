@@ -262,10 +262,10 @@ exports[`should render without crashing 1`] = `
       class="container"
     >
       <div
-        class="atm-keypad svelte-yb9ena"
+        class="atm-keypad svelte-1mginxj"
       >
         <div
-          class="display svelte-yb9ena"
+          class="display svelte-1mginxj"
         >
           *
           
@@ -279,79 +279,79 @@ exports[`should render without crashing 1`] = `
         </div>
          
         <div
-          class="keypad svelte-yb9ena"
+          class="keypad svelte-1mginxj"
         >
           <div
-            class="row svelte-yb9ena"
+            class="row svelte-1mginxj"
           >
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               1
             </button>
              
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               2
             </button>
              
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               3
             </button>
           </div>
            
           <div
-            class="row svelte-yb9ena"
+            class="row svelte-1mginxj"
           >
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               4
             </button>
              
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               5
             </button>
              
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               6
             </button>
           </div>
            
           <div
-            class="row svelte-yb9ena"
+            class="row svelte-1mginxj"
           >
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               7
             </button>
              
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               8
             </button>
              
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               9
             </button>
           </div>
            
           <div
-            class="row svelte-yb9ena"
+            class="row svelte-1mginxj"
           >
             <button
-              class="btn red svelte-yb9ena"
+              class="btn red svelte-1mginxj"
             >
               <svg
                 height="2rem"
@@ -366,13 +366,13 @@ exports[`should render without crashing 1`] = `
             </button>
              
             <button
-              class="btn svelte-yb9ena"
+              class="btn svelte-1mginxj"
             >
               0
             </button>
              
             <button
-              class="btn green svelte-yb9ena"
+              class="btn green svelte-1mginxj"
             >
               <svg
                 height="2rem"
@@ -393,19 +393,61 @@ exports[`should render without crashing 1`] = `
         class="combinationDisplayContainer"
       >
         <p
-          class="attempts-display svelte-yb9ena"
+          class="attempts-display svelte-1mginxj"
         >
           Enter known fingerprints
         </p>
          
         <a
-          class="btn-inverted disabled svelte-yb9ena"
+          class="btn-inverted disabled svelte-1mginxj"
           href="#"
           role="button"
         >
           Waiting for input
         </a>
+         
+        <p>
+           
+        </p>
       </div>
+       
+      <dialog>
+        <article>
+          <header
+            class="svelte-1hk3v5y"
+          >
+            <a
+              aria-label="Close"
+              class="close"
+              href="#close"
+            />
+             
+            All combinations for
+             
+            
+          </header>
+           
+          <p
+            class="svelte-1hk3v5y"
+          >
+            Left-click on a combination to mark it as tried
+          </p>
+           
+          <p
+            class="svelte-1hk3v5y"
+          >
+            Right-click/long-press on a combination to mark it as correct
+          </p>
+           
+          <br />
+           
+          <p
+            class="svelte-1hk3v5y"
+          >
+            No combos found.
+          </p>
+        </article>
+      </dialog>
     </main>
      
     <div

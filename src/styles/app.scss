@@ -46,8 +46,24 @@ html {
   pointer-events: none;
 }
 
+div.grid.combo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
 @media (width <= 768px) {
   .container {
     min-height: 80vh;
+  }
+
+  div.grid.combo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  dialog article {
+    max-height: calc(80vh - var(--spacing) * 2);
   }
 }

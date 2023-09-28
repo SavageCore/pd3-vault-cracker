@@ -1,0 +1,216 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should print known fingerprints in header 1`] = `
+<body>
+  <div>
+    <dialog>
+      <article>
+        <header
+          class="svelte-1hk3v5y"
+        >
+          <a
+            aria-label="Close"
+            class="close"
+            href="#close"
+          />
+           
+          All combinations for
+           
+          69
+        </header>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Left-click on a combination to mark it as tried
+        </p>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Right-click/long-press on a combination to mark it as correct
+        </p>
+         
+        <br />
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          No combos found.
+        </p>
+      </article>
+    </dialog>
+  </div>
+</body>
+`;
+
+exports[`should render with props 1`] = `
+<body>
+  <div>
+    <dialog>
+      <article>
+        <header
+          class="svelte-1hk3v5y"
+        >
+          <a
+            aria-label="Close"
+            class="close"
+            href="#close"
+          />
+           
+          All combinations for
+           
+          
+        </header>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Left-click on a combination to mark it as tried
+        </p>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Right-click/long-press on a combination to mark it as correct
+        </p>
+         
+        <br />
+         
+        <div
+          class="grid combo"
+        >
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            6669
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            6696
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            6699
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            6966
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            6969
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            6996
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            6999
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            9666
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            9669
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            9696
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            9699
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            9966
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            9969
+             
+          </button>
+          <button
+            class="combo-btn btn-inverted svelte-1hk3v5y"
+          >
+            9996
+             
+          </button>
+        </div>
+      </article>
+    </dialog>
+  </div>
+</body>
+`;
+
+exports[`should render without crashing 1`] = `
+<body>
+  <div>
+    <dialog>
+      <article>
+        <header
+          class="svelte-1hk3v5y"
+        >
+          <a
+            aria-label="Close"
+            class="close"
+            href="#close"
+          />
+           
+          All combinations for
+           
+          
+        </header>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Left-click on a combination to mark it as tried
+        </p>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Right-click/long-press on a combination to mark it as correct
+        </p>
+         
+        <br />
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          No combos found.
+        </p>
+      </article>
+    </dialog>
+  </div>
+</body>
+`;
