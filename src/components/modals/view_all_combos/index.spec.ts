@@ -12,6 +12,8 @@ test('should render without crashing', () => {
 test('should render with props', () => {
   const { container } = render(Component, {
     props: {
+      isOpen: false,
+      onClose: () => {},
       combinations: [
         [6, 6, 6, 9],
         [6, 6, 9, 6],
@@ -28,6 +30,7 @@ test('should render with props', () => {
         [9, 9, 6, 9],
         [9, 9, 9, 6],
       ],
+      combination: writable([]),
     },
   });
   expect(container).toMatchSnapshot();

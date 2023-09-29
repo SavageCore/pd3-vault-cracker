@@ -1,5 +1,408 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`Component > should render with props 1`] = `
+<body>
+  <div>
+    <div
+      class="atm-keypad svelte-w42tvt"
+    >
+      <div
+        class="display svelte-w42tvt"
+      >
+        *
+        
+        *
+        
+        *
+        
+        *
+        
+        
+      </div>
+       
+      <div
+        class="keypad svelte-w42tvt"
+      >
+        <div
+          class="row svelte-w42tvt"
+        >
+          <button
+            class="btn svelte-w42tvt"
+            data-value="1"
+          >
+            1
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="2"
+          >
+            2
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="3"
+          >
+            3
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-w42tvt"
+        >
+          <button
+            class="btn svelte-w42tvt"
+            data-value="4"
+          >
+            4
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="5"
+          >
+            5
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="6"
+          >
+            6
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-w42tvt"
+        >
+          <button
+            class="btn svelte-w42tvt"
+            data-value="7"
+          >
+            7
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="8"
+          >
+            8
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="9"
+          >
+            9
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-w42tvt"
+        >
+          <button
+            class="btn red svelte-w42tvt"
+          >
+            <svg
+              height="2rem"
+              viewBox="0 0 24 24"
+              width="2rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+              />
+            </svg>
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="0"
+          >
+            0
+          </button>
+           
+          <button
+            class="btn green svelte-w42tvt"
+          >
+            <svg
+              height="2rem"
+              viewBox="0 0 24 24"
+              width="2rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="combinationDisplayContainer"
+    >
+      <p
+        class="attempts-display svelte-w42tvt"
+      >
+        Enter known fingerprints
+      </p>
+       
+      <a
+        class="btn-inverted disabled svelte-w42tvt"
+        href="#"
+        role="button"
+      >
+        Waiting for input
+      </a>
+       
+      <p>
+         
+      </p>
+    </div>
+     
+    <dialog>
+      <article>
+        <header
+          class="svelte-1hk3v5y"
+        >
+          <a
+            aria-label="Close"
+            class="close"
+            href="#close"
+          />
+           
+          All combinations for
+           
+          
+        </header>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Left-click on a combination to mark it as tried
+        </p>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Right-click/long-press on a combination to mark it as correct
+        </p>
+         
+        <br />
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          No combos found.
+        </p>
+      </article>
+    </dialog>
+  </div>
+  <div>
+    <div
+      class="atm-keypad svelte-w42tvt"
+    >
+      <div
+        class="display svelte-w42tvt"
+      >
+        *
+        
+        *
+        
+        *
+        
+        *
+        
+        
+      </div>
+       
+      <div
+        class="keypad svelte-w42tvt"
+      >
+        <div
+          class="row svelte-w42tvt"
+        >
+          <button
+            class="btn svelte-w42tvt"
+            data-value="1"
+          >
+            1
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="2"
+          >
+            2
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="3"
+          >
+            3
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-w42tvt"
+        >
+          <button
+            class="btn svelte-w42tvt"
+            data-value="4"
+          >
+            4
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="5"
+          >
+            5
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="6"
+          >
+            6
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-w42tvt"
+        >
+          <button
+            class="btn svelte-w42tvt"
+            data-value="7"
+          >
+            7
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="8"
+          >
+            8
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="9"
+          >
+            9
+          </button>
+        </div>
+         
+        <div
+          class="row svelte-w42tvt"
+        >
+          <button
+            class="btn red svelte-w42tvt"
+          >
+            <svg
+              height="2rem"
+              viewBox="0 0 24 24"
+              width="2rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+              />
+            </svg>
+          </button>
+           
+          <button
+            class="btn svelte-w42tvt"
+            data-value="0"
+          >
+            0
+          </button>
+           
+          <button
+            class="btn green svelte-w42tvt"
+          >
+            <svg
+              height="2rem"
+              viewBox="0 0 24 24"
+              width="2rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="combinationDisplayContainer"
+    >
+      <p
+        class="attempts-display svelte-w42tvt"
+      >
+        Enter known fingerprints
+      </p>
+       
+      <a
+        class="btn-inverted disabled svelte-w42tvt"
+        href="#"
+        role="button"
+      >
+        Waiting for input
+      </a>
+       
+      <p>
+         
+      </p>
+    </div>
+     
+    <dialog>
+      <article>
+        <header
+          class="svelte-1hk3v5y"
+        >
+          <a
+            aria-label="Close"
+            class="close"
+            href="#close"
+          />
+           
+          All combinations for
+           
+          
+        </header>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Left-click on a combination to mark it as tried
+        </p>
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          Right-click/long-press on a combination to mark it as correct
+        </p>
+         
+        <br />
+         
+        <p
+          class="svelte-1hk3v5y"
+        >
+          No combos found.
+        </p>
+      </article>
+    </dialog>
+  </div>
+</body>
+`;
+
 exports[`Component > should render without crashing 1`] = `
 <body>
   <div>

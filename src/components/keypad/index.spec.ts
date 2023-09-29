@@ -2,6 +2,7 @@ import '@testing-library/jest-dom';
 import { render, fireEvent, screen } from '@testing-library/svelte';
 
 import Component from './index.svelte';
+import { writable } from 'svelte/store';
 
 describe('Component', () => {
   let display: HTMLElement;
@@ -60,6 +61,15 @@ describe('Component', () => {
 
   test('should render without crashing', () => {
     const { container } = render(Component);
+    expect(container).toMatchSnapshot();
+  });
+
+  test('should render with props', () => {
+    const { container } = render(Component, {
+      props: {
+        pressedNumbers: writable([1, 2, 3, 4]),
+      },
+    });
     expect(container).toMatchSnapshot();
   });
 
