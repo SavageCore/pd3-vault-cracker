@@ -3,7 +3,7 @@
 
   import GitIcon from '../../assets/icons/git.svelte';
 
-  let ghCommitHash = '#{GH_COMMIT_HASH}#';
+  let ghTag = '#{GH_TAG}#';
 </script>
 
 <div class="grid footer">
@@ -19,10 +19,10 @@
       <GitIcon />
     </div>
     <a
-      href="https://github.com/SavageCore/pd3-vault-cracker/commit/{ghCommitHash}"
+      href="https://github.com/SavageCore/pd3-vault-cracker/releases/tag/{ghTag}"
       target="_blank"
     >
-      {ghCommitHash.slice(0, 7)}
+      {ghTag}
     </a>
   </div>
 </div>

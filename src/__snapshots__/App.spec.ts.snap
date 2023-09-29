@@ -510,10 +510,10 @@ exports[`should render without crashing 1`] = `
          
         <a
           class="svelte-186285e"
-          href="https://github.com/SavageCore/pd3-vault-cracker/commit/#{GH_COMMIT_HASH}#"
+          href="https://github.com/SavageCore/pd3-vault-cracker/releases/tag/#{GH_TAG}#"
           target="_blank"
         >
-          #{GH_CO
+          #{GH_TAG}#
         </a>
       </div>
     </div>
