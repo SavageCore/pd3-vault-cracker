@@ -6,7 +6,7 @@ exports[`should render with props 1`] = `
     <dialog>
       <article>
         <header
-          class="svelte-1hk3v5y"
+          class="svelte-ry4i9v"
         >
           <a
             aria-label="Close"
@@ -20,13 +20,13 @@ exports[`should render with props 1`] = `
         </header>
          
         <p
-          class="svelte-1hk3v5y"
+          class="svelte-ry4i9v"
         >
           Left-click on a combination to mark it as tried
         </p>
          
         <p
-          class="svelte-1hk3v5y"
+          class="svelte-ry4i9v"
         >
           Right-click/long-press on a combination to mark it as correct
         </p>
@@ -37,90 +37,96 @@ exports[`should render with props 1`] = `
           class="grid combo"
         >
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             6669
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             6696
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             6699
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             6966
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             6969
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             6996
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             6999
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             9666
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             9669
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             9696
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             9699
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             9966
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             9969
              
           </button>
           <button
-            class="combo-btn btn-inverted svelte-1hk3v5y"
+            class="combo-btn btn-inverted svelte-ry4i9v"
           >
             9996
              
           </button>
         </div>
+         
+        <button
+          class="btn-inverted clear-btn svelte-ry4i9v"
+        >
+          Clear
+        </button>
       </article>
     </dialog>
   </div>
@@ -133,7 +139,7 @@ exports[`should render without crashing 1`] = `
     <dialog>
       <article>
         <header
-          class="svelte-1hk3v5y"
+          class="svelte-ry4i9v"
         >
           <a
             aria-label="Close"
@@ -147,13 +153,13 @@ exports[`should render without crashing 1`] = `
         </header>
          
         <p
-          class="svelte-1hk3v5y"
+          class="svelte-ry4i9v"
         >
           Left-click on a combination to mark it as tried
         </p>
          
         <p
-          class="svelte-1hk3v5y"
+          class="svelte-ry4i9v"
         >
           Right-click/long-press on a combination to mark it as correct
         </p>
@@ -161,7 +167,7 @@ exports[`should render without crashing 1`] = `
         <br />
          
         <p
-          class="svelte-1hk3v5y"
+          class="svelte-ry4i9v"
         >
           No combos found.
         </p>

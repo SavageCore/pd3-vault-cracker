@@ -4,6 +4,7 @@
 
   export let isOpen = false;
   export let onClose = () => {};
+  export let onClear = () => {};
   export let combinations: number[][] = [];
   export let combination: Writable<number[]> = writable([]);
 
@@ -71,6 +72,10 @@
           </button>
         {/each}
       </div>
+      <!-- Clear button -->
+      <button class="btn-inverted clear-btn" on:click="{() => onClear()}">
+        {$_('header.view_all_combos_modal.clear')}
+      </button>
     {/if}
   </article>
 </dialog>

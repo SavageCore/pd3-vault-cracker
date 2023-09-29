@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import { render } from '@testing-library/svelte';
+import { render, fireEvent } from '@testing-library/svelte';
 
 import Component from './index.svelte';
 import { writable } from 'svelte/store';
@@ -14,6 +14,7 @@ test('should render with props', () => {
     props: {
       isOpen: false,
       onClose: () => {},
+      onClear: () => {},
       combinations: [
         [6, 6, 6, 9],
         [6, 6, 9, 6],
@@ -83,11 +84,74 @@ test('should print a button for each combination', () => {
   });
 
   // Expect 14 buttons
-  expect(container.querySelectorAll('button')).toHaveLength(14);
+  expect(container.querySelectorAll('.combo .combo-btn')).toHaveLength(14);
 
   // Expect each button to have the correct text
-  const buttons = container.querySelectorAll('button');
+  const buttons = container.querySelectorAll('.combo .combo-btn');
   for (const [index, button] of buttons.entries()) {
     expect(button).toHaveTextContent(`${[combinations][0][index].join('')}`);
+  }
+});
+
+test('should clear all .tried and .correct buttons when clear button is pressed', async () => {
+  const combinations = [
+    [6, 6, 6, 9],
+    [6, 6, 9, 6],
+    [6, 6, 9, 9],
+    [6, 9, 6, 6],
+    [6, 9, 6, 9],
+    [6, 9, 9, 6],
+    [6, 9, 9, 9],
+    [9, 6, 6, 6],
+    [9, 6, 6, 9],
+    [9, 6, 9, 6],
+    [9, 6, 9, 9],
+    [9, 9, 6, 6],
+    [9, 9, 6, 9],
+    [9, 9, 9, 6],
+  ];
+
+  const { container } = render(Component, {
+    props: {
+      combinations,
+      combination: writable([6, 9]),
+      onClear: () => {
+        const buttons = document.querySelectorAll('.combo .combo-btn');
+        for (const button of buttons) {
+          button.classList.remove('tried');
+          button.classList.remove('correct');
+        }
+      },
+    },
+  });
+
+  const comboButtons = container.querySelectorAll('.combo .combo-btn');
+  const clearButton = container.querySelector('.clear-btn')!;
+
+  // Set all buttons to .tried
+  for (const button of comboButtons) {
+    await fireEvent.click(button);
+    expect(button).toHaveClass('tried');
+  }
+
+  // Click clear button
+  await fireEvent.click(clearButton);
+
+  // Expect all buttons to not have .tried
+  for (const button of comboButtons) {
+    expect(button).not.toHaveClass('tried');
+  }
+
+  // Set a button to .correct
+  await fireEvent.contextMenu(comboButtons[0]);
+  expect(comboButtons[0]).toHaveClass('correct');
+
+  // Click clear button
+  await fireEvent.click(clearButton);
+
+  // Expect all buttons to not have .correct
+  for (const button of comboButtons) {
+    expect(button).not.toHaveClass('tried');
+    expect(button).not.toHaveClass('correct');
   }
 });

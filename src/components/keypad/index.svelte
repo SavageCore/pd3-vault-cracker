@@ -180,6 +180,15 @@
     const button = document.querySelector(`.btn[data-value="${number}"]`)!;
     button.classList.toggle('pressed');
   };
+
+  // Remove tried and correct classes from all buttons
+  const clearModalButtons = () => {
+    const buttons = document.querySelectorAll('.combo-btn');
+    for (const button of buttons) {
+      button.classList.remove('tried');
+      button.classList.remove('correct');
+    }
+  };
 </script>
 
 <div class="atm-keypad">
@@ -309,6 +318,7 @@
 <Modal
   isOpen="{isModalOpen}"
   onClose="{toggleModal}"
+  onClear="{clearModalButtons}"
   combinations="{modalCombinations}"
   combination="{modalCurrentCombination}"
 />
