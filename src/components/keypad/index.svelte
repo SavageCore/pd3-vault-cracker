@@ -56,6 +56,13 @@
     }
 
     if (keyPressed === 'Escape') {
+      const numbers = $pressedNumbers;
+
+      // Clear the .pressed numbers
+      for (const number of numbers) {
+        toggleButton(number.toString());
+      }
+
       pressedNumbers.update(() => []);
       combinations = [];
       currentCombination = 0;
@@ -68,6 +75,14 @@
 
   function onKeypadInput(input: string) {
     if (input === 'Backspace') {
+      // Clear .pressed numbers
+      if ($pressedNumbers.length > 0) {
+        const lastNumber = $pressedNumbers[$pressedNumbers.length - 1];
+        if (lastNumber !== undefined) {
+          toggleButton(lastNumber.toString());
+        }
+      }
+
       pressedNumbers.update((numbers) => numbers.slice(0, -1));
       combinations = [];
       currentCombination = 0;
@@ -90,6 +105,8 @@
     if ($pressedNumbers.includes(input as never)) {
       return;
     }
+
+    toggleButton(input);
 
     pressedNumbers.update((numbers) => [...numbers, input] as never[]);
 
@@ -152,6 +169,12 @@
   const viewAllCombinations = () => {
     isModalOpen = true;
   };
+
+  const toggleButton = (number: string) => {
+    // Find the button that was pressed
+    const button = document.querySelector(`.btn[data-value="${number}"]`)!;
+    button.classList.toggle('pressed');
+  };
 </script>
 
 <div class="atm-keypad">
@@ -175,25 +198,45 @@
   <!-- Keypad -->
   <div class="keypad">
     <div class="row">
-      <button class="btn" on:click="{() => onKeypadInput('1')}"> 1 </button>
-      <button class="btn" on:click="{() => onKeypadInput('2')}"> 2 </button>
-      <button class="btn" on:click="{() => onKeypadInput('3')}"> 3 </button>
+      <button class="btn" data-value="1" on:click="{() => onKeypadInput('1')}">
+        1
+      </button>
+      <button class="btn" data-value="2" on:click="{() => onKeypadInput('2')}">
+        2
+      </button>
+      <button class="btn" data-value="3" on:click="{() => onKeypadInput('3')}">
+        3
+      </button>
     </div>
     <div class="row">
-      <button class="btn" on:click="{() => onKeypadInput('4')}"> 4 </button>
-      <button class="btn" on:click="{() => onKeypadInput('5')}"> 5 </button>
-      <button class="btn" on:click="{() => onKeypadInput('6')}"> 6 </button>
+      <button class="btn" data-value="4" on:click="{() => onKeypadInput('4')}">
+        4
+      </button>
+      <button class="btn" data-value="5" on:click="{() => onKeypadInput('5')}">
+        5
+      </button>
+      <button class="btn" data-value="6" on:click="{() => onKeypadInput('6')}">
+        6
+      </button>
     </div>
     <div class="row">
-      <button class="btn" on:click="{() => onKeypadInput('7')}"> 7 </button>
-      <button class="btn" on:click="{() => onKeypadInput('8')}"> 8 </button>
-      <button class="btn" on:click="{() => onKeypadInput('9')}"> 9 </button>
+      <button class="btn" data-value="7" on:click="{() => onKeypadInput('7')}">
+        7
+      </button>
+      <button class="btn" data-value="8" on:click="{() => onKeypadInput('8')}">
+        8
+      </button>
+      <button class="btn" data-value="9" on:click="{() => onKeypadInput('9')}">
+        9
+      </button>
     </div>
     <div class="row">
       <button class="btn red" on:click="{() => onKeypadInput('Backspace')}">
         <CrossIcon />
       </button>
-      <button class="btn" on:click="{() => onKeypadInput('0')}"> 0 </button>
+      <button class="btn" data-value="0" on:click="{() => onKeypadInput('0')}">
+        0
+      </button>
       <button class="btn green" on:click="{() => onKeypadInput('OK')}">
         <CheckIcon />
       </button>

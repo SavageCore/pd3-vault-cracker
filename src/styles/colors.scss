@@ -54,6 +54,11 @@
     border-color: var(--card-border-color);
     background-color: var(--card-background-color);
   }
+
+  .btn.pressed {
+    background-color: var(--primary);
+    color: #fff;
+  }
 }
 
 // Indigo Dark scheme (Auto)
@@ -112,6 +117,10 @@
       border-color: #aaa;
       background-color: #3b3948;
     }
+
+    .btn.pressed {
+      background-color: var(--primary);
+    }
   }
 }
 
@@ -169,6 +178,10 @@
   .btn-inverted:active {
     border-color: #aaa;
     background-color: #3b3948;
+  }
+
+  .btn.pressed {
+    background-color: var(--primary);
   }
 }
 

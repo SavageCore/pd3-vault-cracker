@@ -28,18 +28,21 @@ exports[`Component > should render without crashing 1`] = `
         >
           <button
             class="btn svelte-w42tvt"
+            data-value="1"
           >
             1
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="2"
           >
             2
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="3"
           >
             3
           </button>
@@ -50,18 +53,21 @@ exports[`Component > should render without crashing 1`] = `
         >
           <button
             class="btn svelte-w42tvt"
+            data-value="4"
           >
             4
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="5"
           >
             5
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="6"
           >
             6
           </button>
@@ -72,18 +78,21 @@ exports[`Component > should render without crashing 1`] = `
         >
           <button
             class="btn svelte-w42tvt"
+            data-value="7"
           >
             7
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="8"
           >
             8
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="9"
           >
             9
           </button>
@@ -109,6 +118,7 @@ exports[`Component > should render without crashing 1`] = `
            
           <button
             class="btn svelte-w42tvt"
+            data-value="0"
           >
             0
           </button>
@@ -217,18 +227,21 @@ exports[`Component > should render without crashing 1`] = `
         >
           <button
             class="btn svelte-w42tvt"
+            data-value="1"
           >
             1
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="2"
           >
             2
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="3"
           >
             3
           </button>
@@ -239,18 +252,21 @@ exports[`Component > should render without crashing 1`] = `
         >
           <button
             class="btn svelte-w42tvt"
+            data-value="4"
           >
             4
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="5"
           >
             5
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="6"
           >
             6
           </button>
@@ -261,18 +277,21 @@ exports[`Component > should render without crashing 1`] = `
         >
           <button
             class="btn svelte-w42tvt"
+            data-value="7"
           >
             7
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="8"
           >
             8
           </button>
            
           <button
             class="btn svelte-w42tvt"
+            data-value="9"
           >
             9
           </button>
@@ -298,6 +317,7 @@ exports[`Component > should render without crashing 1`] = `
            
           <button
             class="btn svelte-w42tvt"
+            data-value="0"
           >
             0
           </button>
