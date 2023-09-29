@@ -1,7 +1,9 @@
 name: Lint
 on:
   push:
-
+    branches:
+      - '*'
+  pull_request:
 jobs:
   lint:
     runs-on: ubuntu-latest
