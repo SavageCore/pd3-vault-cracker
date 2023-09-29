@@ -101,6 +101,11 @@
       return;
     }
 
+    // If user has entered 4 numbers, don't allow any more
+    if ($pressedNumbers.length >= 4) {
+      return;
+    }
+
     // Prevent the user from entering the same number twice
     if ($pressedNumbers.includes(input as never)) {
       return;

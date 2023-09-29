@@ -75,6 +75,26 @@ describe('Component', () => {
     expect(display.textContent).toBe('12**');
   });
 
+  it('should disallow more than 4 .pressed buttons', async () => {
+    await fireEvent.click(oneButton);
+    expect(display.textContent).toBe('1***');
+
+    await fireEvent.click(twoButton);
+    expect(display.textContent).toBe('12**');
+
+    await fireEvent.click(threeButton);
+    expect(display.textContent).toBe('123*');
+
+    await fireEvent.click(fourButton);
+    expect(display.textContent).toBe('1234');
+
+    await fireEvent.click(fiveButton);
+    expect(display.textContent).toBe('1234');
+
+    const pressedButtons = container.querySelectorAll('.pressed');
+    expect(pressedButtons.length).toBe(4);
+  });
+
   it('should give 14 combinations for 2 digit input', async () => {
     await fireEvent.keyDown(document.body, { key: 'Escape' });
 
