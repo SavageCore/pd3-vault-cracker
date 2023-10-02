@@ -39,7 +39,7 @@
     "jsdom": "^22.1.0",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
-    "prettier-plugin-css-order": "^2.0.0",
+    "prettier-plugin-css-order": "^2.0.1",
     "prettier-plugin-svelte": "^3.0.3",
     "sass": "^1.68.0",
     "stylelint": "^15.10.3",
