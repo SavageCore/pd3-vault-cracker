@@ -33,6 +33,9 @@
       !isNaN(parseInt(code))
     ) {
       const fingerprints = code.split('').map((number) => parseInt(number));
+      for (const fingerprint of fingerprints) {
+        toggleButton(fingerprint.toString())
+      }
       pressedNumbers.update(
         (numbers) => [...numbers, ...fingerprints] as never[],
       );
