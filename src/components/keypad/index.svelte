@@ -109,11 +109,6 @@
       return;
     }
 
-    // Prevent the user from entering the same number twice
-    if ($pressedNumbers.includes(input as never)) {
-      return;
-    }
-
     toggleButton(input);
 
     pressedNumbers.update((numbers) => [...numbers, input] as never[]);
@@ -140,8 +135,10 @@
     window.history.replaceState({}, '', `${location.pathname}?${params}`);
   }
 
-  function generateCombinations(fingerprints: number[]) {
-    let combinations = [];
+  function generateCombinations(fingerprints: number[]): number[][] {
+    let combinations = new Set<string>();
+
+    const fingerprintOccurrences = countOccurrences(fingerprints);
 
     for (let i = 0; i < fingerprints.length; i++) {
       for (let j = 0; j < fingerprints.length; j++) {
@@ -153,21 +150,68 @@
               fingerprints[k],
               fingerprints[l],
             ];
-            const uniqueCombination = [...new Set(combination)]; // Remove duplicates
-            if (uniqueCombination.length === fingerprints.length) {
-              combinations.push(combination);
+            const combinationOccurrences = countOccurrences(combination);
+
+            const isValidCombination =
+              fingerprints.length === 4
+                ? hasExactSameOccurrences(
+                    fingerprintOccurrences,
+                    combinationOccurrences,
+                  )
+                : containsOccurrences(
+                    fingerprintOccurrences,
+                    combinationOccurrences,
+                  );
+
+            const combinationAsString = combination.join('');
+            if (isValidCombination) {
+              combinations.add(combinationAsString);
             }
           }
         }
       }
     }
 
-    // Sort combinations
-    combinations.sort((a, b) => {
-      return a[0] - b[0] || a[1] - b[1] || a[2] - b[2] || a[3] - b[3];
-    });
+    // Transform string combinations to arrays of numbers, and sort by combination
+    return Array.from(combinations)
+      .map((combinationAsString) =>
+        combinationAsString.split('').map((number) => parseInt(number)),
+      )
+      .sort((a, b) => {
+        return a[0] - b[0] || a[1] - b[1] || a[2] - b[2] || a[3] - b[3];
+      });
+  }
 
-    return combinations;
+  function countOccurrences(numbers: number[]): Record<string, number> {
+    const occurrences: Record<string, number> = {};
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    for (const [_, number] of Object.entries(numbers)) {
+      occurrences[number] = (occurrences[number] || 0) + 1;
+    }
+    return occurrences;
+  }
+
+  function containsOccurrences(
+    expected: Record<string, number>,
+    actual: Record<string, number>,
+  ): boolean {
+    for (const [number, expectedCount] of Object.entries(expected)) {
+      if (!Object.hasOwn(actual, number) || actual[number] < expectedCount)
+        return false;
+    }
+    return true;
+  }
+
+  function hasExactSameOccurrences(
+    expected: Record<string, number>,
+    actual: Record<string, number>,
+  ): boolean {
+    if (Object.keys(expected).length !== Object.keys(actual).length)
+      return false;
+    for (const [number, expectedCount] of Object.entries(expected)) {
+      if (actual[number] !== expectedCount) return false;
+    }
+    return true;
   }
 
   const toggleModal = () => {

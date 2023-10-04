@@ -73,16 +73,16 @@ describe('Component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should disallow duplicate number entry', async () => {
+  it('should allow duplicate number entry', async () => {
     await fireEvent.click(oneButton);
 
     expect(display.textContent).toBe('1***');
 
     await fireEvent.click(oneButton);
-    expect(display.textContent).toBe('1***');
+    expect(display.textContent).toBe('11**');
 
     await fireEvent.click(twoButton);
-    expect(display.textContent).toBe('12**');
+    expect(display.textContent).toBe('112*');
   });
 
   it('should disallow more than 4 .pressed buttons', async () => {
