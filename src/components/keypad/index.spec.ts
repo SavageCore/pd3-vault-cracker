@@ -101,11 +101,11 @@ describe('Component', () => {
     await fireEvent.click(fiveButton);
     expect(display.textContent).toBe('1234');
 
-    const pressedButtons = container.querySelectorAll('.pressed');
+    const pressedButtons = container.querySelectorAll('[class*="pressed-"]')
     expect(pressedButtons.length).toBe(4);
   });
 
-  it('should give 14 combinations for 2 digit input', async () => {
+  it('should give 14 combinations for 2 unique digit input', async () => {
     await fireEvent.keyDown(document.body, { key: 'Escape' });
 
     expect(display.textContent).toBe('****');
@@ -126,7 +126,7 @@ describe('Component', () => {
     expect(combinations.textContent).toBe('Attempt 1 of 14');
   });
 
-  it('should give 36 combinations for 3 digit input', async () => {
+  it('should give 36 combinations for 3 unique digit input', async () => {
     await fireEvent.keyDown(document.body, { key: 'Escape' });
 
     expect(display.textContent).toBe('****');
@@ -148,7 +148,7 @@ describe('Component', () => {
     expect(combinations.textContent).toBe('Attempt 1 of 36');
   });
 
-  it('should give 24 combinations for 4 digit input', async () => {
+  it('should give 24 combinations for 4 unique digit input', async () => {
     await fireEvent.keyDown(document.body, { key: 'Escape' });
 
     expect(display.textContent).toBe('****');
@@ -169,6 +169,52 @@ describe('Component', () => {
     }
 
     expect(combinations.textContent).toBe('Attempt 1 of 24');
+  });
+
+  it('should give 1 combination for 4 identical digit input', async () => {
+    await fireEvent.keyDown(document.body, { key: 'Escape' });
+
+    expect(display.textContent).toBe('****');
+
+    await fireEvent.click(oneButton);
+    await fireEvent.click(oneButton);
+    await fireEvent.click(oneButton);
+    await fireEvent.click(oneButton);
+
+    expect(display.textContent).toBe('1111');
+
+    await fireEvent.click(enterButton);
+
+    const combinations = container.querySelector('p.attempts-display');
+
+    if (!combinations) {
+      throw new Error('Combinations not found');
+    }
+
+    expect(combinations.textContent).toBe('Attempt 1 of 1');
+  });
+
+  it('should give X combinations for 4 digit input with 2 unique and 2 repeats', async () => {
+    await fireEvent.keyDown(document.body, { key: 'Escape' });
+
+    expect(display.textContent).toBe('****');
+
+    await fireEvent.click(oneButton);
+    await fireEvent.click(twoButton);
+    await fireEvent.click(threeButton);
+    await fireEvent.click(threeButton);
+
+    expect(display.textContent).toBe('1233');
+
+    await fireEvent.click(enterButton);
+
+    const combinations = container.querySelector('p.attempts-display');
+
+    if (!combinations) {
+      throw new Error('Combinations not found');
+    }
+
+    expect(combinations.textContent).toBe('Attempt 1 of 1');
   });
 
   it('should delete a digit when ✘ button clicked', async () => {
