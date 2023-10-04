@@ -55,8 +55,23 @@
     background-color: var(--card-background-color);
   }
 
-  .btn.pressed {
-    background-color: var(--primary);
+  .btn.pressed-1 {
+    background-color: rgba(#1095c1, 0.25);
+    color: #fff;
+  }
+
+  .btn.pressed-2 {
+    background-color: rgba(#1095c1, 0.5);
+    color: #fff;
+  }
+
+  .btn.pressed-3 {
+    background-color: rgba(#1095c1, 0.75);
+    color: #fff;
+  }
+
+  .btn.pressed-4 {
+    background-color: rgba(#1095c1, 1);
     color: #fff;
   }
 }
@@ -118,8 +133,20 @@
       background-color: #3b3948;
     }
 
-    .btn.pressed {
-      background-color: var(--primary);
+    .btn.pressed-1 {
+      background-color: rgba(#1095c1, 0.25);
+    }
+
+    .btn.pressed-2 {
+      background-color: rgba(#1095c1, 0.5);
+    }
+
+    .btn.pressed-3 {
+      background-color: rgba(#1095c1, 0.75);
+    }
+
+    .btn.pressed-4 {
+      background-color: rgba(#1095c1, 1);
     }
   }
 }
@@ -180,8 +207,20 @@
     background-color: #3b3948;
   }
 
-  .btn.pressed {
-    background-color: var(--primary);
+  .btn.pressed-1 {
+    background-color: rgba(#1095c1, 0.25);
+  }
+
+  .btn.pressed-2 {
+    background-color: rgba(#1095c1, 0.5);
+  }
+
+  .btn.pressed-3 {
+    background-color: rgba(#1095c1, 0.75);
+  }
+
+  .btn.pressed-4 {
+    background-color: rgba(#1095c1, 1);
   }
 }
 

@@ -34,7 +34,7 @@
     ) {
       const fingerprints = code.split('').map((number) => parseInt(number));
       for (const fingerprint of fingerprints) {
-        toggleButton(fingerprint.toString())
+        pressButton(fingerprint.toString())
       }
       pressedNumbers.update(
         (numbers) => [...numbers, ...fingerprints] as never[],
@@ -63,7 +63,7 @@
 
       // Clear the .pressed numbers
       for (const number of numbers) {
-        toggleButton(number.toString());
+        unpressButton(number.toString());
       }
 
       pressedNumbers.update(() => []);
@@ -82,7 +82,7 @@
       if ($pressedNumbers.length > 0) {
         const lastNumber = $pressedNumbers[$pressedNumbers.length - 1];
         if (lastNumber !== undefined) {
-          toggleButton(lastNumber.toString());
+          unpressButton(lastNumber.toString());
         }
       }
 
@@ -109,7 +109,7 @@
       return;
     }
 
-    toggleButton(input);
+    pressButton(input);
 
     pressedNumbers.update((numbers) => [...numbers, input] as never[]);
 
@@ -222,10 +222,20 @@
     isModalOpen = true;
   };
 
-  const toggleButton = (number: string) => {
+  const pressButton = (number: string) => {
     // Find the button that was pressed
     const button = document.querySelector(`.btn[data-value="${number}"]`)!;
-    button.classList.toggle('pressed');
+
+    const timesButtonAlreadyPressed = $pressedNumbers.reduce((acc, current) => current.toString() === number ? acc + 1 : acc , 0)
+
+    button.classList.remove(`pressed-${timesButtonAlreadyPressed}`);
+    button.classList.add(`pressed-${timesButtonAlreadyPressed + 1}`);
+  };
+
+  const unpressButton = (number: string) => {
+    // Find the button that was pressed
+    const button = document.querySelector(`.btn[data-value="${number}"]`)!;
+    button.classList.remove('pressed-1', 'pressed-2', 'pressed-3', 'pressed-4');
   };
 
   // Remove tried and correct classes from all buttons
