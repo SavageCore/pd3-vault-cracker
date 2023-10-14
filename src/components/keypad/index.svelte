@@ -61,20 +61,7 @@
     }
 
     if (keyPressed === 'Escape') {
-      const numbers = $pressedNumbers;
-
-      // Clear the .pressed numbers
-      for (const number of numbers) {
-        toggleButton(number.toString());
-      }
-
-      pressedNumbers.update(() => []);
-      combinations = [];
-      currentCombination = 0;
-
-      const params = new URLSearchParams(window.location.search);
-      params.delete('code');
-      window.history.replaceState({}, '', `${location.pathname}?${params}`);
+      clearKeyPad();
     }
   });
 
@@ -93,9 +80,7 @@
       currentCombination = 0;
 
       if ($pressedNumbers.length === 0) {
-        const params = new URLSearchParams(window.location.search);
-        params.delete('code');
-        window.history.replaceState({}, '', `${location.pathname}?${params}`);
+        clearKeyPad();
       }
 
       return;
@@ -194,6 +179,23 @@
       button.classList.remove('correct');
     }
   };
+
+  const clearKeyPad = () => {
+    const numbers = $pressedNumbers;
+
+    // Clear the .pressed numbers
+    for (const number of numbers) {
+      toggleButton(number.toString());
+    }
+
+    pressedNumbers.update(() => []);
+    combinations = [];
+    currentCombination = 0;
+
+    const params = new URLSearchParams(window.location.search);
+    params.delete('code');
+    window.history.replaceState({}, '', `${location.pathname}?${params}`);
+  };
 </script>
 
 <div class="atm-keypad">
@@ -250,7 +252,11 @@
       </button>
     </div>
     <div class="row">
-      <button class="btn red" on:click="{() => onKeypadInput('Backspace')}">
+      <button
+        class="btn red"
+        on:click="{() => onKeypadInput('Backspace')}"
+        on:contextmenu|preventDefault="{clearKeyPad}"
+      >
         <CrossIcon />
       </button>
       <button class="btn" data-value="0" on:click="{() => onKeypadInput('0')}">
