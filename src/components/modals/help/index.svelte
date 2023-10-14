@@ -34,7 +34,7 @@
     <p>
       To remove the entered digits click the
       <span class="red"><CrossIcon size="1rem" /></span>
-      button.
+      button. Right-click/long-press to clear all entered digits.
     </p>
     <p>
       Click on the <SunIcon size="1rem" /> or
@@ -44,7 +44,7 @@
     <ol>
       <li>Enter/Return - Calculate combinations</li>
       <li>Backspace/Delete - Remove last entered digit</li>
-      <li>Escape - Clear entered digits</li>
+      <li>Escape - Clear all entered digits</li>
       <li>Numbers or numpad - Enter digits from keyboard</li>
     </ol>
     <h3>Issues</h3>

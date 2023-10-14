@@ -170,7 +170,7 @@ exports[`should render without crashing 1`] = `
             </svg>
           </span>
           
-      button.
+      button. Right-click/long-press to clear all entered digits.
         </p>
          
         <p
@@ -220,7 +220,7 @@ exports[`should render without crashing 1`] = `
           </li>
            
           <li>
-            Escape - Clear entered digits
+            Escape - Clear all entered digits
           </li>
            
           <li>

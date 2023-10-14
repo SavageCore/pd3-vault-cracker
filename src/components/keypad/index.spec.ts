@@ -445,6 +445,15 @@ describe('Component', () => {
     expect(display.textContent).toBe('****');
   });
 
+  it('should clear the display when X is right-clicked', async () => {
+    await fireEvent.keyDown(document.body, { key: '1' });
+    expect(display.textContent).toBe('1***');
+
+    await fireEvent.contextMenu(deleteButton);
+
+    expect(display.textContent).toBe('****');
+  });
+
   // TODO: Fix this test
   // it('should start when code is provided', async () => {
   //   Object.defineProperty(window, 'location', {
