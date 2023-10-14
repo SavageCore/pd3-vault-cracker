@@ -27,7 +27,6 @@
   };
 
   const toggleCorrect = (event: Event) => {
-    event.preventDefault();
     const targetButton = event.target as HTMLButtonElement;
 
     // Toggle the button's class
@@ -66,7 +65,7 @@
           <button
             class="combo-btn btn-inverted"
             on:click="{toggleTried}"
-            on:contextmenu="{toggleCorrect}"
+            on:contextmenu|preventDefault="{toggleCorrect}"
           >
             {combo.join('')}
           </button>
