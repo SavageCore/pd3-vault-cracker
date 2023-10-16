@@ -24,7 +24,7 @@
   "devDependencies": {
     "@picocss/pico": "^1.5.10",
     "@sveltejs/vite-plugin-svelte": "^2.4.6",
-    "@testing-library/jest-dom": "^6.1.3",
+    "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/svelte": "^4.0.3",
     "@tsconfig/svelte": "^5.0.2",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
