@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js 🛠️
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/Hydrogen'
+          node-version: 'lts/*'
 
       - name: Replace GH_TAG 📝
         run: |
