@@ -98,13 +98,13 @@
     }
 
     // Prevent the user from entering the same number twice
-    if ($pressedNumbers.includes(input as never)) {
+    if ($pressedNumbers.includes(Number(input))) {
       return;
     }
 
     toggleButton(input);
 
-    pressedNumbers.update((numbers) => [...numbers, input] as never[]);
+    pressedNumbers.update((numbers) => [...numbers, Number(input)] as never[]);
 
     // If the user has entered 4 numbers, start the cracking process
     if ($pressedNumbers.length === 4) {
