@@ -5,6 +5,7 @@
   import Modal from '../modals/view_all_combos/index.svelte';
   import CheckIcon from '../../assets/icons/check.svelte';
   import CrossIcon from '../../assets/icons/cross.svelte';
+  import NumberKey from './number/index.svelte';
 
   // https://i.imgur.com/NKHNmfr.png
   // https://codepen.io/noleli/pen/abbeWRL
@@ -65,7 +66,7 @@
     }
   });
 
-  function onKeypadInput(input: string) {
+  function onKeypadInput(input: string): void {
     if (input === 'Backspace') {
       // Clear .pressed numbers
       if ($pressedNumbers.length > 0) {
@@ -218,39 +219,13 @@
   </div>
   <!-- Keypad -->
   <div class="keypad">
-    <div class="row">
-      <button class="btn" data-value="1" on:click="{() => onKeypadInput('1')}">
-        1
-      </button>
-      <button class="btn" data-value="2" on:click="{() => onKeypadInput('2')}">
-        2
-      </button>
-      <button class="btn" data-value="3" on:click="{() => onKeypadInput('3')}">
-        3
-      </button>
-    </div>
-    <div class="row">
-      <button class="btn" data-value="4" on:click="{() => onKeypadInput('4')}">
-        4
-      </button>
-      <button class="btn" data-value="5" on:click="{() => onKeypadInput('5')}">
-        5
-      </button>
-      <button class="btn" data-value="6" on:click="{() => onKeypadInput('6')}">
-        6
-      </button>
-    </div>
-    <div class="row">
-      <button class="btn" data-value="7" on:click="{() => onKeypadInput('7')}">
-        7
-      </button>
-      <button class="btn" data-value="8" on:click="{() => onKeypadInput('8')}">
-        8
-      </button>
-      <button class="btn" data-value="9" on:click="{() => onKeypadInput('9')}">
-        9
-      </button>
-    </div>
+    {#each [[1, 2, 3], [4, 5, 6], [7, 8, 9]] as row}
+      <div class="row">
+        {#each row as number}
+          <NumberKey {number} {onKeypadInput} />
+        {/each}
+      </div>
+    {/each}
     <div class="row">
       <button
         class="btn red"
@@ -259,10 +234,12 @@
       >
         <CrossIcon />
       </button>
-      <button class="btn" data-value="0" on:click="{() => onKeypadInput('0')}">
-        0
-      </button>
-      <button class="btn green" on:click="{() => onKeypadInput('OK')}">
+      <NumberKey number="{0}" {onKeypadInput} />
+      <button
+        class="btn green"
+        on:click="{() => onKeypadInput('OK')}"
+        on:contextmenu|preventDefault="{() => {}}"
+      >
         <CheckIcon />
       </button>
     </div>

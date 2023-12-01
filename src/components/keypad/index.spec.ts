@@ -6,6 +6,7 @@ import { writable } from 'svelte/store';
 
 describe('Component', () => {
   let display: HTMLElement;
+  let zeroButton: HTMLElement;
   let oneButton: HTMLElement;
   let twoButton: HTMLElement;
   let threeButton: HTMLElement;
@@ -53,6 +54,9 @@ describe('Component', () => {
     )!;
     enterButton = container.querySelector(
       'div.keypad > div:nth-child(4) > button:nth-child(3)',
+    )!;
+    zeroButton = container.querySelector(
+      'div.keypad > div:nth-child(4) > button:nth-child(2)',
     )!;
     deleteButton = container.querySelector(
       'div.keypad > div:nth-child(4) > button:nth-child(1)',
@@ -395,8 +399,9 @@ describe('Component', () => {
     }
   });
 
-  it('should enter a digit when a number is clicked', async () => {
+  it('should enter a digit when a number is left clicked', async () => {
     const buttons = [
+      { number: '0', button: zeroButton },
       { number: '1', button: oneButton },
       { number: '2', button: twoButton },
       { number: '3', button: threeButton },
@@ -415,6 +420,29 @@ describe('Component', () => {
 
       // Clear the display
       await fireEvent.keyDown(document.body, { key: `Escape` });
+    }
+  });
+
+  it('should clear a number if right clicked', async () => {
+    const buttons = [
+      { number: '0', button: zeroButton },
+      { number: '1', button: oneButton },
+      { number: '2', button: twoButton },
+      { number: '3', button: threeButton },
+      { number: '4', button: fourButton },
+      { number: '5', button: fiveButton },
+      { number: '6', button: sixButton },
+      { number: '7', button: sevenButton },
+      { number: '8', button: eightButton },
+      { number: '9', button: nineButton },
+    ];
+
+    for (const button of buttons) {
+      await fireEvent.click(button.button);
+
+      expect(display.textContent).toBe(`${button.number}***`);
+
+      await fireEvent.contextMenu(button.button);
     }
   });
 

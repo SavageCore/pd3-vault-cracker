@@ -2,5 +2,13 @@
   "extends": [
     "stylelint-prettier/recommended",
     "stylelint-config-standard-scss"
-  ]
+  ],
+  "rules": {
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
+  }
 }
