@@ -197,6 +197,18 @@
     params.delete('code');
     window.history.replaceState({}, '', `${location.pathname}?${params}`);
   };
+
+  const clearNumber = (number: number) => {
+    toggleButton(number.toString());
+    pressedNumbers.update((numbers) => numbers.filter((n) => n !== number));
+
+    combinations = [];
+    currentCombination = 0;
+
+    if ($pressedNumbers.length === 0) {
+      clearKeyPad();
+    }
+  };
 </script>
 
 <div class="atm-keypad">
@@ -222,7 +234,7 @@
     {#each [[1, 2, 3], [4, 5, 6], [7, 8, 9]] as row}
       <div class="row">
         {#each row as number}
-          <NumberKey {number} {onKeypadInput} />
+          <NumberKey {number} {onKeypadInput} {clearNumber} />
         {/each}
       </div>
     {/each}
@@ -234,7 +246,7 @@
       >
         <CrossIcon />
       </button>
-      <NumberKey number="{0}" {onKeypadInput} />
+      <NumberKey number="{0}" {onKeypadInput} {clearNumber} />
       <button
         class="btn green"
         on:click="{() => onKeypadInput('OK')}"

@@ -423,7 +423,7 @@ describe('Component', () => {
     }
   });
 
-  it('should clear a number if right clicked', async () => {
+  it('should delete a number if right clicked', async () => {
     const buttons = [
       { number: '0', button: zeroButton },
       { number: '1', button: oneButton },
@@ -444,6 +444,18 @@ describe('Component', () => {
 
       await fireEvent.contextMenu(button.button);
     }
+  });
+
+  it('should delete a number if right clicked out of sequence', async () => {
+    await fireEvent.click(oneButton);
+    await fireEvent.click(twoButton);
+    await fireEvent.click(threeButton);
+
+    expect(display.textContent).toBe(`123*`);
+
+    await fireEvent.contextMenu(twoButton);
+
+    expect(display.textContent).toBe(`13**`);
   });
 
   it('should delete a digit when Backspace is typed', async () => {
