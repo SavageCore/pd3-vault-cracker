@@ -23,15 +23,15 @@
     "generate-pwa-assets": "pwa-assets-generator"
   },
   "devDependencies": {
-    "@picocss/pico": "^1.5.10",
+    "@picocss/pico": "^1.5.11",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
-    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/jest-dom": "^6.1.6",
     "@testing-library/svelte": "^4.0.5",
     "@tsconfig/svelte": "^5.0.2",
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
-    "@vite-pwa/assets-generator": "^0.2.1",
-    "@vitest/coverage-v8": "^1.1.0",
-    "@vitest/ui": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@vite-pwa/assets-generator": "^0.2.2",
+    "@vitest/coverage-v8": "^1.1.1",
+    "@vitest/ui": "^1.1.1",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -42,8 +42,8 @@
     "prettier": "^3.1.1",
     "prettier-plugin-css-order": "^2.0.1",
     "prettier-plugin-svelte": "^3.1.2",
-    "sass": "^1.69.5",
-    "stylelint": "^16.0.1",
+    "sass": "^1.69.6",
+    "stylelint": "^16.1.0",
     "stylelint-config-standard-scss": "^12.0.0",
     "stylelint-prettier": "^5.0.0",
     "svelte": "^4.2.8",
@@ -54,6 +54,6 @@
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
     "vite-plugin-pwa": "^0.17.4",
-    "vitest": "^1.1.0"
+    "vitest": "^1.1.1"
   }
 }
