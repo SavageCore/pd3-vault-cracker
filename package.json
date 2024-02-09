@@ -19,7 +19,7 @@
     "format": "eslint -c .eslintrc --fix --ext .svelte,.ts --fix src",
     "format:prettier": "prettier --write src/**/{*.svelte,*.ts,*.scss}",
     "format:stylelint": "stylelint --config .stylelintrc \"src/**/*.{css,scss}\" --fix",
-    "prepare": "husky install",
+    "prepare": "husky",
     "generate-pwa-assets": "pwa-assets-generator"
   },
   "devDependencies": {
