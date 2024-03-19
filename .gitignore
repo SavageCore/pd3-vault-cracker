@@ -30,3 +30,4 @@ coverage
 
 public/*
 !public/logo.svg
+package-lock.json
