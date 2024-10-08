@@ -1,178 +1,174 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`should render with props 1`] = `
-<body>
-  <div>
-    <dialog>
-      <article>
-        <header
-          class="svelte-ry4i9v"
-        >
-          <a
-            aria-label="Close"
-            class="close"
-            href="#close"
-          />
-           
-          All combinations for
-           
-          
-        </header>
+<div>
+  <dialog>
+    <article>
+      <header
+        class="svelte-ry4i9v"
+      >
+        <a
+          aria-label="Close"
+          class="close"
+          href="#close"
+        />
          
-        <p
-          class="svelte-ry4i9v"
-        >
-          Left-click on a combination to mark it as tried
-        </p>
+        All combinations for
          
-        <p
-          class="svelte-ry4i9v"
-        >
-          Right-click/long-press on a combination to mark it as correct
-        </p>
-         
-        <br />
-         
-        <div
-          class="grid combo"
-        >
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            6669
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            6696
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            6699
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            6966
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            6969
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            6996
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            6999
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            9666
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            9669
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            9696
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            9699
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            9966
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            9969
-             
-          </button>
-          <button
-            class="combo-btn btn-inverted svelte-ry4i9v"
-          >
-            9996
-             
-          </button>
-        </div>
-         
+        
+      </header>
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        Left-click on a combination to mark it as tried
+      </p>
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        Right-click/long-press on a combination to mark it as correct
+      </p>
+       
+      <br />
+       
+      <div
+        class="grid combo"
+      >
         <button
-          class="btn-inverted clear-btn svelte-ry4i9v"
+          class="combo-btn btn-inverted svelte-ry4i9v"
         >
-          Clear
+          6669
+           
         </button>
-      </article>
-    </dialog>
-  </div>
-</body>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          6696
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          6699
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          6966
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          6969
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          6996
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          6999
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          9666
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          9669
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          9696
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          9699
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          9966
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          9969
+           
+        </button>
+        <button
+          class="combo-btn btn-inverted svelte-ry4i9v"
+        >
+          9996
+           
+        </button>
+      </div>
+       
+      <button
+        class="btn-inverted clear-btn svelte-ry4i9v"
+      >
+        Clear
+      </button>
+    </article>
+  </dialog>
+</div>
 `;
 
 exports[`should render without crashing 1`] = `
-<body>
-  <div>
-    <dialog>
-      <article>
-        <header
-          class="svelte-ry4i9v"
-        >
-          <a
-            aria-label="Close"
-            class="close"
-            href="#close"
-          />
-           
-          All combinations for
-           
-          
-        </header>
+<div>
+  <dialog>
+    <article>
+      <header
+        class="svelte-ry4i9v"
+      >
+        <a
+          aria-label="Close"
+          class="close"
+          href="#close"
+        />
          
-        <p
-          class="svelte-ry4i9v"
-        >
-          Left-click on a combination to mark it as tried
-        </p>
+        All combinations for
          
-        <p
-          class="svelte-ry4i9v"
-        >
-          Right-click/long-press on a combination to mark it as correct
-        </p>
-         
-        <br />
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          No combos found.
-        </p>
-      </article>
-    </dialog>
-  </div>
-</body>
+        
+      </header>
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        Left-click on a combination to mark it as tried
+      </p>
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        Right-click/long-press on a combination to mark it as correct
+      </p>
+       
+      <br />
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        No combos found.
+      </p>
+    </article>
+  </dialog>
+</div>
 `;

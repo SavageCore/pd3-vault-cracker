@@ -1,775 +1,389 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Component > should render with props 1`] = `
-<body>
-  <div>
+<div>
+  <div
+    class="atm-keypad svelte-f9drc7"
+  >
     <div
-      class="atm-keypad svelte-f9drc7"
+      class="display svelte-f9drc7"
     >
-      <div
-        class="display svelte-f9drc7"
-      >
-        *
-        
-        *
-        
-        *
-        
-        *
-        
-        
-      </div>
-       
-      <div
-        class="keypad svelte-f9drc7"
-      >
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="1"
-          >
-            1
-          </button>
-          <button
-            class="btn"
-            data-value="2"
-          >
-            2
-          </button>
-          <button
-            class="btn"
-            data-value="3"
-          >
-            3
-          </button>
-        </div>
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="4"
-          >
-            4
-          </button>
-          <button
-            class="btn"
-            data-value="5"
-          >
-            5
-          </button>
-          <button
-            class="btn"
-            data-value="6"
-          >
-            6
-          </button>
-        </div>
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="7"
-          >
-            7
-          </button>
-          <button
-            class="btn"
-            data-value="8"
-          >
-            8
-          </button>
-          <button
-            class="btn"
-            data-value="9"
-          >
-            9
-          </button>
-        </div>
-         
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn red svelte-f9drc7"
-          >
-            <svg
-              height="2rem"
-              viewBox="0 0 24 24"
-              width="2rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
-              />
-            </svg>
-          </button>
-           
-          <button
-            class="btn"
-            data-value="0"
-          >
-            0
-          </button>
-           
-          <button
-            class="btn green svelte-f9drc7"
-          >
-            <svg
-              height="2rem"
-              viewBox="0 0 24 24"
-              width="2rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
+      *
+      
+      *
+      
+      *
+      
+      *
+      
+      
     </div>
      
     <div
-      class="combinationDisplayContainer"
+      class="keypad svelte-f9drc7"
     >
-      <p
-        class="attempts-display svelte-f9drc7"
+      <div
+        class="row svelte-f9drc7"
       >
-        Enter known fingerprints
-      </p>
-       
-      <a
-        class="btn-inverted disabled svelte-f9drc7"
-        href="#"
-        role="button"
+        <button
+          class="btn"
+          data-value="1"
+        >
+          1
+        </button>
+        <button
+          class="btn"
+          data-value="2"
+        >
+          2
+        </button>
+        <button
+          class="btn"
+          data-value="3"
+        >
+          3
+        </button>
+      </div>
+      <div
+        class="row svelte-f9drc7"
       >
-        Waiting for input
-      </a>
+        <button
+          class="btn"
+          data-value="4"
+        >
+          4
+        </button>
+        <button
+          class="btn"
+          data-value="5"
+        >
+          5
+        </button>
+        <button
+          class="btn"
+          data-value="6"
+        >
+          6
+        </button>
+      </div>
+      <div
+        class="row svelte-f9drc7"
+      >
+        <button
+          class="btn"
+          data-value="7"
+        >
+          7
+        </button>
+        <button
+          class="btn"
+          data-value="8"
+        >
+          8
+        </button>
+        <button
+          class="btn"
+          data-value="9"
+        >
+          9
+        </button>
+      </div>
        
-      <p>
-         
-      </p>
+      <div
+        class="row svelte-f9drc7"
+      >
+        <button
+          class="btn red svelte-f9drc7"
+        >
+          <svg
+            height="2rem"
+            viewBox="0 0 24 24"
+            width="2rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+            />
+          </svg>
+        </button>
+         
+        <button
+          class="btn"
+          data-value="0"
+        >
+          0
+        </button>
+         
+        <button
+          class="btn green svelte-f9drc7"
+        >
+          <svg
+            height="2rem"
+            viewBox="0 0 24 24"
+            width="2rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
-     
-    <dialog>
-      <article>
-        <header
-          class="svelte-ry4i9v"
-        >
-          <a
-            aria-label="Close"
-            class="close"
-            href="#close"
-          />
-           
-          All combinations for
-           
-          
-        </header>
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          Left-click on a combination to mark it as tried
-        </p>
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          Right-click/long-press on a combination to mark it as correct
-        </p>
-         
-        <br />
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          No combos found.
-        </p>
-      </article>
-    </dialog>
   </div>
-  <div>
-    <div
-      class="atm-keypad svelte-f9drc7"
+   
+  <div
+    class="combinationDisplayContainer"
+  >
+    <p
+      class="attempts-display svelte-f9drc7"
     >
-      <div
-        class="display svelte-f9drc7"
-      >
-        *
-        
-        *
-        
-        *
-        
-        *
-        
-        
-      </div>
-       
-      <div
-        class="keypad svelte-f9drc7"
-      >
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="1"
-          >
-            1
-          </button>
-          <button
-            class="btn"
-            data-value="2"
-          >
-            2
-          </button>
-          <button
-            class="btn"
-            data-value="3"
-          >
-            3
-          </button>
-        </div>
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="4"
-          >
-            4
-          </button>
-          <button
-            class="btn"
-            data-value="5"
-          >
-            5
-          </button>
-          <button
-            class="btn"
-            data-value="6"
-          >
-            6
-          </button>
-        </div>
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="7"
-          >
-            7
-          </button>
-          <button
-            class="btn"
-            data-value="8"
-          >
-            8
-          </button>
-          <button
-            class="btn"
-            data-value="9"
-          >
-            9
-          </button>
-        </div>
-         
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn red svelte-f9drc7"
-          >
-            <svg
-              height="2rem"
-              viewBox="0 0 24 24"
-              width="2rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
-              />
-            </svg>
-          </button>
-           
-          <button
-            class="btn"
-            data-value="0"
-          >
-            0
-          </button>
-           
-          <button
-            class="btn green svelte-f9drc7"
-          >
-            <svg
-              height="2rem"
-              viewBox="0 0 24 24"
-              width="2rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
+      Enter known fingerprints
+    </p>
      
-    <div
-      class="combinationDisplayContainer"
+    <a
+      class="btn-inverted disabled svelte-f9drc7"
+      href="#"
+      role="button"
     >
-      <p
-        class="attempts-display svelte-f9drc7"
-      >
-        Enter known fingerprints
-      </p>
-       
-      <a
-        class="btn-inverted disabled svelte-f9drc7"
-        href="#"
-        role="button"
-      >
-        Waiting for input
-      </a>
-       
-      <p>
-         
-      </p>
-    </div>
+      Waiting for input
+    </a>
      
-    <dialog>
-      <article>
-        <header
-          class="svelte-ry4i9v"
-        >
-          <a
-            aria-label="Close"
-            class="close"
-            href="#close"
-          />
-           
-          All combinations for
-           
-          
-        </header>
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          Left-click on a combination to mark it as tried
-        </p>
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          Right-click/long-press on a combination to mark it as correct
-        </p>
-         
-        <br />
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          No combos found.
-        </p>
-      </article>
-    </dialog>
+    <p>
+       
+    </p>
   </div>
-</body>
+   
+  <dialog>
+    <article>
+      <header
+        class="svelte-ry4i9v"
+      >
+        <a
+          aria-label="Close"
+          class="close"
+          href="#close"
+        />
+         
+        All combinations for
+         
+        
+      </header>
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        Left-click on a combination to mark it as tried
+      </p>
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        Right-click/long-press on a combination to mark it as correct
+      </p>
+       
+      <br />
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        No combos found.
+      </p>
+    </article>
+  </dialog>
+</div>
 `;
 
 exports[`Component > should render without crashing 1`] = `
-<body>
-  <div>
+<div>
+  <div
+    class="atm-keypad svelte-f9drc7"
+  >
     <div
-      class="atm-keypad svelte-f9drc7"
+      class="display svelte-f9drc7"
     >
-      <div
-        class="display svelte-f9drc7"
-      >
-        *
-        
-        *
-        
-        *
-        
-        *
-        
-        
-      </div>
-       
-      <div
-        class="keypad svelte-f9drc7"
-      >
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="1"
-          >
-            1
-          </button>
-          <button
-            class="btn"
-            data-value="2"
-          >
-            2
-          </button>
-          <button
-            class="btn"
-            data-value="3"
-          >
-            3
-          </button>
-        </div>
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="4"
-          >
-            4
-          </button>
-          <button
-            class="btn"
-            data-value="5"
-          >
-            5
-          </button>
-          <button
-            class="btn"
-            data-value="6"
-          >
-            6
-          </button>
-        </div>
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="7"
-          >
-            7
-          </button>
-          <button
-            class="btn"
-            data-value="8"
-          >
-            8
-          </button>
-          <button
-            class="btn"
-            data-value="9"
-          >
-            9
-          </button>
-        </div>
-         
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn red svelte-f9drc7"
-          >
-            <svg
-              height="2rem"
-              viewBox="0 0 24 24"
-              width="2rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
-              />
-            </svg>
-          </button>
-           
-          <button
-            class="btn"
-            data-value="0"
-          >
-            0
-          </button>
-           
-          <button
-            class="btn green svelte-f9drc7"
-          >
-            <svg
-              height="2rem"
-              viewBox="0 0 24 24"
-              width="2rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
+      *
+      
+      *
+      
+      *
+      
+      *
+      
+      
     </div>
      
     <div
-      class="combinationDisplayContainer"
+      class="keypad svelte-f9drc7"
     >
-      <p
-        class="attempts-display svelte-f9drc7"
+      <div
+        class="row svelte-f9drc7"
       >
-        Enter known fingerprints
-      </p>
-       
-      <a
-        class="btn-inverted disabled svelte-f9drc7"
-        href="#"
-        role="button"
+        <button
+          class="btn"
+          data-value="1"
+        >
+          1
+        </button>
+        <button
+          class="btn"
+          data-value="2"
+        >
+          2
+        </button>
+        <button
+          class="btn"
+          data-value="3"
+        >
+          3
+        </button>
+      </div>
+      <div
+        class="row svelte-f9drc7"
       >
-        Waiting for input
-      </a>
+        <button
+          class="btn"
+          data-value="4"
+        >
+          4
+        </button>
+        <button
+          class="btn"
+          data-value="5"
+        >
+          5
+        </button>
+        <button
+          class="btn"
+          data-value="6"
+        >
+          6
+        </button>
+      </div>
+      <div
+        class="row svelte-f9drc7"
+      >
+        <button
+          class="btn"
+          data-value="7"
+        >
+          7
+        </button>
+        <button
+          class="btn"
+          data-value="8"
+        >
+          8
+        </button>
+        <button
+          class="btn"
+          data-value="9"
+        >
+          9
+        </button>
+      </div>
        
-      <p>
-         
-      </p>
+      <div
+        class="row svelte-f9drc7"
+      >
+        <button
+          class="btn red svelte-f9drc7"
+        >
+          <svg
+            height="2rem"
+            viewBox="0 0 24 24"
+            width="2rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+            />
+          </svg>
+        </button>
+         
+        <button
+          class="btn"
+          data-value="0"
+        >
+          0
+        </button>
+         
+        <button
+          class="btn green svelte-f9drc7"
+        >
+          <svg
+            height="2rem"
+            viewBox="0 0 24 24"
+            width="2rem"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
-     
-    <dialog>
-      <article>
-        <header
-          class="svelte-ry4i9v"
-        >
-          <a
-            aria-label="Close"
-            class="close"
-            href="#close"
-          />
-           
-          All combinations for
-           
-          
-        </header>
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          Left-click on a combination to mark it as tried
-        </p>
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          Right-click/long-press on a combination to mark it as correct
-        </p>
-         
-        <br />
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          No combos found.
-        </p>
-      </article>
-    </dialog>
   </div>
-  <div>
-    <div
-      class="atm-keypad svelte-f9drc7"
+   
+  <div
+    class="combinationDisplayContainer"
+  >
+    <p
+      class="attempts-display svelte-f9drc7"
     >
-      <div
-        class="display svelte-f9drc7"
-      >
-        *
-        
-        *
-        
-        *
-        
-        *
-        
-        
-      </div>
-       
-      <div
-        class="keypad svelte-f9drc7"
-      >
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="1"
-          >
-            1
-          </button>
-          <button
-            class="btn"
-            data-value="2"
-          >
-            2
-          </button>
-          <button
-            class="btn"
-            data-value="3"
-          >
-            3
-          </button>
-        </div>
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="4"
-          >
-            4
-          </button>
-          <button
-            class="btn"
-            data-value="5"
-          >
-            5
-          </button>
-          <button
-            class="btn"
-            data-value="6"
-          >
-            6
-          </button>
-        </div>
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn"
-            data-value="7"
-          >
-            7
-          </button>
-          <button
-            class="btn"
-            data-value="8"
-          >
-            8
-          </button>
-          <button
-            class="btn"
-            data-value="9"
-          >
-            9
-          </button>
-        </div>
-         
-        <div
-          class="row svelte-f9drc7"
-        >
-          <button
-            class="btn red svelte-f9drc7"
-          >
-            <svg
-              height="2rem"
-              viewBox="0 0 24 24"
-              width="2rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
-              />
-            </svg>
-          </button>
-           
-          <button
-            class="btn"
-            data-value="0"
-          >
-            0
-          </button>
-           
-          <button
-            class="btn green svelte-f9drc7"
-          >
-            <svg
-              height="2rem"
-              viewBox="0 0 24 24"
-              width="2rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
+      Enter known fingerprints
+    </p>
      
-    <div
-      class="combinationDisplayContainer"
+    <a
+      class="btn-inverted disabled svelte-f9drc7"
+      href="#"
+      role="button"
     >
-      <p
-        class="attempts-display svelte-f9drc7"
-      >
-        Enter known fingerprints
-      </p>
-       
-      <a
-        class="btn-inverted disabled svelte-f9drc7"
-        href="#"
-        role="button"
-      >
-        Waiting for input
-      </a>
-       
-      <p>
-         
-      </p>
-    </div>
+      Waiting for input
+    </a>
      
-    <dialog>
-      <article>
-        <header
-          class="svelte-ry4i9v"
-        >
-          <a
-            aria-label="Close"
-            class="close"
-            href="#close"
-          />
-           
-          All combinations for
-           
-          
-        </header>
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          Left-click on a combination to mark it as tried
-        </p>
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          Right-click/long-press on a combination to mark it as correct
-        </p>
-         
-        <br />
-         
-        <p
-          class="svelte-ry4i9v"
-        >
-          No combos found.
-        </p>
-      </article>
-    </dialog>
+    <p>
+       
+    </p>
   </div>
-</body>
+   
+  <dialog>
+    <article>
+      <header
+        class="svelte-ry4i9v"
+      >
+        <a
+          aria-label="Close"
+          class="close"
+          href="#close"
+        />
+         
+        All combinations for
+         
+        
+      </header>
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        Left-click on a combination to mark it as tried
+      </p>
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        Right-click/long-press on a combination to mark it as correct
+      </p>
+       
+      <br />
+       
+      <p
+        class="svelte-ry4i9v"
+      >
+        No combos found.
+      </p>
+    </article>
+  </dialog>
+</div>
 `;
