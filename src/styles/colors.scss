@@ -13,50 +13,51 @@
   }
 
   .atm-keypad {
-    border: 2px solid var(--card-border-color);
-    background-color: var(--card-sectionning-background-color);
+    border: 2px solid var(--pico-card-border-color);
+    background-color: var(--pico-card-sectioning-background-color);
   }
 
   .display {
-    border: 2px solid var(--card-border-color);
-    background-color: var(--card-sectionning-background-color);
+    border: 2px solid var(--pico-card-border-color);
+    background-color: var(--pico-card-background-color);
     color: var(--color);
   }
 
   .btn {
-    border: 2px solid var(--card-border-color);
-    background-color: var(--card-sectionning-background-color);
+    border: 2px solid var(--pico-card-border-color);
+    background-color: var(--pico-card-sectioning-background-color);
     color: var(--h5-color);
   }
 
   .btn:hover {
-    border-color: var(--card-border-color);
-    background-color: var(--card-background-color);
+    border-color: var(--pico-card-border-color);
+    background-color: var(--pico-card-background-color);
   }
 
   .btn:active {
     border-color: #aaa;
-    background-color: var(--card-background-color);
+    background-color: var(--pico-card-background-color);
   }
 
+  // Inverted button when not tried
   .btn-inverted {
-    border: 2px solid var(--card-border-color);
-    background-color: var(--card-sectionning-background-color);
+    border: 2px solid var(--pico-card-border-color);
+    background-color: var(--pico-card-sectioning-background-color);
     color: var(--h5-color);
   }
 
   .btn-inverted:hover {
-    border-color: var(--card-border-color);
-    background-color: var(--card-background-color);
+    border-color: var(--pico-card-border-color);
+    background-color: var(--pico-card-background-color);
   }
 
   .btn-inverted:active {
-    border-color: var(--card-border-color);
-    background-color: var(--card-background-color);
+    border-color: var(--pico-card-border-color);
+    background-color: var(--pico-card-background-color);
   }
 
   .btn.pressed {
-    background-color: var(--primary);
+    background-color: var(--pico-primary);
     color: #fff;
   }
 }
@@ -76,24 +77,24 @@
     }
 
     .atm-keypad {
-      border: 2px solid var(--card-border-color);
-      background-color: var(--card-sectionning-background-color);
+      border: 2px solid var(--pico-card-border-color);
+      background-color: var(--pico-card-sectioning-background-color);
     }
 
     .display {
-      border: 2px solid var(--card-border-color);
-      background-color: var(--card-background-color);
+      border: 2px solid var(--pico-card-border-color);
+      background-color: var(--pico-card-background-color);
       color: var(--color);
     }
 
     .btn {
-      border: 2px solid var(--card-border-color);
-      background-color: var(--card-background-color);
+      border: 2px solid var(--pico-card-border-color);
+      background-color: var(--pico-card-background-color);
       color: var(--h5-color);
     }
 
     .btn:hover {
-      border-color: var(--card-border-color);
+      border-color: var(--pico-card-border-color);
       background-color: #3b3948;
     }
 
@@ -103,13 +104,13 @@
     }
 
     .btn-inverted {
-      border: 2px solid var(--card-border-color);
-      background-color: var(--card-sectionning-background-color);
+      border: 2px solid var(--pico-card-border-color);
+      background-color: var(--pico-card-sectioning-background-color);
       color: var(--h5-color);
     }
 
     .btn-inverted:hover {
-      border-color: var(--card-border-color);
+      border-color: var(--pico-card-border-color);
       background-color: #3b3948;
     }
 
@@ -138,24 +139,24 @@
   }
 
   .atm-keypad {
-    border: 2px solid var(--card-border-color);
-    background-color: var(--card-sectionning-background-color);
+    border: 2px solid var(--pico-card-border-color);
+    background-color: var(--pico-card-sectioning-background-color);
   }
 
   .display {
-    border: 2px solid var(--card-border-color);
-    background-color: var(--card-background-color);
+    border: 2px solid var(--pico-card-border-color);
+    background-color: var(--pico-card-background-color);
     color: var(--color);
   }
 
   .btn {
-    border: 2px solid var(--card-border-color);
-    background-color: var(--card-background-color);
+    border: 2px solid var(--pico-card-border-color);
+    background-color: var(--pico-card-background-color);
     color: var(--h5-color);
   }
 
   .btn:hover {
-    border-color: var(--card-border-color);
+    border-color: var(--pico-card-border-color);
     background-color: #3b3948;
   }
 
@@ -165,13 +166,13 @@
   }
 
   .btn-inverted {
-    border: 2px solid var(--card-border-color);
-    background-color: var(--card-sectionning-background-color);
+    border: 2px solid var(--pico-card-border-color);
+    background-color: var(--pico-card-sectioning-background-color);
     color: var(--h5-color);
   }
 
   .btn-inverted:hover {
-    border-color: var(--card-border-color);
+    border-color: var(--pico-card-border-color);
     background-color: #3b3948;
   }
 
@@ -206,12 +207,14 @@ button.warning:hover {
 
 .btn-inverted.tried,
 .btn-inverted.tried:hover {
-  background-color: var(--red);
+  background-color: var(--red) !important;
+  color: var(--pico-color) !important;
 }
 
 .btn-inverted.correct,
 .btn-inverted.correct:hover {
-  background-color: var(--green);
+  background-color: var(--green) !important;
+  color: var(--pico-color) !important;
 }
 
 .green {
