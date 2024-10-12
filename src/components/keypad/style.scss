@@ -17,7 +17,7 @@
 }
 
 .attempts-display {
-  margin-top: var(--typography-spacing-vertical);
+  margin-top: var(--pico-typography-spacing-vertical);
   text-align: center;
 }
 
@@ -61,6 +61,6 @@
 [role='button'] {
   display: flex;
   justify-content: center;
-  margin: 0 auto var(--typography-spacing-vertical) auto;
+  margin: 0 auto var(--pico-typography-spacing-vertical) auto;
   width: 10rem;
 }

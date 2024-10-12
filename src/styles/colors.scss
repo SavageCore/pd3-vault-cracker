@@ -20,13 +20,13 @@
   .display {
     border: 2px solid var(--pico-card-border-color);
     background-color: var(--pico-card-background-color);
-    color: var(--color);
+    color: var(--pico-color);
   }
 
   .btn {
     border: 2px solid var(--pico-card-border-color);
     background-color: var(--pico-card-sectioning-background-color);
-    color: var(--h5-color);
+    color: var(--pico-h5-color);
   }
 
   .btn:hover {
@@ -43,7 +43,7 @@
   .btn-inverted {
     border: 2px solid var(--pico-card-border-color);
     background-color: var(--pico-card-sectioning-background-color);
-    color: var(--h5-color);
+    color: var(--pico-h5-color);
   }
 
   .btn-inverted:hover {
@@ -66,7 +66,7 @@
 // Automatically enabled if user has Dark mode enabled
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --primary-focus: #3b3948;
+    --pico-primary-focus: #3b3948;
 
     .header,
     .footer {
@@ -84,13 +84,13 @@
     .display {
       border: 2px solid var(--pico-card-border-color);
       background-color: var(--pico-card-background-color);
-      color: var(--color);
+      color: var(--pico-color);
     }
 
     .btn {
       border: 2px solid var(--pico-card-border-color);
       background-color: var(--pico-card-background-color);
-      color: var(--h5-color);
+      color: var(--pico-h5-color);
     }
 
     .btn:hover {
@@ -106,7 +106,7 @@
     .btn-inverted {
       border: 2px solid var(--pico-card-border-color);
       background-color: var(--pico-card-sectioning-background-color);
-      color: var(--h5-color);
+      color: var(--pico-h5-color);
     }
 
     .btn-inverted:hover {
@@ -120,7 +120,7 @@
     }
 
     .btn.pressed {
-      background-color: var(--primary);
+      background-color: var(--pico-primary);
     }
   }
 }
@@ -128,7 +128,7 @@
 // Indigo Dark scheme (Forced)
 // Enabled if forced with data-theme="dark"
 [data-theme='dark'] {
-  --primary-focus: #3b3948;
+  --pico-primary-focus: #3b3948;
 
   .header,
   .footer {
@@ -146,13 +146,13 @@
   .display {
     border: 2px solid var(--pico-card-border-color);
     background-color: var(--pico-card-background-color);
-    color: var(--color);
+    color: var(--pico-color);
   }
 
   .btn {
     border: 2px solid var(--pico-card-border-color);
     background-color: var(--pico-card-background-color);
-    color: var(--h5-color);
+    color: var(--pico-h5-color);
   }
 
   .btn:hover {
@@ -168,7 +168,7 @@
   .btn-inverted {
     border: 2px solid var(--pico-card-border-color);
     background-color: var(--pico-card-sectioning-background-color);
-    color: var(--h5-color);
+    color: var(--pico-h5-color);
   }
 
   .btn-inverted:hover {
@@ -182,7 +182,7 @@
   }
 
   .btn.pressed {
-    background-color: var(--primary);
+    background-color: var(--pico-primary);
   }
 }
 
@@ -195,7 +195,7 @@
 
 // Warning button
 button.warning {
-  border: var(--border-width) solid var(--red-tint);
+  border: var(--pico-border-width) solid var(--red-tint);
   background-color: var(--red);
   color: white;
 }

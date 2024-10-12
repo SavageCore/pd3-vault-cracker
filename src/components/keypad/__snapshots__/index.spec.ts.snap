@@ -3,10 +3,10 @@
 exports[`Component > should render with props 1`] = `
 <div>
   <div
-    class="atm-keypad svelte-f9drc7"
+    class="atm-keypad svelte-17os67r"
   >
     <div
-      class="display svelte-f9drc7"
+      class="display svelte-17os67r"
     >
       *
       
@@ -20,10 +20,10 @@ exports[`Component > should render with props 1`] = `
     </div>
      
     <div
-      class="keypad svelte-f9drc7"
+      class="keypad svelte-17os67r"
     >
       <div
-        class="row svelte-f9drc7"
+        class="row svelte-17os67r"
       >
         <button
           class="btn"
@@ -45,7 +45,7 @@ exports[`Component > should render with props 1`] = `
         </button>
       </div>
       <div
-        class="row svelte-f9drc7"
+        class="row svelte-17os67r"
       >
         <button
           class="btn"
@@ -67,7 +67,7 @@ exports[`Component > should render with props 1`] = `
         </button>
       </div>
       <div
-        class="row svelte-f9drc7"
+        class="row svelte-17os67r"
       >
         <button
           class="btn"
@@ -90,10 +90,10 @@ exports[`Component > should render with props 1`] = `
       </div>
        
       <div
-        class="row svelte-f9drc7"
+        class="row svelte-17os67r"
       >
         <button
-          class="btn red svelte-f9drc7"
+          class="btn red svelte-17os67r"
         >
           <svg
             height="2rem"
@@ -115,7 +115,7 @@ exports[`Component > should render with props 1`] = `
         </button>
          
         <button
-          class="btn green svelte-f9drc7"
+          class="btn green svelte-17os67r"
         >
           <svg
             height="2rem"
@@ -136,13 +136,13 @@ exports[`Component > should render with props 1`] = `
     class="combinationDisplayContainer"
   >
     <p
-      class="attempts-display svelte-f9drc7"
+      class="attempts-display svelte-17os67r"
     >
       Enter known fingerprints
     </p>
      
     <a
-      class="btn-inverted disabled svelte-f9drc7"
+      class="btn-inverted disabled svelte-17os67r"
       href="#"
       role="button"
     >
@@ -197,10 +197,10 @@ exports[`Component > should render with props 1`] = `
 exports[`Component > should render without crashing 1`] = `
 <div>
   <div
-    class="atm-keypad svelte-f9drc7"
+    class="atm-keypad svelte-17os67r"
   >
     <div
-      class="display svelte-f9drc7"
+      class="display svelte-17os67r"
     >
       *
       
@@ -214,10 +214,10 @@ exports[`Component > should render without crashing 1`] = `
     </div>
      
     <div
-      class="keypad svelte-f9drc7"
+      class="keypad svelte-17os67r"
     >
       <div
-        class="row svelte-f9drc7"
+        class="row svelte-17os67r"
       >
         <button
           class="btn"
@@ -239,7 +239,7 @@ exports[`Component > should render without crashing 1`] = `
         </button>
       </div>
       <div
-        class="row svelte-f9drc7"
+        class="row svelte-17os67r"
       >
         <button
           class="btn"
@@ -261,7 +261,7 @@ exports[`Component > should render without crashing 1`] = `
         </button>
       </div>
       <div
-        class="row svelte-f9drc7"
+        class="row svelte-17os67r"
       >
         <button
           class="btn"
@@ -284,10 +284,10 @@ exports[`Component > should render without crashing 1`] = `
       </div>
        
       <div
-        class="row svelte-f9drc7"
+        class="row svelte-17os67r"
       >
         <button
-          class="btn red svelte-f9drc7"
+          class="btn red svelte-17os67r"
         >
           <svg
             height="2rem"
@@ -309,7 +309,7 @@ exports[`Component > should render without crashing 1`] = `
         </button>
          
         <button
-          class="btn green svelte-f9drc7"
+          class="btn green svelte-17os67r"
         >
           <svg
             height="2rem"
@@ -330,13 +330,13 @@ exports[`Component > should render without crashing 1`] = `
     class="combinationDisplayContainer"
   >
     <p
-      class="attempts-display svelte-f9drc7"
+      class="attempts-display svelte-17os67r"
     >
       Enter known fingerprints
     </p>
      
     <a
-      class="btn-inverted disabled svelte-f9drc7"
+      class="btn-inverted disabled svelte-17os67r"
       href="#"
       role="button"
     >
