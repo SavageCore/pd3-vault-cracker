@@ -2,7 +2,7 @@
   :root:not([data-theme]) {
     --background-color: #1c1b22;
     --card-background-color: #1c1b22;
-    --card-sectionning-background-color: #2b2a33;
+    --pico-card-sectioning-background-color: #2b2a33;
     --modal-overlay-background-color: rgb(75 73 89 / 80%);
 
     color-scheme: dark;
@@ -12,7 +12,7 @@
 [data-theme='dark'] {
   --background-color: #1c1b22;
   --card-background-color: #1c1b22;
-  --card-sectionning-background-color: #2b2a33;
+  --pico-card-sectioning-background-color: #2b2a33;
   --modal-overlay-background-color: rgb(75 73 89 / 80%);
 
   color-scheme: dark;
