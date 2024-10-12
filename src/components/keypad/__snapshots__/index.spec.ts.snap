@@ -157,7 +157,7 @@ exports[`Component > should render with props 1`] = `
   <dialog>
     <article>
       <header
-        class="svelte-11kei0n"
+        class="svelte-1in4fra"
       >
         <a
           aria-label="Close"
@@ -171,13 +171,13 @@ exports[`Component > should render with props 1`] = `
       </header>
        
       <p
-        class="svelte-11kei0n"
+        class="svelte-1in4fra"
       >
         Left-click on a combination to mark it as tried
       </p>
        
       <p
-        class="svelte-11kei0n"
+        class="svelte-1in4fra"
       >
         Right-click/long-press on a combination to mark it as correct
       </p>
@@ -185,7 +185,7 @@ exports[`Component > should render with props 1`] = `
       <br />
        
       <p
-        class="svelte-11kei0n"
+        class="svelte-1in4fra"
       >
         No combos found.
       </p>
@@ -351,7 +351,7 @@ exports[`Component > should render without crashing 1`] = `
   <dialog>
     <article>
       <header
-        class="svelte-11kei0n"
+        class="svelte-1in4fra"
       >
         <a
           aria-label="Close"
@@ -365,13 +365,13 @@ exports[`Component > should render without crashing 1`] = `
       </header>
        
       <p
-        class="svelte-11kei0n"
+        class="svelte-1in4fra"
       >
         Left-click on a combination to mark it as tried
       </p>
        
       <p
-        class="svelte-11kei0n"
+        class="svelte-1in4fra"
       >
         Right-click/long-press on a combination to mark it as correct
       </p>
@@ -379,7 +379,7 @@ exports[`Component > should render without crashing 1`] = `
       <br />
        
       <p
-        class="svelte-11kei0n"
+        class="svelte-1in4fra"
       >
         No combos found.
       </p>

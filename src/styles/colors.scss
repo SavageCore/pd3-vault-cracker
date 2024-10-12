@@ -58,7 +58,7 @@
 
   .btn.pressed {
     background-color: var(--pico-primary);
-    color: #fff;
+    color: var(--pico-color);
   }
 }
 
@@ -121,6 +121,7 @@
 
     .btn.pressed {
       background-color: var(--pico-primary);
+      color: var(--pico-color);
     }
   }
 }
@@ -183,6 +184,7 @@
 
   .btn.pressed {
     background-color: var(--pico-primary);
+    color: var(--pico-color);
   }
 }
 
