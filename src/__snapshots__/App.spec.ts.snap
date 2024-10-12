@@ -3,28 +3,28 @@
 exports[`should render without crashing 1`] = `
 <div>
   <div
-    class="grid header svelte-yzjrtv"
+    class="grid header svelte-66di5t"
   >
     <div
-      class="logo svelte-yzjrtv"
+      class="logo svelte-66di5t"
     >
       PD3 Vault Cracker
     </div>
      
     <div
-      class="offlinemode svelte-yzjrtv"
+      class="offlinemode svelte-66di5t"
     >
       #OFFLINEMODE
     </div>
      
     <div
-      class="links svelte-yzjrtv"
+      class="links svelte-66di5t"
     >
       <div
         aria-checked="false"
         aria-label="auto"
         aria-live="polite"
-        class="icon theme-toggle svelte-yzjrtv"
+        class="icon theme-toggle svelte-66di5t"
         id="theme-toggle"
         role="checkbox"
         tabindex="0"
@@ -43,7 +43,7 @@ exports[`should render without crashing 1`] = `
       </div>
        
       <div
-        class="icon pointer svelte-yzjrtv"
+        class="icon pointer svelte-66di5t"
         role="link"
         tabindex="0"
         title="Help"
@@ -73,7 +73,7 @@ exports[`should render without crashing 1`] = `
         target="_blank"
       >
         <div
-          class="icon svelte-yzjrtv"
+          class="icon svelte-66di5t"
           title="View source"
         >
           <svg
@@ -415,7 +415,7 @@ exports[`should render without crashing 1`] = `
     <dialog>
       <article>
         <header
-          class="svelte-ry4i9v"
+          class="svelte-11kei0n"
         >
           <a
             aria-label="Close"
@@ -429,13 +429,13 @@ exports[`should render without crashing 1`] = `
         </header>
          
         <p
-          class="svelte-ry4i9v"
+          class="svelte-11kei0n"
         >
           Left-click on a combination to mark it as tried
         </p>
          
         <p
-          class="svelte-ry4i9v"
+          class="svelte-11kei0n"
         >
           Right-click/long-press on a combination to mark it as correct
         </p>
@@ -443,7 +443,7 @@ exports[`should render without crashing 1`] = `
         <br />
          
         <p
-          class="svelte-ry4i9v"
+          class="svelte-11kei0n"
         >
           No combos found.
         </p>
@@ -452,16 +452,16 @@ exports[`should render without crashing 1`] = `
   </main>
    
   <div
-    class="grid footer svelte-186285e"
+    class="grid footer svelte-fumb94"
   >
     <div />
      
     <div
-      class="made-by svelte-186285e"
+      class="made-by svelte-fumb94"
     >
       Made with 🔫 by
       <a
-        class="svelte-186285e"
+        class="svelte-fumb94"
         href="https://github.com/SavageCore"
         target="_blank"
       >
@@ -474,10 +474,10 @@ exports[`should render without crashing 1`] = `
     </div>
      
     <div
-      class="version svelte-186285e"
+      class="version svelte-fumb94"
     >
       <div
-        class="icon svelte-186285e"
+        class="icon svelte-fumb94"
       >
         <svg
           fill="#f14e32"
@@ -500,7 +500,7 @@ exports[`should render without crashing 1`] = `
       </div>
        
       <a
-        class="svelte-186285e"
+        class="svelte-fumb94"
         href="https://github.com/SavageCore/pd3-vault-cracker/releases/tag/#{GH_TAG}#"
         target="_blank"
       >

@@ -3,16 +3,16 @@
 exports[`should render without crashing 1`] = `
 <div>
   <div
-    class="grid footer svelte-186285e"
+    class="grid footer svelte-fumb94"
   >
     <div />
      
     <div
-      class="made-by svelte-186285e"
+      class="made-by svelte-fumb94"
     >
       Made with 🔫 by
       <a
-        class="svelte-186285e"
+        class="svelte-fumb94"
         href="https://github.com/SavageCore"
         target="_blank"
       >
@@ -25,10 +25,10 @@ exports[`should render without crashing 1`] = `
     </div>
      
     <div
-      class="version svelte-186285e"
+      class="version svelte-fumb94"
     >
       <div
-        class="icon svelte-186285e"
+        class="icon svelte-fumb94"
       >
         <svg
           fill="#f14e32"
@@ -51,7 +51,7 @@ exports[`should render without crashing 1`] = `
       </div>
        
       <a
-        class="svelte-186285e"
+        class="svelte-fumb94"
         href="https://github.com/SavageCore/pd3-vault-cracker/releases/tag/#{GH_TAG}#"
         target="_blank"
       >
