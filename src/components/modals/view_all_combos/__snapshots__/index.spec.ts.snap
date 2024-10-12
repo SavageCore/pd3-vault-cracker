@@ -37,84 +37,98 @@ exports[`should render with props 1`] = `
       >
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="6669"
         >
           6669
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="6696"
         >
           6696
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="6699"
         >
           6699
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="6966"
         >
           6966
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="6969"
         >
           6969
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="6996"
         >
           6996
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="6999"
         >
           6999
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="9666"
         >
           9666
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="9669"
         >
           9669
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="9696"
         >
           9696
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="9699"
         >
           9699
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="9966"
         >
           9966
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="9969"
         >
           9969
            
         </button>
         <button
           class="combo-btn btn-inverted svelte-11kei0n"
+          data-combination="9996"
         >
           9996
            

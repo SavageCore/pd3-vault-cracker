@@ -7,11 +7,35 @@
   export let onClear = () => {};
   export let combinations: number[][] = [];
   export let combination: Writable<number[]> = writable([]);
+  export let triedCombinations: Writable<number[][]> = writable([]);
 
   let combinationPrint: string = '';
 
   combination.subscribe((value) => {
     combinationPrint = value.join('');
+  });
+
+  // Mark the combination as tried, based on triedCombinations, which is set in keypad when pressing next
+  triedCombinations.subscribe((value) => {
+    // If the value is empty, remove all tried classes
+    if (value.length === 0) {
+      const buttons = document.querySelectorAll('.combo-btn');
+      for (const button of buttons) {
+        button.classList.remove('tried');
+      }
+      return;
+    }
+
+    for (const triedCombination of value) {
+      const buttons = document.querySelectorAll('.combo-btn');
+      for (const button of buttons) {
+        if (
+          button.getAttribute('data-combination') === triedCombination.join('')
+        ) {
+          button.classList.add('tried');
+        }
+      }
+    }
   });
 
   const handleClick = () => {
@@ -66,6 +90,7 @@
             class="combo-btn btn-inverted"
             on:click="{toggleTried}"
             on:contextmenu|preventDefault="{toggleCorrect}"
+            data-combination="{combo.join('')}"
           >
             {combo.join('')}
           </button>

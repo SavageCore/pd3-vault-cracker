@@ -13,12 +13,14 @@
   // https://www.onlinegdb.com/jMsyIVl33
 
   export const pressedNumbers: Writable<number[]> = writable([]);
+  export const triedCombinations: Writable<number[][]> = writable([]);
   let combinations: number[][] = [];
   let currentCombination = 0;
   let code: string | null = null;
   let isModalOpen = false;
 
   $: modalCombinations = combinations;
+  $: modalTriedCombinations = triedCombinations;
   $: modalCurrentCombination = pressedNumbers;
 
   onMount(() => {
@@ -122,6 +124,8 @@
     }
 
     combinations = generateCombinations(fingerprints);
+    // Clear tried combinations
+    triedCombinations.update(() => []);
 
     const params = new URLSearchParams(window.location.search);
     params.set('code', fingerprints.join(''));
@@ -191,6 +195,7 @@
 
     pressedNumbers.update(() => []);
     combinations = [];
+    triedCombinations.update(() => []);
     currentCombination = 0;
 
     const params = new URLSearchParams(window.location.search);
@@ -273,6 +278,14 @@
       title="Next combination"
       on:click="{() => {
         currentCombination += 1;
+        // Add the current combination to the tried combinations
+        triedCombinations.update((tried) => {
+          const index = currentCombination - 1;
+          if (index >= 0 && index < combinations.length) {
+            return [...tried, combinations[index]];
+          }
+          return tried; // Return the original array if the index is out of bounds
+        });
       }}"
     >
       Next
@@ -320,6 +333,7 @@
   onClose="{toggleModal}"
   onClear="{clearModalButtons}"
   combinations="{modalCombinations}"
+  triedCombinations="{modalTriedCombinations}"
   combination="{modalCurrentCombination}"
 />
 
