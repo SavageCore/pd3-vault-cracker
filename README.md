@@ -2,11 +2,13 @@
 
 # PD3 Vault Cracker
 
-A tool to help you crack the vault in Payday 3. Enter your 2-4 digit code and it will tell you the possible combinations. Go get those no mask runs!
+A website to help you crack the vault in Payday 3. Enter the 2-4 digits highlighted on the in-game keypad and it will tell you the possible combinations. Go get those no mask runs!
 
 Click [here](https://savagecore.github.io/pd3-vault-cracker/) to view it.
 
 Inspired by [this](https://www.reddit.com/r/paydaytheheist/comments/15jvvpq/payday_3_beta_vault_code_generator_from/) Reddit post.
+
+There is also a [UE4SS](https://modworkshop.net/mod/47771) mod in the `ue4ss_mod` [folder](https://github.com/SavageCore/pd3-vault-cracker/tree/main/ue4ss_mod) of this repo, it prints the door/vault code to the console.
 
 ## Development
 

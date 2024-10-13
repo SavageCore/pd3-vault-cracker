@@ -29,5 +29,11 @@
     "less",
     "postcss",
     "scss"
+  ],
+  "Lua.diagnostics.globals": [
+    "RegisterHook"
+  ],
+  "Lua.diagnostics.disable": [
+    "undefined-global"
   ]
 }

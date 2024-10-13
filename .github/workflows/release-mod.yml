@@ -1,0 +1,30 @@
+name: Release CodeRevealer
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create directory structure
+        run: |
+          mkdir -p CodeRevealer/Scripts
+          touch CodeRevealer/enabled.txt
+          cp ue4ss_mod/main.lua CodeRevealer/Scripts/main.lua
+
+      - name: Zip files
+        run: |
+          zip -r CodeRevealer.zip CodeRevealer
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CodeRevealer
+          path: CodeRevealer.zip
