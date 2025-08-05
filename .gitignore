@@ -31,3 +31,5 @@ coverage
 public/*
 !public/logo.svg
 package-lock.json
+
+__snapshots__
