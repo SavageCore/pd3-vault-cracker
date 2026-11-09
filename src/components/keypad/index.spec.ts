@@ -25,6 +25,9 @@ describe('Component', () => {
     // the next test from the previous test's code.
     window.history.replaceState({}, '', location.pathname);
 
+    // The view preference persists in localStorage across tests too.
+    window.localStorage.removeItem('view-preference');
+
     const result = render(Component);
     container = result.container;
 
@@ -511,4 +514,35 @@ describe('Component', () => {
 
   //   expect(component.start).toHaveBeenCalled();
   // });
+
+  it('should default to modal view without a side panel', () => {
+    expect(
+      container.querySelector('.combo-side-panel'),
+    ).not.toBeInTheDocument();
+    expect(window.localStorage.getItem('view-preference')).toBeNull();
+  });
+
+  it('should show combinations in a side panel when side view is selected', async () => {
+    await fireEvent.click(oneButton);
+    await fireEvent.click(twoButton);
+    await fireEvent.click(enterButton);
+
+    await fireEvent.click(screen.getByText('Side'));
+
+    expect(window.localStorage.getItem('view-preference')).toBe('side');
+
+    const sidePanel = container.querySelector('.combo-side-panel');
+    expect(sidePanel).toBeInTheDocument();
+    expect(sidePanel?.querySelectorAll('.combo-btn').length).toBe(14);
+  });
+
+  it('should restore the side panel from the stored view preference', async () => {
+    window.localStorage.setItem('view-preference', 'side');
+
+    const { container: freshContainer } = render(Component);
+
+    expect(
+      freshContainer.querySelector('.combo-side-panel'),
+    ).toBeInTheDocument();
+  });
 });

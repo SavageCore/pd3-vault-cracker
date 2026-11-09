@@ -4,6 +4,7 @@
   import { _ } from 'svelte-i18n';
   import CheckIcon from '../../assets/icons/check.svelte';
   import CrossIcon from '../../assets/icons/cross.svelte';
+  import ComboGrid from '../modals/view_all_combos/combo_grid/index.svelte';
   import Modal from '../modals/view_all_combos/index.svelte';
   import NumberKey from './number/index.svelte';
 
@@ -18,6 +19,16 @@
   let currentCombination = 0;
   let code: string | null = null;
   let isModalOpen = false;
+
+  const viewModeStorageKey = 'view-preference';
+  const loadViewMode = (): 'modal' | 'side' =>
+    localStorage.getItem(viewModeStorageKey) === 'side' ? 'side' : 'modal';
+  let viewMode = loadViewMode();
+
+  const setViewMode = (mode: 'modal' | 'side') => {
+    viewMode = mode;
+    localStorage.setItem(viewModeStorageKey, mode);
+  };
 
   onMount(() => {
     if (!code) {
@@ -212,60 +223,79 @@
   };
 </script>
 
-<div class="atm-keypad">
-  <!-- Display -->
-  <div class="display">
-    <!-- Current combination -->
-    {#if combinations.length > 0 && currentCombination < combinations.length}
-      {combinations[currentCombination].join('')}
-    {:else if combinations.length > 0 &&
-      currentCombination >= combinations.length}
-      x x x x
-    {:else}
-      <!-- Current fingerprints entered -->
-      <!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
-      {#each Array(4) as _, i (i)}
-        {#if $pressedNumbers[i] !== undefined}
-          {$pressedNumbers[i]}
-        {:else}
-          *
-        {/if}
-      {/each}
-    {/if}
-  </div>
-  <!-- Keypad -->
-  <div class="keypad">
-    {#each [
-      [1, 2, 3],
-      [4, 5, 6],
-      [7, 8, 9],
-    ] as row (row)}
-      <div class="row">
-        {#each row as number (number)}
-          <NumberKey {number} {onKeypadInput} {clearNumber} />
+<div class="crack-layout" class:side-view={viewMode === 'side'}>
+  <div class="atm-keypad">
+    <!-- Display -->
+    <div class="display">
+      <!-- Current combination -->
+      {#if combinations.length > 0 && currentCombination < combinations.length}
+        {combinations[currentCombination].join('')}
+      {:else if combinations.length > 0 &&
+        currentCombination >= combinations.length}
+        x x x x
+      {:else}
+        <!-- Current fingerprints entered -->
+        <!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
+        {#each Array(4) as _, i (i)}
+          {#if $pressedNumbers[i] !== undefined}
+            {$pressedNumbers[i]}
+          {:else}
+            *
+          {/if}
         {/each}
+      {/if}
+    </div>
+    <!-- Keypad -->
+    <div class="keypad">
+      {#each [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+      ] as row (row)}
+        <div class="row">
+          {#each row as number (number)}
+            <NumberKey {number} {onKeypadInput} {clearNumber} />
+          {/each}
+        </div>
+      {/each}
+      <div class="row">
+        <button
+          class="btn red"
+          type="button"
+          on:click={() => onKeypadInput('Backspace')}
+          on:contextmenu|preventDefault={clearKeyPad}
+        >
+          <CrossIcon />
+        </button>
+        <NumberKey number={0} {onKeypadInput} {clearNumber} />
+        <button
+          class="btn green"
+          type="button"
+          on:click={() => onKeypadInput('OK')}
+          on:contextmenu|preventDefault={() => {}}
+        >
+          <CheckIcon />
+        </button>
       </div>
-    {/each}
-    <div class="row">
-      <button
-        class="btn red"
-        type="button"
-        on:click={() => onKeypadInput('Backspace')}
-        on:contextmenu|preventDefault={clearKeyPad}
-      >
-        <CrossIcon />
-      </button>
-      <NumberKey number={0} {onKeypadInput} {clearNumber} />
-      <button
-        class="btn green"
-        type="button"
-        on:click={() => onKeypadInput('OK')}
-        on:contextmenu|preventDefault={() => {}}
-      >
-        <CheckIcon />
-      </button>
     </div>
   </div>
+
+  {#if viewMode === 'side'}
+    <aside class="combo-side-panel" aria-label={$_('keypad.side_header')}>
+      <h3>
+        {$_('keypad.side_header')}
+      </h3>
+      {#if combinations.length === 0}
+        <p>{$_('header.view_all_combos_modal.empty')}</p>
+      {:else}
+        <ComboGrid
+          {combinations}
+          {triedCombinations}
+          onClear={clearModalButtons}
+        />
+      {/if}
+    </aside>
+  {/if}
 </div>
 
 <div class="combinationDisplayContainer">
@@ -309,6 +339,25 @@
         >{$_('keypad.view_all')}</a
       >
     </p>
+
+    <!-- View mode toggle (takes effect on wide screens) -->
+    <div class="view-toggle" role="group" aria-label={$_('keypad.view_label')}>
+      <span>{$_('keypad.view_label')}:</span>
+      <button
+        type="button"
+        class:active={viewMode === 'modal'}
+        on:click={() => setViewMode('modal')}
+      >
+        {$_('keypad.view_modal')}
+      </button>
+      <button
+        type="button"
+        class:active={viewMode === 'side'}
+        on:click={() => setViewMode('side')}
+      >
+        {$_('keypad.view_side')}
+      </button>
+    </div>
   {:else if combinations.length > 0 &&
     currentCombination + 1 >= combinations.length}
     <p class="attempts-display">{$_('keypad.end_of_combinations')}</p>

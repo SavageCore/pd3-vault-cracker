@@ -66,6 +66,65 @@
   width: 10rem;
 }
 
+// The view toggle and side panel only make sense where there is room:
+// wide screens show the toggle, and the side panel additionally needs
+// side-view mode selected.
+.view-toggle,
+.combo-side-panel {
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .view-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .view-toggle button {
+    border: var(--pico-border-width) solid var(--pico-secondary-border);
+    background-color: var(--pico-secondary-background);
+    color: var(--pico-secondary-inverse);
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .view-toggle button.active {
+    border-color: var(--pico-primary-border);
+    background-color: var(--pico-primary-background);
+    color: var(--pico-primary-inverse);
+  }
+
+  .crack-layout.side-view {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .combo-side-panel {
+    display: block;
+    flex: 0 1 auto;
+    border-radius: var(--pico-border-radius);
+    background-color: var(--pico-card-background-color);
+    padding: 1rem;
+    min-width: 22rem;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .combo-side-panel h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .combo-side-panel :global(.grid.combo) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 // Compact layout for short viewports (e.g. iPhone SE at 667px height).
 @media (height <= 720px) {
   .atm-keypad {
