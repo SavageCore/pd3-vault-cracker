@@ -1,0 +1,90 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.6/schema.json",
+  "files": {
+    "includes": ["**", "!dist", "!coverage", "!pnpm-lock.yaml", "!.serena"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "html": {
+    // Svelte formatting is experimental and opt-in.
+    "experimentalFullSupportEnabled": true,
+    "formatter": {
+      "enabled": true,
+      "indentScriptAndStyle": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended"
+    }
+  },
+  "overrides": [
+    {
+      // PicoCSS theme overrides live here: the cascade order and
+      // !important markers are intentional. noUnknownUnit is a Biome
+      // false positive on hex colors starting with a digit (#1c1b22).
+      "includes": ["src/styles/colors.scss", "src/styles/theme.scss"],
+      "linter": {
+        "rules": {
+          "complexity": {
+            "noImportantStyles": "off"
+          },
+          "correctness": {
+            "noUnknownUnit": "off"
+          },
+          "style": {
+            "noDescendingSpecificity": "off"
+          }
+        }
+      }
+    },
+    {
+      // Svelte's :global() in plain .scss files linked via <style src>.
+      // stylelint already allows it (see .stylelintrc).
+      "includes": ["src/**/*.scss"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnknownPseudoClass": "off"
+          }
+        }
+      }
+    },
+    {
+      // Test selectors intentionally assert non-null DOM lookups.
+      "includes": ["**/*.spec.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noNonNullAssertion": "off"
+          }
+        }
+      }
+    },
+    {
+      // Experimental a11y rules vs Pico idioms: <a href="#" role="button">
+      // link-buttons, aria-labelled close links, and icon toggles that
+      // already carry roles and keyboard handlers.
+      "includes": ["**/*.svelte"],
+      "linter": {
+        "rules": {
+          "a11y": {
+            "useAnchorContent": "off",
+            "useSemanticElements": "off",
+            "useValidAnchor": "off"
+          }
+        }
+      }
+    }
+  ]
+}

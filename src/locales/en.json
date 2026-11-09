@@ -1,16 +1,62 @@
 {
   "title": "Vite + Svelte",
+  "app": {
+    "loading": "Please wait..."
+  },
   "header": {
+    "theme_toggle": {
+      "dark": "Dark theme",
+      "light": "Light theme"
+    },
+    "help": "Help",
+    "view_source": "View source",
     "help_modal": {
-      "header": "Help"
+      "header": "Help",
+      "intro": "This tool helps you to find the correct combination for the vault in Payday 3.",
+      "enter_before": "Enter the 2, 3 or 4 digits from the fingerprints on the vault keypad then click the",
+      "enter_after": "button to calculate the possible combinations.",
+      "remove_before": "To remove the entered digits click the",
+      "remove_after": "button. Right-click/long-press to clear all entered digits.",
+      "theme_before": "Click on the",
+      "theme_or": "or",
+      "theme_after": "icon to toggle between light and dark mode.",
+      "keybinds": "Keybinds",
+      "keybind_calculate": "Enter/Return - Calculate combinations",
+      "keybind_remove": "Backspace/Delete - Remove last entered digit",
+      "keybind_clear": "Escape - Clear all entered digits",
+      "keybind_digits": "Numbers or numpad - Enter digits from keyboard",
+      "issues": "Issues",
+      "issues_before": "Please post any issues on",
+      "issues_github": "GitHub",
+      "issues_middle": "or DM"
     },
     "install_modal": {
-      "header": "Install"
+      "header": "Install",
+      "body_intro": "Do you want to install this app on your device? This will allow you to launch from your home screen and use whilst offline.",
+      "body_cancel_note": "If you choose to cancel, you will not be asked again. You can still install the app manually by clicking the install icon in the address bar or under the 3 dot menu.",
+      "cancel": "Cancel",
+      "install": "Install"
     },
     "view_all_combos_modal": {
       "header": "All combinations for",
+      "hint_tried": "Left-click on a combination to mark it as tried",
+      "hint_correct": "Right-click/long-press on a combination to mark it as correct",
+      "empty": "No combos found.",
       "clear": "Clear"
     }
+  },
+  "keypad": {
+    "attempts": "Attempt {current} of {total}",
+    "next": "Next",
+    "next_title": "Next combination",
+    "view_all": "View all combinations",
+    "end_of_combinations": "End of combinations",
+    "start_again": "Start again",
+    "enter_fingerprints": "Enter known fingerprints",
+    "waiting_for_input": "Waiting for input"
+  },
+  "common": {
+    "close": "Close"
   },
   "footer": {
     "made-by": {

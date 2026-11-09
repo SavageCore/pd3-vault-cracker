@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { isLoading } from 'svelte-i18n';
+  import { _, isLoading } from 'svelte-i18n';
 
   import Footer from './components/footer/index.svelte';
   import Header from './components/header/index.svelte';
@@ -67,7 +67,7 @@
 
 {#if $isLoading}
   <main class="container">
-    <p aria-busy="true">Please wait...</p>
+    <p aria-busy="true">{$_('app.loading')}</p>
   </main>
 {:else}
   <Header />
@@ -77,10 +77,10 @@
   <Footer />
 
   <Modal
-    isOpen="{isModalOpen}"
-    onClose="{toggleModal}"
-    onInstall="{installApp}"
-    onInstallDenied="{installDenied}"
+    isOpen={isModalOpen}
+    onClose={toggleModal}
+    onInstall={installApp}
+    onInstallDenied={installDenied}
   />
 {/if}
 

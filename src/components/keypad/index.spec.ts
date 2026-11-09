@@ -1,8 +1,7 @@
 import '@testing-library/jest-dom';
-import { render, fireEvent, screen } from '@testing-library/svelte';
-
-import Component from './index.svelte';
+import { fireEvent, render, screen } from '@testing-library/svelte';
 import { writable } from 'svelte/store';
+import Component from './index.svelte';
 
 describe('Component', () => {
   let display: HTMLElement;
@@ -21,6 +20,11 @@ describe('Component', () => {
   let container: HTMLElement;
 
   beforeEach(() => {
+    // The keypad deep-links its state into the URL (?code=...). jsdom keeps
+    // history for the whole spec file, so clear it or onMount auto-starts
+    // the next test from the previous test's code.
+    window.history.replaceState({}, '', location.pathname);
+
     const result = render(Component);
     container = result.container;
 

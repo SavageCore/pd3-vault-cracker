@@ -1,0 +1,10 @@
+allowBuilds:
+  "@parcel/watcher": true
+  es5-ext: true
+  esbuild: true
+  lefthook: true
+  svelte-preprocess: true
+overrides:
+  # stylelint-config-standard-scss@17 pins standard@40, which references a
+  # rule removed in stylelint 18. Force the stylelint-18-compatible release.
+  stylelint-config-standard: ^41.0.0

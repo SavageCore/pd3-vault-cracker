@@ -14,17 +14,9 @@
     "allowJs": true,
     "checkJs": true,
     "isolatedModules": true,
-    "types": [
-      "vitest/globals",
-      "./src/types/app.d.ts"
-    ]
+    "types": ["vitest/globals", "./src/types/app.d.ts"]
   },
-  "include": [
-    "src/**/*.d.ts",
-    "src/**/*.ts",
-    "src/**/*.js",
-    "src/**/*.svelte",
-  ],
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
   "references": [
     {
       "path": "./tsconfig.node.json"

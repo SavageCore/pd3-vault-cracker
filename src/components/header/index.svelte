@@ -1,17 +1,18 @@
 <script lang="ts">
-  import Modal from '../modals/help/index.svelte';
-
+  import { _ } from 'svelte-i18n';
   import GitubIcon from '../../assets/icons/github.svelte';
   import HelpIcon from '../../assets/icons/help.svelte';
   import MoonIcon from '../../assets/icons/moon.svelte';
   import SunIcon from '../../assets/icons/sun.svelte';
+  import Modal from '../modals/help/index.svelte';
 
   let isModalOpen = false;
   const themeStorageKey = 'theme-preference';
 
   const getColorPreference = () => {
-    if (localStorage.getItem(themeStorageKey)) {
-      return localStorage.getItem(themeStorageKey)!;
+    const storedPreference = localStorage.getItem(themeStorageKey);
+    if (storedPreference) {
+      return storedPreference;
     }
 
     return window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -39,7 +40,7 @@
   };
 
   const reflectThemePreference = () => {
-    document.firstElementChild!.setAttribute('data-theme', theme.value);
+    document.firstElementChild?.setAttribute('data-theme', theme.value);
 
     document
       .querySelector('#theme-toggle')
@@ -65,12 +66,16 @@
     <div
       class="icon theme-toggle"
       id="theme-toggle"
-      title="{theme.value === 'light' ? 'Dark theme' : 'Light theme'}"
+      title={$_(
+        theme.value === 'light'
+          ? 'header.theme_toggle.dark'
+          : 'header.theme_toggle.light',
+      )}
       aria-label="auto"
       aria-live="polite"
       aria-checked="false"
-      on:click="{toggleTheme}"
-      on:keydown="{toggleTheme}"
+      on:click={toggleTheme}
+      on:keydown={toggleTheme}
       role="checkbox"
       tabindex="0"
     >
@@ -84,9 +89,9 @@
 
     <div
       class="icon pointer"
-      title="Help"
-      on:click="{toggleHelpModal}"
-      on:keydown="{toggleHelpModal}"
+      title={$_('header.help')}
+      on:click={toggleHelpModal}
+      on:keydown={toggleHelpModal}
       role="link"
       tabindex="0"
     >
@@ -94,7 +99,7 @@
     </div>
 
     <a href="https://github.com/SavageCore/pd3-vault-cracker" target="_blank">
-      <div class="icon" title="View source">
+      <div class="icon" title={$_('header.view_source')}>
         <GitubIcon />
       </div>
     </a>
@@ -102,7 +107,7 @@
 </div>
 <!-- </div> -->
 
-<Modal isOpen="{isModalOpen}" onClose="{toggleHelpModal}" />
+<Modal isOpen={isModalOpen} onClose={toggleHelpModal} />
 
 <style src="./style.scss">
 </style>

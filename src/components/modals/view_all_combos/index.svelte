@@ -1,6 +1,6 @@
 <script lang="ts">
+  import { type Writable, writable } from 'svelte/store';
   import { _ } from 'svelte-i18n';
-  import { writable, type Writable } from 'svelte/store';
 
   export let isOpen = false;
   export let onClose = () => {};
@@ -69,35 +69,44 @@
   };
 </script>
 
-<dialog open="{isOpen}">
+<dialog open={isOpen}>
   <article>
     <header>
-      <a href="#close" aria-label="Close" class="close" on:click="{handleClick}"
+      <a
+        href="#close"
+        aria-label={$_('common.close')}
+        class="close"
+        on:click={handleClick}
       ></a>
       {$_('header.view_all_combos_modal.header')}
       {combinationPrint}
     </header>
-    <p>Left-click on a combination to mark it as tried</p>
-    <p>Right-click/long-press on a combination to mark it as correct</p>
-    <br />
+    <p>{$_('header.view_all_combos_modal.hint_tried')}</p>
+    <p>{$_('header.view_all_combos_modal.hint_correct')}</p>
+    <br>
 
     {#if combinations.length === 0}
-      <p>No combos found.</p>
+      <p>{$_('header.view_all_combos_modal.empty')}</p>
     {:else}
       <div class="grid combo">
-        {#each combinations as combo}
+        {#each combinations as combo (combo.join(''))}
           <button
             class="combo-btn btn-inverted"
-            on:click="{toggleTried}"
-            on:contextmenu|preventDefault="{toggleCorrect}"
-            data-combination="{combo.join('')}"
+            type="button"
+            on:click={toggleTried}
+            on:contextmenu|preventDefault={toggleCorrect}
+            data-combination={combo.join('')}
           >
             {combo.join('')}
           </button>
         {/each}
       </div>
       <!-- Clear button -->
-      <button class="btn-inverted clear-btn" on:click="{() => onClear()}">
+      <button
+        class="btn-inverted clear-btn"
+        type="button"
+        on:click={() => onClear()}
+      >
         {$_('header.view_all_combos_modal.clear')}
       </button>
     {/if}

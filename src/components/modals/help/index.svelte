@@ -1,10 +1,9 @@
 <script>
   import { _ } from 'svelte-i18n';
-
-  import MoonIcon from '../../../assets/icons/moon.svelte';
-  import SunIcon from '../../../assets/icons/sun.svelte';
   import CheckIcon from '../../../assets/icons/check.svelte';
   import CrossIcon from '../../../assets/icons/cross.svelte';
+  import MoonIcon from '../../../assets/icons/moon.svelte';
+  import SunIcon from '../../../assets/icons/sun.svelte';
 
   export let isOpen = false;
   export let onClose = () => {};
@@ -14,49 +13,54 @@
   }
 </script>
 
-<dialog open="{isOpen}">
+<dialog open={isOpen}>
   <article>
     <header>
-      <a href="#close" aria-label="Close" class="close" on:click="{handleClick}"
+      <a
+        href="#close"
+        aria-label={$_('common.close')}
+        class="close"
+        on:click={handleClick}
       ></a>
       {$_('header.help_modal.header')}
     </header>
     <p>
-      This tool helps you to find the correct combination for the vault in
-      Payday 3.
+      {$_('header.help_modal.intro')}
     </p>
     <p>
-      Enter the 2, 3 or 4 digits from the fingerprints on the vault keypad then
-      click the
+      {$_('header.help_modal.enter_before')}
       <span class="green"><CheckIcon size="1rem" /></span>
-      button to calculate the possible combinations.
+      {$_('header.help_modal.enter_after')}
     </p>
     <p>
-      To remove the entered digits click the
+      {$_('header.help_modal.remove_before')}
       <span class="red"><CrossIcon size="1rem" /></span>
-      button. Right-click/long-press to clear all entered digits.
+      {$_('header.help_modal.remove_after')}
     </p>
     <p>
-      Click on the <SunIcon size="1rem" /> or
-      <MoonIcon size="1rem" /> icon to toggle between light and dark mode.
+      {$_('header.help_modal.theme_before')}
+      <SunIcon size="1rem" />
+      {$_('header.help_modal.theme_or')}
+      <MoonIcon size="1rem" />
+      {$_('header.help_modal.theme_after')}
     </p>
-    <h3>Keybinds</h3>
+    <h3>{$_('header.help_modal.keybinds')}</h3>
     <ol>
-      <li>Enter/Return - Calculate combinations</li>
-      <li>Backspace/Delete - Remove last entered digit</li>
-      <li>Escape - Clear all entered digits</li>
-      <li>Numbers or numpad - Enter digits from keyboard</li>
+      <li>{$_('header.help_modal.keybind_calculate')}</li>
+      <li>{$_('header.help_modal.keybind_remove')}</li>
+      <li>{$_('header.help_modal.keybind_clear')}</li>
+      <li>{$_('header.help_modal.keybind_digits')}</li>
     </ol>
-    <h3>Issues</h3>
+    <h3>{$_('header.help_modal.issues')}</h3>
     <p>
-      Please post any issues on
+      {$_('header.help_modal.issues_before')}
       <a
         href="https://github.com/SavageCore/pd3-vault-cracker/issues"
         target="_blank"
       >
-        GitHub
+        {$_('header.help_modal.issues_github')}
       </a>
-      or DM
+      {$_('header.help_modal.issues_middle')}
       <a
         href="https://www.reddit.com/message/compose/?to=SavageCore"
         target="_blank"

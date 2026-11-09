@@ -1,39 +1,26 @@
 {
-  "i18n-ally.localesPaths": [
-    "src/locales"
-  ],
+  "i18n-ally.localesPaths": ["src/locales"],
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "i18n-ally.keystyle": "nested",
   "editor.formatOnSave": true,
   "eslint.enable": true,
-  "eslint.validate": [
-    "svelte"
-  ],
+  "eslint.validate": ["svelte"],
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[svelte]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "css.validate": false,
   "scss.validate": false,
   "stylelint.enable": true,
-  "stylelint.validate": [
-    "css",
-    "less",
-    "postcss",
-    "scss"
-  ],
-  "Lua.diagnostics.globals": [
-    "RegisterHook"
-  ],
-  "Lua.diagnostics.disable": [
-    "undefined-global"
-  ]
+  "stylelint.validate": ["css", "less", "postcss", "scss"],
+  "Lua.diagnostics.globals": ["RegisterHook"],
+  "Lua.diagnostics.disable": ["undefined-global"]
 }

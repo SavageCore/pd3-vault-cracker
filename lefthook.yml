@@ -1,0 +1,10 @@
+# See https://lefthook.dev/configuration/
+pre-commit:
+  parallel: true
+  jobs:
+    - name: biome check
+      run: pnpm exec biome check .
+      stage_fixed: true
+
+    - name: tests
+      run: pnpm test

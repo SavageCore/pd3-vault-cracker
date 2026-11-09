@@ -6,6 +6,7 @@
 
 <button
   class="btn"
+  type="button"
   data-value="{number}"
   on:click="{() => onKeypadInput(number.toString())}"
   on:contextmenu|preventDefault="{() => clearNumber(number)}"

@@ -11,7 +11,8 @@
   <div class="made-by">
     {$_('footer.made-by.text')}<a
       href="https://github.com/SavageCore"
-      target="_blank"><span class="bold">SavageCore</span></a
+      target="_blank"
+      ><span class="bold">SavageCore</span></a
     >
   </div>
   <div class="version">

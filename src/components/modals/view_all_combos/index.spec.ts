@@ -1,8 +1,7 @@
 import '@testing-library/jest-dom';
-import { render, fireEvent } from '@testing-library/svelte';
-
-import Component from './index.svelte';
+import { fireEvent, render } from '@testing-library/svelte';
 import { writable } from 'svelte/store';
+import Component from './index.svelte';
 
 test('should render without crashing', () => {
   const { container } = render(Component);
@@ -41,7 +40,7 @@ test('should print known fingerprints in header', () => {
   const pressedNumbers = writable([]);
   pressedNumbers.set([6, 9] as never[]);
 
-  let knownFingerprints;
+  let knownFingerprints = '';
 
   pressedNumbers.subscribe((value) => {
     knownFingerprints = value.join('');

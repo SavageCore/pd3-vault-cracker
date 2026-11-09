@@ -1,5 +1,5 @@
-@import './colors';
-@import './theme';
+@import "./colors";
+@import "./theme";
 
 body,
 html {
@@ -48,8 +48,8 @@ html {
 div.grid.combo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
   place-items: center;
+  gap: 1rem;
 }
 
 @media (width <= 768px) {

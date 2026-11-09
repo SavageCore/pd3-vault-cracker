@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { writable, type Writable } from 'svelte/store';
-
-  import Modal from '../modals/view_all_combos/index.svelte';
+  import { type Writable, writable } from 'svelte/store';
+  import { _ } from 'svelte-i18n';
   import CheckIcon from '../../assets/icons/check.svelte';
   import CrossIcon from '../../assets/icons/cross.svelte';
+  import Modal from '../modals/view_all_combos/index.svelte';
   import NumberKey from './number/index.svelte';
 
   // https://i.imgur.com/NKHNmfr.png
@@ -19,10 +19,6 @@
   let code: string | null = null;
   let isModalOpen = false;
 
-  $: modalCombinations = combinations;
-  $: modalTriedCombinations = triedCombinations;
-  $: modalCurrentCombination = pressedNumbers;
-
   onMount(() => {
     if (!code) {
       const params = new URLSearchParams(window.location.search);
@@ -33,9 +29,9 @@
       code &&
       code.length >= 2 &&
       code.length <= 4 &&
-      !isNaN(parseInt(code))
+      !Number.isNaN(parseInt(code, 10))
     ) {
-      const fingerprints = code.split('').map((number) => parseInt(number));
+      const fingerprints = code.split('').map((number) => parseInt(number, 10));
 
       for (const fingerprint of fingerprints) {
         toggleButton(fingerprint.toString());
@@ -172,8 +168,8 @@
 
   const toggleButton = (number: string) => {
     // Find the button that was pressed
-    const button = document.querySelector(`.btn[data-value="${number}"]`)!;
-    button.classList.toggle('pressed');
+    const button = document.querySelector(`.btn[data-value="${number}"]`);
+    button?.classList.toggle('pressed');
   };
 
   // Remove tried and correct classes from all buttons
@@ -222,23 +218,30 @@
     <!-- Current combination -->
     {#if combinations.length > 0 && currentCombination < combinations.length}
       {combinations[currentCombination].join('')}
-    {:else if combinations.length > 0 && currentCombination >= combinations.length}
+    {:else if combinations.length > 0 &&
+      currentCombination >= combinations.length}
       x x x x
     {:else}
       <!-- Current fingerprints entered -->
       <!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
-      {#each Array(4) as _, i}
+      {#each Array(4) as _, i (i)}
         {#if $pressedNumbers[i] !== undefined}
           {$pressedNumbers[i]}
-        {:else}*{/if}
+        {:else}
+          *
+        {/if}
       {/each}
     {/if}
   </div>
   <!-- Keypad -->
   <div class="keypad">
-    {#each [[1, 2, 3], [4, 5, 6], [7, 8, 9]] as row}
+    {#each [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+    ] as row (row)}
       <div class="row">
-        {#each row as number}
+        {#each row as number (number)}
           <NumberKey {number} {onKeypadInput} {clearNumber} />
         {/each}
       </div>
@@ -246,16 +249,18 @@
     <div class="row">
       <button
         class="btn red"
-        on:click="{() => onKeypadInput('Backspace')}"
-        on:contextmenu|preventDefault="{clearKeyPad}"
+        type="button"
+        on:click={() => onKeypadInput('Backspace')}
+        on:contextmenu|preventDefault={clearKeyPad}
       >
         <CrossIcon />
       </button>
-      <NumberKey number="{0}" {onKeypadInput} {clearNumber} />
+      <NumberKey number={0} {onKeypadInput} {clearNumber} />
       <button
         class="btn green"
-        on:click="{() => onKeypadInput('OK')}"
-        on:contextmenu|preventDefault="{() => {}}"
+        type="button"
+        on:click={() => onKeypadInput('OK')}
+        on:contextmenu|preventDefault={() => {}}
       >
         <CheckIcon />
       </button>
@@ -266,7 +271,9 @@
 <div class="combinationDisplayContainer">
   {#if combinations.length > 0 && currentCombination < combinations.length}
     <p class="attempts-display">
-      Attempt {currentCombination + 1} of {combinations.length}
+      {$_('keypad.attempts', {
+        values: { current: currentCombination + 1, total: combinations.length },
+      })}
     </p>
 
     <!-- Next button -->
@@ -275,8 +282,8 @@
       href="#"
       role="button"
       class="btn-inverted"
-      title="Next combination"
-      on:click="{() => {
+      title={$_('keypad.next_title')}
+      on:click={() => {
         currentCombination += 1;
         // Add the current combination to the tried combinations
         triedCombinations.update((tried) => {
@@ -286,9 +293,9 @@
           }
           return tried; // Return the original array if the index is out of bounds
         });
-      }}"
+      }}
     >
-      Next
+      {$_('keypad.next')}
     </a>
 
     <!-- View all link -->
@@ -297,31 +304,33 @@
       <a
         href="#"
         class="view-all-link"
-        title="View all combinations"
-        on:click="{() => viewAllCombinations()}">View all combinations</a
+        title={$_('keypad.view_all')}
+        on:click={() => viewAllCombinations()}
+        >{$_('keypad.view_all')}</a
       >
     </p>
-  {:else if combinations.length > 0 && currentCombination + 1 >= combinations.length}
-    <p class="attempts-display">End of combinations</p>
+  {:else if combinations.length > 0 &&
+    currentCombination + 1 >= combinations.length}
+    <p class="attempts-display">{$_('keypad.end_of_combinations')}</p>
     <!-- svelte-ignore a11y-invalid-attribute -->
     <a
       href="#"
       role="button"
       class="btn-inverted"
-      on:click="{() => {
+      on:click={() => {
         onKeypadInput('OK');
-      }}"
+      }}
     >
-      Start again
+      {$_('keypad.start_again')}
     </a>
 
     <p>&nbsp;</p>
   {:else}
-    <p class="attempts-display">Enter known fingerprints</p>
+    <p class="attempts-display">{$_('keypad.enter_fingerprints')}</p>
 
     <!-- svelte-ignore a11y-invalid-attribute -->
     <a href="#" role="button" class="btn-inverted disabled">
-      Waiting for input
+      {$_('keypad.waiting_for_input')}
     </a>
 
     <p>&nbsp;</p>
@@ -329,12 +338,12 @@
 </div>
 
 <Modal
-  isOpen="{isModalOpen}"
-  onClose="{toggleModal}"
-  onClear="{clearModalButtons}"
-  combinations="{modalCombinations}"
-  triedCombinations="{modalTriedCombinations}"
-  combination="{modalCurrentCombination}"
+  isOpen={isModalOpen}
+  onClose={toggleModal}
+  onClear={clearModalButtons}
+  {combinations}
+  {triedCombinations}
+  combination={pressedNumbers}
 />
 
 <style src="./style.scss">
