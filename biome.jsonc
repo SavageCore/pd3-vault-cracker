@@ -1,7 +1,14 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.6.6/schema.json",
   "files": {
-    "includes": ["**", "!dist", "!coverage", "!pnpm-lock.yaml", "!.serena"]
+    "includes": [
+      "**",
+      "!dist",
+      "!dev-dist",
+      "!coverage",
+      "!pnpm-lock.yaml",
+      "!.serena"
+    ]
   },
   "formatter": {
     "enabled": true,

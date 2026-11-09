@@ -1,8 +1,5 @@
 {
   "title": "Vite + Svelte",
-  "app": {
-    "loading": "Please wait..."
-  },
   "header": {
     "theme_toggle": {
       "dark": "Dark theme",

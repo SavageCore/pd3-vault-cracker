@@ -13,7 +13,7 @@ html {
   width: 100vw;
   height: 100%;
   min-height: 100%;
-  overflow: hidden;
+  overflow: hidden auto;
 }
 
 .icon {
@@ -35,7 +35,7 @@ html {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: safe center;
   align-items: center;
   min-height: 100vh;
 }
@@ -66,6 +66,9 @@ div.grid.combo {
 @media (width <= 768px) {
   .container {
     min-height: 80vh;
+
+    // Clear the fixed footer when the page scrolls on short viewports.
+    padding-bottom: 2.5rem;
   }
 
   div.grid.combo {
