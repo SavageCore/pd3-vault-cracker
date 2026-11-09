@@ -1,0 +1,67 @@
+{
+  "title": "Vite + Svelte",
+  "header": {
+    "theme_toggle": {
+      "dark": "Donker thema",
+      "light": "Licht thema"
+    },
+    "help": "Hulp",
+    "view_source": "Bron bekijken",
+    "help_modal": {
+      "header": "Hulp",
+      "intro": "Dit hulpmiddel helpt je de juiste combinatie voor de kluis in Payday 3 te vinden.",
+      "enter_before": "Voer de 2, 3 of 4 cijfers van de vingerafdrukken op het kluistoetsenbord in en klik op de",
+      "enter_after": "knop om de mogelijke combinaties te berekenen.",
+      "remove_before": "Klik op de",
+      "remove_after": "knop om de ingevoerde cijfers te verwijderen. Klik met de rechtermuisknop of houd lang ingedrukt om alle ingevoerde cijfers te wissen.",
+      "theme_before": "Klik op het",
+      "theme_or": "of",
+      "theme_after": "pictogram om te schakelen tussen lichte en donkere modus.",
+      "keybinds": "Sneltoetsen",
+      "keybind_calculate": "Enter/Return - Combinaties berekenen",
+      "keybind_remove": "Backspace/Delete - Laatst ingevoerde cijfer verwijderen",
+      "keybind_clear": "Escape - Alle ingevoerde cijfers wissen",
+      "keybind_digits": "Cijfers of numeriek toetsenbord - Cijfers invoeren via het toetsenbord",
+      "issues": "Problemen",
+      "issues_before": "Meld problemen op",
+      "issues_github": "GitHub",
+      "issues_middle": "of via DM"
+    },
+    "install_modal": {
+      "header": "Installeren",
+      "body_intro": "Wil je deze app op je apparaat installeren? Hiermee kun je de app starten vanaf je startscherm en offline gebruiken.",
+      "body_cancel_note": "Als je ervoor kiest te annuleren, wordt er niet opnieuw gevraagd. Je kunt de app nog steeds handmatig installeren via het installatiepictogram in de adresbalk of onder het menu met de drie puntjes.",
+      "cancel": "Annuleren",
+      "install": "Installeren"
+    },
+    "view_all_combos_modal": {
+      "header": "Alle combinaties voor",
+      "hint_tried": "Klik met links op een combinatie om deze als geprobeerd te markeren",
+      "hint_correct": "Klik met rechts of houd lang ingedrukt op een combinatie om deze als correct te markeren",
+      "empty": "Geen combinaties gevonden.",
+      "clear": "Wissen"
+    }
+  },
+  "keypad": {
+    "attempts": "Poging {current} van {total}",
+    "next": "Volgende",
+    "next_title": "Volgende combinatie",
+    "view_all": "Alle combinaties bekijken",
+    "view_label": "Weergave",
+    "view_modal": "Venster",
+    "view_side": "Zijpaneel",
+    "side_header": "Alle combinaties",
+    "end_of_combinations": "Einde van combinaties",
+    "start_again": "Opnieuw beginnen",
+    "enter_fingerprints": "Voer bekende vingerafdrukken in",
+    "waiting_for_input": "Wachten op invoer"
+  },
+  "common": {
+    "close": "Sluiten"
+  },
+  "footer": {
+    "made-by": {
+      "text": "Gemaakt met 🔫 door"
+    }
+  }
+}
