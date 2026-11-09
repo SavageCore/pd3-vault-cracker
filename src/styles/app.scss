@@ -52,6 +52,17 @@ div.grid.combo {
   gap: 1rem;
 }
 
+// Pico blurs the whole viewport behind <dialog> via backdrop-filter.
+// Tearing that fullscreen blur layer down on close (and building it on
+// open) drops frames on low-end mobile GPUs, which feels like the app
+// freezing when the modal's X is pressed (#27). Drop the blur where the
+// GPU can't afford it; precise pointers keep it.
+@media (pointer: coarse) {
+  :root {
+    --pico-modal-overlay-backdrop-filter: none;
+  }
+}
+
 @media (width <= 768px) {
   .container {
     min-height: 80vh;
