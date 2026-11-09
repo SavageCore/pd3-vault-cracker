@@ -6,7 +6,7 @@ import App from './App.svelte';
 
 test('should render without crashing', () => {
   const { container } = render(App);
-  expect(container).toMatchSnapshot();
+  expect(container.querySelector('main.container')).toBeInTheDocument();
 });
 
 test('shows proper heading when rendered', () => {

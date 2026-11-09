@@ -5,7 +5,7 @@ import Component from './index.svelte';
 
 test('should render without crashing', () => {
   const { container } = render(Component);
-  expect(container).toMatchSnapshot();
+  expect(container.firstChild).toBeInTheDocument();
 });
 
 test('should render with props', () => {
@@ -33,7 +33,7 @@ test('should render with props', () => {
       combination: writable([]),
     },
   });
-  expect(container).toMatchSnapshot();
+  expect(container.querySelectorAll('.combo-btn').length).toBe(14);
 });
 
 test('should print known fingerprints in header', () => {

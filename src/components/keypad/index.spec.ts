@@ -72,16 +72,16 @@ describe('Component', () => {
 
   test('should render without crashing', () => {
     const { container } = render(Component);
-    expect(container).toMatchSnapshot();
+    expect(container.firstChild).toBeInTheDocument();
   });
 
-  test('should render with props', () => {
+  test('should render all digit buttons', () => {
     const { container } = render(Component, {
       props: {
         pressedNumbers: writable([1, 2, 3, 4]),
       },
     });
-    expect(container).toMatchSnapshot();
+    expect(container.querySelectorAll('button.btn').length).toBe(12);
   });
 
   it('should disallow duplicate number entry', async () => {

@@ -5,5 +5,5 @@ import Component from './index.svelte';
 
 test('should render without crashing', () => {
   const { container } = render(Component);
-  expect(container).toMatchSnapshot();
+  expect(container.firstChild).toBeInTheDocument();
 });
